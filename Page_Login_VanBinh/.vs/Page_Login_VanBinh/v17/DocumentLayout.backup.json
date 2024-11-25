@@ -1,0 +1,147 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\TranVanBinhLapTrinh\\XML\\WNC_QUANLITHUVIEN\\Page_Login_VanBinh\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{257759E1-06C6-4316-8809-DD382966551E}|Page_Login_VanBinh.csproj|d:\\tranvanbinhlaptrinh\\xml\\wnc_quanlithuvien\\page_login_vanbinh\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{257759E1-06C6-4316-8809-DD382966551E}|Page_Login_VanBinh.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{257759E1-06C6-4316-8809-DD382966551E}|Page_Login_VanBinh.csproj|d:\\tranvanbinhlaptrinh\\xml\\wnc_quanlithuvien\\page_login_vanbinh\\views\\account\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{257759E1-06C6-4316-8809-DD382966551E}|Page_Login_VanBinh.csproj|solutionrelative:views\\account\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{257759E1-06C6-4316-8809-DD382966551E}|Page_Login_VanBinh.csproj|d:\\tranvanbinhlaptrinh\\xml\\wnc_quanlithuvien\\page_login_vanbinh\\views\\account\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{257759E1-06C6-4316-8809-DD382966551E}|Page_Login_VanBinh.csproj|solutionrelative:views\\account\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{257759E1-06C6-4316-8809-DD382966551E}|Page_Login_VanBinh.csproj|d:\\tranvanbinhlaptrinh\\xml\\wnc_quanlithuvien\\page_login_vanbinh\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{257759E1-06C6-4316-8809-DD382966551E}|Page_Login_VanBinh.csproj|solutionrelative:models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{257759E1-06C6-4316-8809-DD382966551E}|Page_Login_VanBinh.csproj|d:\\tranvanbinhlaptrinh\\xml\\wnc_quanlithuvien\\page_login_vanbinh\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{257759E1-06C6-4316-8809-DD382966551E}|Page_Login_VanBinh.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{257759E1-06C6-4316-8809-DD382966551E}|Page_Login_VanBinh.csproj|d:\\tranvanbinhlaptrinh\\xml\\wnc_quanlithuvien\\page_login_vanbinh\\views\\page_login_vanbinh.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{257759E1-06C6-4316-8809-DD382966551E}|Page_Login_VanBinh.csproj|solutionrelative:views\\page_login_vanbinh.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{257759E1-06C6-4316-8809-DD382966551E}|Page_Login_VanBinh.csproj|d:\\tranvanbinhlaptrinh\\xml\\wnc_quanlithuvien\\page_login_vanbinh\\styles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{257759E1-06C6-4316-8809-DD382966551E}|Page_Login_VanBinh.csproj|solutionrelative:styles\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\TranVanBinhLapTrinh\\XML\\WNC_QUANLITHUVIEN\\Page_Login_VanBinh\\Views\\Account\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Create.cshtml",
+              "ToolTip": "D:\\TranVanBinhLapTrinh\\XML\\WNC_QUANLITHUVIEN\\Page_Login_VanBinh\\Views\\Account\\Create.cshtml",
+              "RelativeToolTip": "Views\\Account\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-25T15:31:02.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "style.css",
+              "DocumentMoniker": "D:\\TranVanBinhLapTrinh\\XML\\WNC_QUANLITHUVIEN\\Page_Login_VanBinh\\styles\\style.css",
+              "RelativeDocumentMoniker": "styles\\style.css",
+              "ToolTip": "D:\\TranVanBinhLapTrinh\\XML\\WNC_QUANLITHUVIEN\\Page_Login_VanBinh\\styles\\style.css",
+              "RelativeToolTip": "styles\\style.css",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAiwN0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-25T15:08:51.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\TranVanBinhLapTrinh\\XML\\WNC_QUANLITHUVIEN\\Page_Login_VanBinh\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\TranVanBinhLapTrinh\\XML\\WNC_QUANLITHUVIEN\\Page_Login_VanBinh\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-25T15:03:12.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\TranVanBinhLapTrinh\\XML\\WNC_QUANLITHUVIEN\\Page_Login_VanBinh\\Views\\Account\\Error.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Error.cshtml",
+              "ToolTip": "D:\\TranVanBinhLapTrinh\\XML\\WNC_QUANLITHUVIEN\\Page_Login_VanBinh\\Views\\Account\\Error.cshtml",
+              "RelativeToolTip": "Views\\Account\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-25T15:32:28.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Page_Login_VanBinh.cshtml",
+              "DocumentMoniker": "D:\\TranVanBinhLapTrinh\\XML\\WNC_QUANLITHUVIEN\\Page_Login_VanBinh\\Views\\Page_Login_VanBinh.cshtml",
+              "RelativeDocumentMoniker": "Views\\Page_Login_VanBinh.cshtml",
+              "ToolTip": "D:\\TranVanBinhLapTrinh\\XML\\WNC_QUANLITHUVIEN\\Page_Login_VanBinh\\Views\\Page_Login_VanBinh.cshtml",
+              "RelativeToolTip": "Views\\Page_Login_VanBinh.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-25T14:41:34.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\TranVanBinhLapTrinh\\XML\\WNC_QUANLITHUVIEN\\Page_Login_VanBinh\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "D:\\TranVanBinhLapTrinh\\XML\\WNC_QUANLITHUVIEN\\Page_Login_VanBinh\\Controllers\\AccountController.cs*",
+              "RelativeToolTip": "Controllers\\AccountController.cs*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T14:05:06.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Account.cs",
+              "DocumentMoniker": "D:\\TranVanBinhLapTrinh\\XML\\WNC_QUANLITHUVIEN\\Page_Login_VanBinh\\Models\\Account.cs",
+              "RelativeDocumentMoniker": "Models\\Account.cs",
+              "ToolTip": "D:\\TranVanBinhLapTrinh\\XML\\WNC_QUANLITHUVIEN\\Page_Login_VanBinh\\Models\\Account.cs",
+              "RelativeToolTip": "Models\\Account.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T14:02:36.539Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
