@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLiSachThuVien\\Code\\BaoCaoCuoiKi_QuanLyThuVien\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{60812253-0145-41E8-966F-F0AF69348E61}|BaoCaoCuoiKi_QuanLyThuVien.csproj|d:\\programming exercises\\nam 124 - sv 3\\ltwnc_csharp\\baocaocuoiki_quanlisachthuvien\\code\\baocaocuoiki_quanlythuvien\\librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60812253-0145-41E8-966F-F0AF69348E61}|BaoCaoCuoiKi_QuanLyThuVien.csproj|solutionrelative:librarydbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60812253-0145-41E8-966F-F0AF69348E61}|BaoCaoCuoiKi_QuanLyThuVien.csproj|d:\\programming exercises\\nam 124 - sv 3\\ltwnc_csharp\\baocaocuoiki_quanlisachthuvien\\code\\baocaocuoiki_quanlythuvien\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60812253-0145-41E8-966F-F0AF69348E61}|BaoCaoCuoiKi_QuanLyThuVien.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60812253-0145-41E8-966F-F0AF69348E61}|BaoCaoCuoiKi_QuanLyThuVien.csproj|d:\\programming exercises\\nam 124 - sv 3\\ltwnc_csharp\\baocaocuoiki_quanlisachthuvien\\code\\baocaocuoiki_quanlythuvien\\models\\borrowingrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60812253-0145-41E8-966F-F0AF69348E61}|BaoCaoCuoiKi_QuanLyThuVien.csproj|solutionrelative:models\\borrowingrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60812253-0145-41E8-966F-F0AF69348E61}|BaoCaoCuoiKi_QuanLyThuVien.csproj|d:\\programming exercises\\nam 124 - sv 3\\ltwnc_csharp\\baocaocuoiki_quanlisachthuvien\\code\\baocaocuoiki_quanlythuvien\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60812253-0145-41E8-966F-F0AF69348E61}|BaoCaoCuoiKi_QuanLyThuVien.csproj|solutionrelative:controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60812253-0145-41E8-966F-F0AF69348E61}|BaoCaoCuoiKi_QuanLyThuVien.csproj|d:\\programming exercises\\nam 124 - sv 3\\ltwnc_csharp\\baocaocuoiki_quanlisachthuvien\\code\\baocaocuoiki_quanlythuvien\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{60812253-0145-41E8-966F-F0AF69348E61}|BaoCaoCuoiKi_QuanLyThuVien.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60812253-0145-41E8-966F-F0AF69348E61}|BaoCaoCuoiKi_QuanLyThuVien.csproj|d:\\programming exercises\\nam 124 - sv 3\\ltwnc_csharp\\baocaocuoiki_quanlisachthuvien\\code\\baocaocuoiki_quanlythuvien\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{60812253-0145-41E8-966F-F0AF69348E61}|BaoCaoCuoiKi_QuanLyThuVien.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60812253-0145-41E8-966F-F0AF69348E61}|BaoCaoCuoiKi_QuanLyThuVien.csproj|d:\\programming exercises\\nam 124 - sv 3\\ltwnc_csharp\\baocaocuoiki_quanlisachthuvien\\code\\baocaocuoiki_quanlythuvien\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{60812253-0145-41E8-966F-F0AF69348E61}|BaoCaoCuoiKi_QuanLyThuVien.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60812253-0145-41E8-966F-F0AF69348E61}|BaoCaoCuoiKi_QuanLyThuVien.csproj|d:\\programming exercises\\nam 124 - sv 3\\ltwnc_csharp\\baocaocuoiki_quanlisachthuvien\\code\\baocaocuoiki_quanlythuvien\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{60812253-0145-41E8-966F-F0AF69348E61}|BaoCaoCuoiKi_QuanLyThuVien.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BorrowingRecord.cs",
+              "DocumentMoniker": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLiSachThuVien\\Code\\BaoCaoCuoiKi_QuanLyThuVien\\Models\\BorrowingRecord.cs",
+              "RelativeDocumentMoniker": "Models\\BorrowingRecord.cs",
+              "ToolTip": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLiSachThuVien\\Code\\BaoCaoCuoiKi_QuanLyThuVien\\Models\\BorrowingRecord.cs",
+              "RelativeToolTip": "Models\\BorrowingRecord.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T14:59:09.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLiSachThuVien\\Code\\BaoCaoCuoiKi_QuanLyThuVien\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLiSachThuVien\\Code\\BaoCaoCuoiKi_QuanLyThuVien\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-25T14:39:20.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLiSachThuVien\\Code\\BaoCaoCuoiKi_QuanLyThuVien\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLiSachThuVien\\Code\\BaoCaoCuoiKi_QuanLyThuVien\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-25T14:39:16.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LibraryDbContext.cs",
+              "DocumentMoniker": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLiSachThuVien\\Code\\BaoCaoCuoiKi_QuanLyThuVien\\LibraryDbContext.cs",
+              "RelativeDocumentMoniker": "LibraryDbContext.cs",
+              "ToolTip": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLiSachThuVien\\Code\\BaoCaoCuoiKi_QuanLyThuVien\\LibraryDbContext.cs",
+              "RelativeToolTip": "LibraryDbContext.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA1wBYAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T14:23:02.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLiSachThuVien\\Code\\BaoCaoCuoiKi_QuanLyThuVien\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLiSachThuVien\\Code\\BaoCaoCuoiKi_QuanLyThuVien\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T09:09:45.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLiSachThuVien\\Code\\BaoCaoCuoiKi_QuanLyThuVien\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLiSachThuVien\\Code\\BaoCaoCuoiKi_QuanLyThuVien\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-25T14:39:22.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookController.cs",
+              "DocumentMoniker": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLiSachThuVien\\Code\\BaoCaoCuoiKi_QuanLyThuVien\\Controllers\\BookController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookController.cs",
+              "ToolTip": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLiSachThuVien\\Code\\BaoCaoCuoiKi_QuanLyThuVien\\Controllers\\BookController.cs",
+              "RelativeToolTip": "Controllers\\BookController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T14:20:40.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLiSachThuVien\\Code\\BaoCaoCuoiKi_QuanLyThuVien\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLiSachThuVien\\Code\\BaoCaoCuoiKi_QuanLyThuVien\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-25T14:44:39.112Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
