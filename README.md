@@ -2,6 +2,7 @@
   <h1>QUI ƯỚC ĐẶT TÊN BIẾN, TÊN FILE</h1>
 </div>
 <div>
+  <h2>MUỐN CHẠY API THÌ PHẢI ĐỔI CONNECTION STRING TẠI appsettings.json</h2>
   <ul>
     <li>
       <h2>Tên File:</h2>
