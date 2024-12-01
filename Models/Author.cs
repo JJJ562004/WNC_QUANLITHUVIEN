@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.Text.Json.Serialization;
 
 namespace BaoCaoCuoiKi_QuanLyThuVien.Models
 {
@@ -9,6 +10,7 @@ namespace BaoCaoCuoiKi_QuanLyThuVien.Models
 
         // Navigation property
         [JsonIgnore]
+        [ValidateNever]
         public ICollection<BookAuthor> BookAuthors { get; set; }
     }
 }

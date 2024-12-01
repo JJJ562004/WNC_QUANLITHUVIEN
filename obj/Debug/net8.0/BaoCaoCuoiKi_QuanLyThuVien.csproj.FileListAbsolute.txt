@@ -90,3 +90,4 @@ D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLiSachThuV
 D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLiSachThuVien\Code\BaoCaoCuoiKi_QuanLyThuVien\obj\Debug\net8.0\BaoCaoCuoiKi_QuanLyThuVien.pdb
 D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLiSachThuVien\Code\BaoCaoCuoiKi_QuanLyThuVien\obj\Debug\net8.0\BaoCaoCuoiKi_QuanLyThuVien.genruntimeconfig.cache
 D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLiSachThuVien\Code\BaoCaoCuoiKi_QuanLyThuVien\obj\Debug\net8.0\ref\BaoCaoCuoiKi_QuanLyThuVien.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLiSachThuVien\Code\BaoCaoCuoiKi_QuanLyThuVien\obj\Debug\net8.0\BaoCaoCuoiKi_QuanLyThuVien.sourcelink.json

@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using BaoCaoCuoiKi_QuanLyThuVien.Models;
 using BaoCaoCuoiKi_QuanLyThuVien.Data;
+using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -35,16 +36,33 @@ builder.Services.AddControllers()
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
-    options.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo
+    // Define a Swagger document for each group
+    options.SwaggerDoc("Books", new OpenApiInfo
     {
-        Title = "Library Management API",
+        Title = "Library Management API - Books",
         Version = "v1",
-        Description = "API documentation for the Library Management System",
-        Contact = new Microsoft.OpenApi.Models.OpenApiContact
-        {
-            Name = "Pham Thanh Hieu",
-            Email = "your-email@example.com"
-        }
+        Description = "API for managing books"
+    });
+
+    options.SwaggerDoc("Students", new OpenApiInfo
+    {
+        Title = "Library Management API - Students",
+        Version = "v1",
+        Description = "API for managing students"
+    });
+
+    options.SwaggerDoc("Staffs", new OpenApiInfo
+    {
+        Title = "Library Management API - Staffs",
+        Version = "v1",
+        Description = "API for managing staffs"
+    });
+
+    options.SwaggerDoc("BorrowingRecordsAPI", new OpenApiInfo
+    {
+        Title = "Library Management API - Borrowing Records",
+        Version = "v1",
+        Description = "API for managing borrowing Records"
     });
 });
 
@@ -59,8 +77,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Library Management API v1");
-        c.RoutePrefix = string.Empty; // Set Swagger UI at the app's root (optional)
+        c.SwaggerEndpoint("/swagger/Books/swagger.json", "Books API");
+        c.SwaggerEndpoint("/swagger/Students/swagger.json", "Students API");
+        c.SwaggerEndpoint("/swagger/Staffs/swagger.json", "Staffs API");
+        c.SwaggerEndpoint("/swagger/BorrowingRecordsAPI/swagger.json", "Borrowing Records API");
+        c.RoutePrefix = string.Empty; // Optional: Set Swagger UI at the root
     });
 }
 

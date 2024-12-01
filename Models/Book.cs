@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.Text.Json.Serialization;
 
 namespace BaoCaoCuoiKi_QuanLyThuVien.Models
 {
@@ -10,20 +11,22 @@ namespace BaoCaoCuoiKi_QuanLyThuVien.Models
         public int CategoryID { get; set; }
         public int PublishedYear { get; set; }
 
+        public int Quantity { get; set; }
+
         // Navigation properties
         public Publisher Publisher { get; set; }
         public Category Category { get; set; }
 
         [JsonIgnore]
-        public ICollection<BookAuthor> BookAuthors { get; set; }
+        [ValidateNever]
+        public ICollection<BookAuthor>? BookAuthors { get; set; }
         [JsonIgnore]
-        public ICollection<BorrowingRecord> BorrowingRecords
-        {
-            get; set;
-        }
+        [ValidateNever]
+        public ICollection<BorrowingRecord>? BorrowingRecords{ get; set; }
 
         // Navigation property
         [JsonIgnore]
-        public ICollection<StaffAddBook> StaffAddBooks { get; set; }
+        [ValidateNever]
+        public ICollection<StaffAddBook>? StaffAddBooks { get; set; }
     }
 }

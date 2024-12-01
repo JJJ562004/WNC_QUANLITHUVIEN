@@ -17,7 +17,7 @@ namespace BaoCaoCuoiKi_QuanLyThuVien.Data
         public DbSet<Category> Categories { get; set; }
         public DbSet<Book> Books { get; set; }
         public DbSet<BookAuthor> BookAuthors { get; set; }
-        public DbSet<BorrowingRecord> BorrowingRecords { get; set; }
+        public DbSet<BorrowingRecord> Borrowing_Records { get; set; }
         public DbSet<Fine> Fines { get; set; }
         public DbSet<Notification> Notifications { get; set; }
         public DbSet<StaffAddBook> StaffAddBooks { get; set; }
@@ -29,7 +29,32 @@ namespace BaoCaoCuoiKi_QuanLyThuVien.Data
                 entity.ToTable("Book");
             });
 
+            modelBuilder.Entity<BorrowingRecord>()
+            .ToTable("Borrowing_Record"); 
 
+            modelBuilder.Entity<Student>()
+            .ToTable("Student");
+
+            modelBuilder.Entity<Author>()
+            .ToTable("Author");
+
+            modelBuilder.Entity<Publisher>()
+            .ToTable("Publisher");
+
+            modelBuilder.Entity<Category>()
+            .ToTable("Category");
+
+            modelBuilder.Entity<BookAuthor>()
+            .ToTable("Book_Author");
+
+            modelBuilder.Entity<Fine>()
+            .ToTable("Fine");
+
+            modelBuilder.Entity<Notification>()
+            .ToTable("Notification");
+
+            modelBuilder.Entity<StaffAddBook>()
+            .ToTable("Staff_Add_Book");
             // Configure primary keys and relationships
 
             // BookAuthor (Many-to-Many)

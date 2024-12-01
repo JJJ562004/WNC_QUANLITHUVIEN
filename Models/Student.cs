@@ -1,4 +1,5 @@
-﻿using System.Text.Json.Serialization;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.Text.Json.Serialization;
 
 namespace BaoCaoCuoiKi_QuanLyThuVien.Models
 {
@@ -11,11 +12,15 @@ namespace BaoCaoCuoiKi_QuanLyThuVien.Models
         public string? PhoneNumber { get; set; }
         public string? StudentAddress { get; set; }
 
+        public DateTime? EnrollmentDate { get; set; }
+
         // Navigation properties
         [JsonIgnore]
-        public ICollection<BorrowingRecord> BorrowingRecords { get; set; }
+        [ValidateNever]
+        public ICollection<BorrowingRecord>? BorrowingRecords { get; set; }
 
         [JsonIgnore]
-        public ICollection<Notification> Notifications { get; set; }
+        [ValidateNever]
+        public ICollection<Notification>? Notifications { get; set; }
     }
 }
