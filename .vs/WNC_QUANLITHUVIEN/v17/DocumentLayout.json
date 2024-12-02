@@ -1,0 +1,188 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Controllers\\BooksController.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cuoiki_LTWNC\\cuoiki_LTWNC\\Controllers\\BooksController.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\ApplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\ApplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\Book.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\Book.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\Puiblisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\Puiblisher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\Category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\Category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Controllers\\LibraryBookController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cuoiki_LTWNC\\cuoiki_LTWNC\\Controllers\\LibraryBookController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\LibraryBook\\coffees.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\LibraryBook\\coffees.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\LibraryBook\\coffees.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\LibraryBook\\coffees.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\darkn\\Documents\\BaiTapThuan\\GiuaKi\\NNT_GiuaKi\\Views\\Shared\\_Layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3fd5e0cc-709a-4f8c-94c3-7f0f8dff5bb2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BooksController.cs",
+              "DocumentMoniker": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Controllers\\BooksController.cs",
+              "RelativeDocumentMoniker": "cuoiki_LTWNC\\cuoiki_LTWNC\\Controllers\\BooksController.cs",
+              "ToolTip": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Controllers\\BooksController.cs",
+              "RelativeToolTip": "cuoiki_LTWNC\\cuoiki_LTWNC\\Controllers\\BooksController.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAAUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T15:27:34.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T15:25:48.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\Category.cs",
+              "RelativeToolTip": "cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T15:23:57.572Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Puiblisher.cs",
+              "DocumentMoniker": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\Puiblisher.cs",
+              "RelativeDocumentMoniker": "cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\Puiblisher.cs",
+              "ToolTip": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\Puiblisher.cs",
+              "RelativeToolTip": "cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\Puiblisher.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T15:21:20.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\Book.cs",
+              "RelativeToolTip": "cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\Book.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T15:17:42.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LibraryBookController.cs",
+              "DocumentMoniker": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Controllers\\LibraryBookController.cs",
+              "RelativeDocumentMoniker": "cuoiki_LTWNC\\cuoiki_LTWNC\\Controllers\\LibraryBookController.cs",
+              "ToolTip": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Controllers\\LibraryBookController.cs",
+              "RelativeToolTip": "cuoiki_LTWNC\\cuoiki_LTWNC\\Controllers\\LibraryBookController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T15:13:44.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "coffees.html",
+              "DocumentMoniker": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\LibraryBook\\coffees.html",
+              "RelativeDocumentMoniker": "cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\LibraryBook\\coffees.html",
+              "ToolTip": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\LibraryBook\\coffees.html",
+              "RelativeToolTip": "cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\LibraryBook\\coffees.html",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-01T15:01:41.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\GiuaKi\\NNT_GiuaKi\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "..\\GiuaKi\\NNT_GiuaKi\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\GiuaKi\\NNT_GiuaKi\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "..\\GiuaKi\\NNT_GiuaKi\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-01T15:01:16.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "coffees.cshtml",
+              "DocumentMoniker": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\LibraryBook\\coffees.cshtml",
+              "RelativeDocumentMoniker": "cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\LibraryBook\\coffees.cshtml",
+              "ToolTip": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\LibraryBook\\coffees.cshtml",
+              "RelativeToolTip": "cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\LibraryBook\\coffees.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACQAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-01T14:48:12.264Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
