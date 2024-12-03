@@ -33,7 +33,7 @@ namespace cuoiki_LTWNC.Controllers
         }
         void connectionString()
         {
-            con.ConnectionString = "Data Source=BINHTRAN\\BINHVAN;Initial Catalog=Login;Integrated Security=True;Encrypt=False";
+            con.ConnectionString = "Data Source=BINHTRAN\\BINHVAN;Initial Catalog=WNC_QUANLYTHUVIEN;Integrated Security=True;Encrypt=False";
         }
         [HttpPost]
         public ActionResult Verify(Account acc)
@@ -42,12 +42,12 @@ namespace cuoiki_LTWNC.Controllers
             con.Open();
 
             cmd.Connection = con;
-            cmd.CommandText = "select * from Login where username='" + acc.MSV + "' and password='" + acc.Password + "'";
+            cmd.CommandText = "select * from Student where StudentID='" + acc.MSV + "' and PhoneNumber='" + acc.Password + "'";
             dr = cmd.ExecuteReader();
             if (dr.Read())
             {
                 con.Close();
-                return View("Finish");
+                return Redirect("~/LibraryBook/index");
             }
             else
             {

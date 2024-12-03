@@ -9,9 +9,9 @@ namespace cuoiki_LTWNC.Models
 {
     public class Account
     {
-        //[Required(ErrorMessage = "MSV cannot be blank")]
+        [Required(ErrorMessage = "MSV cannot be blank")]
         public string MSV { get; set; }
-        //[Required(ErrorMessage = "Password cannot be blank")]
+        [Required(ErrorMessage = "Password cannot be blank")]
         public string Password { get; set; }
     }
 }
