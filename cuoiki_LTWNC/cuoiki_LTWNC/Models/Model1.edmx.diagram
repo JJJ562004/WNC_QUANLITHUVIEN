@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b938c62bd9764fb1a071936e41c6d18a" Name="Diagram1">
+        <EntityTypeShape EntityType="WNC_QUANLYTHUVIENModel.Author" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="WNC_QUANLYTHUVIENModel.Book" Width="1.5" PointX="3" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WNC_QUANLYTHUVIENModel.Borrowing_Record" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WNC_QUANLYTHUVIENModel.Category" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WNC_QUANLYTHUVIENModel.Fine" Width="1.5" PointX="7.5" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="WNC_QUANLYTHUVIENModel.Notification" Width="1.5" PointX="5.25" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WNC_QUANLYTHUVIENModel.Publisher" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WNC_QUANLYTHUVIENModel.Staff" Width="1.5" PointX="6" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WNC_QUANLYTHUVIENModel.Staff_Add_Book" Width="1.5" PointX="8.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WNC_QUANLYTHUVIENModel.Student" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WNC_QUANLYTHUVIENModel.sysdiagram" Width="1.5" PointX="8.75" PointY="9.625" IsExpanded="true" />
+        <AssociationConnector Association="WNC_QUANLYTHUVIENModel.FK__Book__CategoryID__52593CB8" ManuallyRouted="false" />
+        <AssociationConnector Association="WNC_QUANLYTHUVIENModel.FK__Book__PublisherI__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="WNC_QUANLYTHUVIENModel.FK__Borrowing__BookI__5629CD9C" ManuallyRouted="false" />
+        <AssociationConnector Association="WNC_QUANLYTHUVIENModel.FK__Staff_Add__BookI__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="WNC_QUANLYTHUVIENModel.FK__Borrowing__Stude__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="WNC_QUANLYTHUVIENModel.FK__Fine__BorrowID__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="WNC_QUANLYTHUVIENModel.FK__Notificat__Stude__59063A47" ManuallyRouted="false" />
+        <AssociationConnector Association="WNC_QUANLYTHUVIENModel.FK__Staff_Add__Staff__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="WNC_QUANLYTHUVIENModel.Book_Author" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
