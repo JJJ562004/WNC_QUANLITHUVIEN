@@ -520,7 +520,7 @@
           <End Role="Author" Type="Self.Author" Multiplicity="*" />
           <End Role="Book" Type="Self.Book" Multiplicity="*" />
         </Association>
-        <EntityContainer Name="WNC_QUANLYTHUVIENEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="WNC_QUANLYTHUVIENEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Authors" EntityType="Self.Author" />
           <EntitySet Name="Books" EntityType="Self.Book" />
           <EntitySet Name="Borrowing_Record" EntityType="Self.Borrowing_Record" />
@@ -574,7 +574,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="WNC_QUANLYTHUVIENModelStoreContainer" CdmEntityContainer="WNC_QUANLYTHUVIENEntities">
+        <EntityContainerMapping StorageEntityContainer="WNC_QUANLYTHUVIENModelStoreContainer" CdmEntityContainer="WNC_QUANLYTHUVIENEntities1">
           <EntitySetMapping Name="Authors">
             <EntityTypeMapping TypeName="WNC_QUANLYTHUVIENModel.Author">
               <MappingFragment StoreEntitySet="Author">
