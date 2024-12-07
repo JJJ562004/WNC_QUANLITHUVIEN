@@ -201,7 +201,7 @@ button {
 }
 
 .layout_padding {
-    padding-top: 100px;
+    padding-top: 10px;
     padding-bottom: 0px;
 }
 
@@ -461,6 +461,7 @@ button {
 .bulit_icon {
     width: 100%;
     text-align: center;
+    margin-bottom: 20px
 }
 
 .coffee_img img {
@@ -551,7 +552,7 @@ button {
 .about_section {
     width: 100%;
     float: left;
-    padding-bottom: 90px;
+    padding-bottom: 50px;
 }
 
 .about_section_2 {
@@ -583,7 +584,7 @@ button {
 }
 
 .image_iman {
-    padding-left: 250px;
+    padding-left:50px;
     position: relative;
 }
 
@@ -1037,4 +1038,108 @@ textarea#comment.update_mail::placeholder {
 
 .margin_top90 {
     margin-top: 90px;
+}
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Book Details Container */
+.book-details {
+    width: 80%;
+    margin: 150px auto 100px auto;
+    padding: 20px 20px 100px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    /* Heading Styles */
+    .book-details h2 {
+        text-align: center;
+        color: #333;
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .book-details h3 {
+        color: #333;
+        font-size: 40px;
+        margin-bottom: 10px;
+        font-style:oblique
+    }
+
+/* Book Image */
+.book-image {
+    float: left;
+    width: 30%;
+    margin-right: 20px;
+}
+
+    .book-image img {
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+/* Book Info */
+.book-info {
+    float: left;
+    width: 65%;
+}
+
+    .book-info p {
+        font-size: 1.1em;
+        color: #555;
+        line-height: 1.6;
+    }
+
+    .book-info ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+        .book-info ul li {
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+
+/* Clearfix */
+.book-details::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Button Style */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .book-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .book-info {
+        width: 100%;
+    }
 }

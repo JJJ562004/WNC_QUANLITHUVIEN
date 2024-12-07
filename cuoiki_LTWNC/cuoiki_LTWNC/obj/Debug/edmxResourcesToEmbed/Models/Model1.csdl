@@ -223,7 +223,7 @@
     <End Role="Author" Type="Self.Author" Multiplicity="*" />
     <End Role="Book" Type="Self.Book" Multiplicity="*" />
   </Association>
-  <EntityContainer Name="WNC_QUANLYTHUVIENEntities1" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="WNC_QUANLYTHUVIENEntities2" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Authors" EntityType="Self.Author" />
     <EntitySet Name="Books" EntityType="Self.Book" />
     <EntitySet Name="Borrowing_Record" EntityType="Self.Borrowing_Record" />
