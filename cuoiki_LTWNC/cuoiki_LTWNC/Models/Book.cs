@@ -28,6 +28,8 @@ namespace cuoiki_LTWNC.Models
         public Nullable<int> CategoryID { get; set; }
         public Nullable<int> PublishedYear { get; set; }
         public Nullable<int> Quantity { get; set; }
+        public string Description { get; set; }
+        public string ImageURL { get; set; }
     
         public virtual Category Category { get; set; }
         public virtual Publisher Publisher { get; set; }

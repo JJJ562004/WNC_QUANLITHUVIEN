@@ -177,9 +177,6 @@
     <Compile Include="Models\Student.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\sysdiagram.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -251,8 +248,8 @@
     <Content Include="js\slider-setting.js" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
       <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Models\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -291,11 +288,6 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
-    <Content Include="Views\LibraryBook\about.html" />
-    <Content Include="Views\LibraryBook\blog.html" />
-    <Content Include="Views\LibraryBook\coffees.html" />
-    <Content Include="Views\LibraryBook\contact.html" />
-    <Content Include="Views\LibraryBook\index.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -308,13 +300,15 @@
     <Content Include="Views\LibraryBook\Index.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\LibraryBook\about.cshtml" />
-    <Content Include="Views\LibraryBook\blog.cshtml" />
-    <Content Include="Views\LibraryBook\coffees.cshtml" />
-    <Content Include="Views\LibraryBook\contact.cshtml" />
+    <Content Include="Views\LibraryBook\staff.cshtml" />
+    <Content Include="Views\LibraryBook\books.cshtml" />
+    <Content Include="Views\LibraryBook\students.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\LibraryBook\publishers.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Uploaded\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

@@ -1,0 +1,34 @@
+﻿@model cuoiki_LTWNC.Models.Publisher
+
+@{
+    ViewBag.Title = "Quản lí nhà xuất bản";
+}
+
+@section Banner{}
+
+<!-- Form quản lý sách-->
+<div class="container mt-4">
+    <form asp-action="ManagePublisher" method="post" class="needs-validation" novalidate enctype="multipart/form-data">
+
+        <div class="row mb-3">
+            <label for="PublisherName" class="col-sm-2 col-form-label">Tên nhà xuất bản</label>
+            <div class="col-sm-10">
+                <input asp-for="PublisherName" id="PublisherName" class="form-control" placeholder="Nhập tên nhà sản xuất" />
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label for="PublisherAddress" class="col-sm-2 col-form-label">Địa chỉ</label>
+            <div class="col-sm-10">
+                <input asp-for="PublisherAddress" id="PublisherAddress" class="form-control" placeholder="Nhập địa chỉ" />
+            </div>
+        </div>
+
+        <div class="text-end">
+            <button type="submit" name="action" value="Create" class="btn btn-primary me-2">Thêm</button>
+            <button type="submit" name="action" value="Update" class="btn btn-warning me-2">Sửa</button>
+            <button type="submit" name="action" value="Delete" class="btn btn-danger">Xóa</button>
+        </div>
+    </form>
+
+</div>

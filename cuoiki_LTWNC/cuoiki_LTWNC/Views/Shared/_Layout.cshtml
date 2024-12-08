@@ -27,12 +27,13 @@
     <link rel="stylesheet" href="~/css/jquery.mCustomScrollbar.min.css">
     <!-- Tweaks for older IEs-->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/~/css/font-awesome.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <title>@ViewBag.Title</title>
 </head>
 <body>
     <div class="header_section header_bg">
         <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="index.html"><img src="~/images/logo.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -46,16 +47,16 @@
                             <a class="nav-link" href="~/LibraryBook/about">Về chúng tôi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="~/LibraryBook/coffees">Quản lí sách</a>
+                            <a class="nav-link" href="~/LibraryBook/books">Quản lí sách</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Quản lí nhân viên</a>
+                            <a class="nav-link" href="~/LibraryBook/staff">Quản lí nhân viên</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="~/LibraryBook/blog">Quản lí tài khoản</a>
+                            <a class="nav-link" href="~/LibraryBook/accounts">Quản lí tài khoản</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="~/LibraryBook/contact">Quản lí sinh viên</a>
+                            <a class="nav-link" href="~/LibraryBook/students">Quản lí sinh viên</a>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
@@ -75,34 +76,39 @@
     @RenderBody()
 
     <!-- footer section start -->
-    <div class="footer_section layout_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="address_text">Địa chỉ</h1>
-                    <p class="footer_text">here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use </p>
-                    <div class="location_text">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_10">+01 1234567890</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">demo@gmail.com</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="form-group">
-                        <textarea class="update_mail" placeholder="Your Email" rows="5" id="comment" name="Your Email"></textarea>
-                        <div class="subscribe_bt"><a href="#"><img src="~/images/teligram-icon.png"></a></div>
-                    </div>
+    <<div class="footer_section layout_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="address_text">Địa chỉ</h1>
+                <p class="footer_text">here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use</p>
+                <div class="location_text">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_10">+01 1234567890</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">demo@gmail.com</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+                <form method="post" action="@Url.Action("SendEmail", "Footer")">
+                    <div class="form-group">
+                        <textarea class="update_mail" placeholder="Your Email" rows="5" id="emailContent" name="emailContent"></textarea>
+                        <div class="subscribe_bt">
+                            <button type="submit" class="btn btn-primary">Send Email</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+</div>
+
     <!-- footer section end -->
     <!-- copyright section start -->
     <div class="copyright_section">
