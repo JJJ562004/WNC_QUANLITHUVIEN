@@ -13,10 +13,10 @@ namespace cuoiki_LTWNC.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class WNC_QUANLYTHUVIENEntities : DbContext
+    public partial class WNC_QUANLYTHIVIEN_REALEntities : DbContext
     {
-        public WNC_QUANLYTHUVIENEntities()
-            : base("name=WNC_QUANLYTHUVIENEntities")
+        public WNC_QUANLYTHIVIEN_REALEntities()
+            : base("name=WNC_QUANLYTHIVIEN_REALEntities")
         {
         }
     
@@ -35,6 +35,5 @@ namespace cuoiki_LTWNC.Models
         public virtual DbSet<Staff> Staffs { get; set; }
         public virtual DbSet<Staff_Add_Book> Staff_Add_Book { get; set; }
         public virtual DbSet<Student> Students { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
     }
 }

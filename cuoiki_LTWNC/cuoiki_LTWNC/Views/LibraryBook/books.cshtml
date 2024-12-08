@@ -1,0 +1,80 @@
+﻿@model cuoiki_LTWNC.Models.Book
+
+@{
+    ViewBag.Title = "Quản lí sách";
+}
+
+@section Banner{}
+
+<!-- Form quản lý sách-->
+<div class="container mt-4">
+    <form asp-action="ManageBook" method="post" class="needs-validation" novalidate enctype="multipart/form-data">
+        <div class="row mb-3">
+            <label for="Title" class="col-sm-2 col-form-label">Title</label>
+            <div class="col-sm-10">
+                <input asp-for="Title" id="Title" class="form-control" placeholder="Enter book title" required />
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label for="PublisherID" class="col-sm-2 col-form-label">Nhà xuất bản</label>
+            <div class="col-sm-10">
+                <select asp-for="PublisherID" id="PublisherID" class="form-select" required>
+                    <option value="">-- Select Publisher --</option>
+                    @foreach (var publisher in ViewBag.Publishers)
+                    {
+                        <option value="@publisher.Value">@publisher.Text</option>
+                    }
+                </select>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label for="CategoryID" class="col-sm-2 col-form-label">Category</label>
+            <div class="col-sm-10">
+                <select asp-for="CategoryID" id="CategoryID" class="form-select" required>
+                    <option value="">-- Select Category --</option>
+                    @foreach (var category in ViewBag.Categories)
+                    {
+                        <option value="@category.Value">@category.Text</option>
+                    }
+                </select>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label for="PublishedYear" class="col-sm-2 col-form-label">Published Year</label>
+            <div class="col-sm-10">
+                <input asp-for="PublishedYear" id="PublishedYear" class="form-control" placeholder="Enter year" />
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label for="Quantity" class="col-sm-2 col-form-label">Quantity</label>
+            <div class="col-sm-10">
+                <input asp-for="Quantity" id="Quantity" class="form-control" placeholder="Enter quantity" />
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label for="Description" class="col-sm-2 col-form-label">Description</label>
+            <div class="col-sm-10">
+                <input asp-for="Description" id="Description" class="form-control" placeholder="Enter book description" />
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <label for="Image" class="col-sm-2 col-form-label">Book Image</label>
+            <div class="col-sm-10">
+                <input type="file" name="Image" id="Image" class="form-control" />
+            </div>
+        </div>
+
+        <div class="text-end">
+            <button type="submit" name="action" value="Create" class="btn btn-primary me-2">Thêm</button>
+            <button type="submit" name="action" value="Update" class="btn btn-warning me-2">Sửa</button>
+            <button type="submit" name="action" value="Delete" class="btn btn-danger">Xóa</button>
+        </div>
+    </form>
+
+</div>
