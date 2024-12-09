@@ -1,4 +1,4 @@
-/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+﻿/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
 
 
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
@@ -1143,3 +1143,80 @@ body {
         width: 100%;
     }
 }
+/* Khu vực danh mục */
+.category_section {
+    margin: 20px 0;
+    text-align: left;
+    position: relative;
+}
+
+/* Tiêu đề danh mục */
+.category_title {
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff; /* Màu chữ mặc định */
+    background-color: #ccc; /* Nền mặc định là màu xám */
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+    /* Hover vào tiêu đề danh mục */
+    .category_title:hover {
+        background-color: #fff; /* Chuyển nền thành màu trắng */
+        color: #333; /* Chuyển chữ thành màu xám đậm */
+        border: 1px solid #ddd; /* Tạo viền nhẹ khi hover */
+    }
+
+/* Danh sách danh mục */
+.category_list {
+    display: none; /* Ẩn mặc định */
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    overflow: hidden;
+}
+
+/* Hiển thị danh sách khi hover vào label */
+.category_section:hover .category_list {
+    display: block;
+    animation: slideDown 0.3s ease;
+}
+
+/* Hiệu ứng mở danh sách */
+@keyframes slideDown {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+
+    to {
+        max-height: 500px;
+        opacity: 1;
+    }
+}
+
+/* Các liên kết trong danh sách danh mục */
+.category_link {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+    .category_link:last-child {
+        border-bottom: none;
+    }
+
+    .category_link:hover {
+        background-color: #f1f1f1;
+        color: #007bff;
+    }
