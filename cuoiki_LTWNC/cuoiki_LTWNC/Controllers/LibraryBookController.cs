@@ -227,7 +227,8 @@ namespace cuoiki_LTWNC.Controllers
                 {
                     // Update existing staff
                     existingPublisher.PublisherName = model.PublisherName;
-                    existingPublisher.PublisherAddress = model.PublisherAddress;                    
+                    existingPublisher.PublisherAddress = model.PublisherAddress;
+                    existingPublisher.PublisherAddress = model.PublisherAddress;
                     _context.SaveChanges();
                     TempData["Message"] = "Publisher updated successfully!";
                 }
@@ -251,7 +252,76 @@ namespace cuoiki_LTWNC.Controllers
 
 
         }
-        
+
+        public ActionResult fines(int? fineId, int? page)
+        {
+            int pageSize = 5;
+            int pageNumber = page ?? 1;
+
+            ViewBag.Borrows = _context.Borrowing_Record
+               .Select(c => new SelectListItem
+               {
+                   Value = c.BorrowID.ToString(),
+                   Text = c.BorrowDate.ToString(),
+               })
+               .ToList();
+
+            var fines = _context.Fines.OrderBy(s => s.FineID).ToPagedList(pageNumber, pageSize);
+
+            if (fineId.HasValue)
+            {
+                var fine = _context.Fines.FirstOrDefault(b => b.FineID == fineId);
+                if (fine != null)
+                {
+                    ViewBag.Fine = fine;
+                }
+            }
+
+            return View(fines);
+        }
+
+        [HttpPost]
+        public ActionResult ManageFine(Models.Fine model, string action)
+        {
+            if (action == "Create")
+            {
+                _context.Fines.Add(model);
+                _context.SaveChanges();
+                TempData["Message"] = "Fine data added successfully!";
+            }
+
+
+            else if (action == "Update")
+            {
+                var existingFine= _context.Fines.Find(model.FineID);
+                if (existingFine != null)
+                {
+                    existingFine.BorrowID = model.BorrowID;
+                    existingFine.FineAmount = model.FineAmount;
+                    existingFine.PaidStatus = model.PaidStatus;
+                    _context.SaveChanges();
+                    TempData["Message"] = "Fine data updated successfully!";
+                }
+            }
+            else if (action == "Delete")
+            {
+                var fine = _context.Fines.Find(model.FineID);
+                if (fine != null)
+                {
+                    _context.Fines.Remove(fine);
+                    _context.SaveChanges();
+                    TempData["Message"] = "fine data deleted successfully!";
+                }
+                else
+                {
+                    TempData["Error"] = "fine data not found.";
+                }
+            }
+
+            return RedirectToAction("fines");
+
+
+        }
 
     }
 }

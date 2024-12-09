@@ -1,0 +1,103 @@
+﻿@model PagedList.IPagedList<cuoiki_LTWNC.Models.Fine>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Quản lí dữ liệu tiền đền bù";
+}
+@section Banner{}
+<div class="container">
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="~/images/blog-img2.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">@(ViewBag.Staff != null ? "Cập nhật dữ liệu" : "Quản lí dữ liệu")</h1>
+                <p class="lead">@(ViewBag.Staff != null ? "Bạn đang cập nhật" : "Bạn đang thêm dữ liệu")</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data Table -->
+    @if (Model != null && Model.Any())
+    {
+        <table class="table mt-4">
+            <thead>
+                <tr>
+                    <th>Ngày mượn</th>
+                    <th>Số tiền</th>
+                    <th>Tình trạng</th>            
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var fine in Model)
+                {
+                    <tr>
+                        <td>@fine.Borrowing_Record.BorrowDate</td>                        
+                        <td>@fine.FineAmount</td>
+                        <td>@fine.PaidStatus</td>                       
+                        <td>
+                            <!-- Edit Button -->
+                            <form action="@Url.Action("fines", "LibraryBook")" method="get" style="display:inline;">
+                                <input type="hidden" name="fineId" value="@fine.FineID" />
+                                <button type="submit" class="btn btn-warning">Sửa</button>
+                            </form>
+                            <!-- Delete Button -->
+                            <form action="@Url.Action("manageFine", "LibraryBook")" method="post" style="display:inline;">
+                                <input type="hidden" name="fineId" value="@fine.FineID" />
+                                <input type="hidden" name="action" value="Delete" />
+                                <button type="submit" class="btn btn-danger">Xóa</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <!-- Add paging controls -->
+        <div class="text-center">
+            @Html.PagedListPager(Model, page => Url.Action("fines", new { page }))
+        </div>
+    }
+    else
+    {
+        <p>Chưa có dữ liệu</p>
+    }
+
+    <!-- Start form -->
+    <form action="@Url.Action("ManageFine", "LibraryBook")" method="post" enctype="multipart/form-data">
+        @if (ViewBag.Fine != null)
+        {
+            <input type="hidden" name="FineID" value="@ViewBag.Fine.FineID" />
+            <input type="hidden" name="action" value="Update" />
+        }
+        else
+        {
+            <input type="hidden" name="action" value="Create" />
+        }
+        <div class="mb-3">
+            <label for="BorrowID">Ngày mượn</label>
+            <select name="BorrowID" class="form-control">
+                @foreach (var b in ViewBag.Borrows)
+                {
+                    <option value="@b.Value" @(b.Value == ViewBag.Fine?.BorrowID.ToString() ? "selected" : "")>@b.Text</option>
+                }
+            </select>
+        </div>      
+        <div class="mb-3">
+            <label for="FineAmount">Số tiền</label>
+            <input type="number" name="FineAmount" class="form-control" placeholder="Nhập số tiền" required />
+        </div>
+        <div class="mb-3">
+            <label for="PaidStatus">Tình trạng (đã nộp)</label>
+            <input type="checkbox" name="PaidStatus" class="form-check-input" required/>
+        </div>        
+        <div class="text-end">
+            <button type="submit" class="btn btn-primary">@(ViewBag.Fine != null ? "Cập nhật" : "Thêm")</button>
+            @if (ViewBag.Fine != null)
+            {
+                <a href="@Url.Action("fines", "LibraryBook")" class="btn btn-secondary">Hủy</a>
+            }
+        </div>
+    </form>
+    <!-- End form -->
+</div>

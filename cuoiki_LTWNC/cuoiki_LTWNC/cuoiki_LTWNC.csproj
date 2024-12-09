@@ -321,6 +321,7 @@
     <Content Include="Views\LibraryBook\students.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\LibraryBook\publishers.cshtml" />
+    <Content Include="Views\LibraryBook\fines.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
