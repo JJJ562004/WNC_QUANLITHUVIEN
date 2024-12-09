@@ -14,7 +14,49 @@ namespace cuoiki_LTWNC.Controllers
 
         public ActionResult Index()
         {
-            return View(); // This looks for the `Index.cshtml` in `/Views/LibraryBook/`
+            using (var context = new cuoiki_LTWNC.Models.WNC_QUANLYTHUVIEN_REALEntities())
+            {
+
+                var books = context.Books
+                    .OrderBy(b => b.BookID) // Sắp xếp nếu cần thiết (theo BookID)
+                    .Select(b => new BookViewModel
+                    {
+                        BookID = b.BookID,
+                        Title = b.Title,
+                        Quantity = b.Quantity ?? 0, // Xử lý null cho Quantity
+                        Image = b.ImageURL // Sinh ảnh từ imageurl
+                    })
+                    .ToList();
+
+                return View(books);
+            }
+        }
+
+        public ActionResult Details(int? id)
+        {
+            using (var context = new WNC_QUANLYTHUVIEN_REALEntities())
+            {
+                var book = context.Books
+                    .Where(b => b.BookID == id)
+                    .Select(b => new BookViewModel
+                    {
+                        BookID = b.BookID,
+                        Title = b.Title,
+                        PublishYear = b.PublishedYear,
+                        Quantity = b.Quantity ?? 0,
+                        AuthorName = b.Authors.Select(a => a.AuthorName).ToList(), // Lấy danh sách tên tác giả
+                        Image = b.ImageURL,
+                        Description = b.Description
+                    })
+                    .FirstOrDefault();
+
+                if (book == null)
+                {
+                    return HttpNotFound();
+                }
+
+                return View(book);
+            }
         }
 
         public ActionResult charts()
@@ -22,13 +64,26 @@ namespace cuoiki_LTWNC.Controllers
             return View();
         }
 
-        public JsonResult GetChartData()
+        public JsonResult GetChartDataCategory()
         {
             var data = _context.Categories
                 .Select(c => new
                 {
                     CategoryName = c.CategoryName,
                     BookCount = _context.Books.Count(b => b.CategoryID == c.CategoryID)
+                })
+                .ToList();
+
+            return Json(data, JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult GetChartDataStaff()
+        {
+            var data = _context.Staffs
+                .Select(r => new
+                {
+                    Role = r.Role,
+                    StaffCount = _context.Staffs.Count(b => b.StaffID == r.StaffID)
                 })
                 .ToList();
 
