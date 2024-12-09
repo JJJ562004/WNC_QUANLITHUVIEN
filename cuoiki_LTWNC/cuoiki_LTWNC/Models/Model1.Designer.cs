@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'D:\HocTap\hocki1nam3\LTWNC\Cuoiki_main_1\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\Models\Model1.edmx'. 
+﻿// T4 code generation is enabled for model 'D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BCCK_QuanLyThuVien_v2\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\Models\Model1.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

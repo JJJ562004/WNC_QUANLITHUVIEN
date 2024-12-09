@@ -154,11 +154,12 @@
                     <div class="carousel-item active">
                         <div class="container-fluid">
                             <div class="row">
+
                                 @foreach (var book in Model)
                                 {
-                            <div class="col-lg-3 col-md-6">
+                            <div class="col-lg-3 col-md-6" style="margin-top:5px; margin-bottom: 5px">
                                 <div class="coffee_img">
-                                    <img src="~/images/@book.Image"/>
+                                    <img src="@book.Image" style="max-width:250px; max-height:250px;"/>
                                 </div>
                                 <h3 class="types_text">@book.Title</h3>
                                 <p class="looking_text">Số lượng: @book.Quantity</p>
@@ -180,7 +181,6 @@
                 </a>
             </div>
         </div>
-    </div>
     <!-- coffee section end -->
     <!-- about section start -->
     <div class="about_section layout_padding">
@@ -203,7 +203,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="about_taital">What syas customers</h1>
+                    <h1 class="about_taital">What customers says</h1>
                     <div class="bulit_icon"><img src="~/images/bulit-icon.png"></div>
                 </div>
             </div>

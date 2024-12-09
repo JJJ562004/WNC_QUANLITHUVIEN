@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="WNC_QUANLYTHUVIENModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+<Schema Namespace="WNC_QUANLYTHUVIEN_REALModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="Author">
     <Key>
       <PropertyRef Name="AuthorID" />
@@ -18,6 +18,8 @@
     <Property Name="CategoryID" Type="Int32" />
     <Property Name="PublishedYear" Type="Int32" />
     <Property Name="Quantity" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ImageURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="Category" Relationship="Self.FK__Book__CategoryID__52593CB8" FromRole="Book" ToRole="Category" />
     <NavigationProperty Name="Publisher" Relationship="Self.FK__Book__PublisherI__534D60F1" FromRole="Book" ToRole="Publisher" />
     <NavigationProperty Name="Borrowing_Record" Relationship="Self.FK__Borrowing__BookI__5629CD9C" FromRole="Book" ToRole="Borrowing_Record" />
@@ -81,11 +83,11 @@
       <PropertyRef Name="StaffID" />
     </Key>
     <Property Name="StaffID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="FirstName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="LastName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="PhoneNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
-    <Property Name="Role" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FirstName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="Role" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="Staff_Add_Book" Relationship="Self.FK__Staff_Add__Staff__5AEE82B9" FromRole="Staff" ToRole="Staff_Add_Book" />
   </EntityType>
   <EntityType Name="Staff_Add_Book">
@@ -223,7 +225,7 @@
     <End Role="Author" Type="Self.Author" Multiplicity="*" />
     <End Role="Book" Type="Self.Book" Multiplicity="*" />
   </Association>
-  <EntityContainer Name="WNC_QUANLYTHUVIENEntities2" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="WNC_QUANLYTHUVIEN_Entities2" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Authors" EntityType="Self.Author" />
     <EntitySet Name="Books" EntityType="Self.Book" />
     <EntitySet Name="Borrowing_Record" EntityType="Self.Borrowing_Record" />
