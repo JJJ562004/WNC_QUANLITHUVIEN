@@ -12,7 +12,7 @@ namespace cuoiki_LTWNC.Controllers
         // GET: LibraryBook
      public ActionResult Index()
 {
-    using (var context = new cuoiki_LTWNC.Models.WNC_QUANLYTHUVIENEntities2())
+    using (var context = new cuoiki_LTWNC.Models.WNC_QUANLYTHIVIEN_REALEntities())
     {
       
         var books = context.Books
@@ -22,7 +22,7 @@ namespace cuoiki_LTWNC.Controllers
                 BookID = b.BookID,
                 Title = b.Title,
                 Quantity = b.Quantity ?? 0, // Xử lý null cho Quantity
-                Image = "book-" + b.BookID + ".png" // Sinh ảnh từ BookID
+                Image = b.ImageURL // Sinh ảnh từ imageurl
             })
             .ToList();
 
@@ -31,7 +31,7 @@ namespace cuoiki_LTWNC.Controllers
 }
         public ActionResult Details(int? id)
         {
-            using (var context = new WNC_QUANLYTHUVIENEntities2())
+            using (var context = new WNC_QUANLYTHIVIEN_REALEntities())
             {
                 var book = context.Books
                     .Where(b => b.BookID == id)
@@ -42,9 +42,8 @@ namespace cuoiki_LTWNC.Controllers
                         PublishYear = b.PublishedYear,
                         Quantity = b.Quantity ?? 0,
                         AuthorName = b.Authors.Select(a => a.AuthorName).ToList(), // Lấy danh sách tên tác giả
-                Image = "book-" + b.BookID + ".png",
-                        Description = "Đây là 1 sách rất hay." // Giả định có cột mô tả
-            })
+                        Image = b.ImageURL,
+                        Description = b.Description            })
                     .FirstOrDefault();
 
                 if (book == null)

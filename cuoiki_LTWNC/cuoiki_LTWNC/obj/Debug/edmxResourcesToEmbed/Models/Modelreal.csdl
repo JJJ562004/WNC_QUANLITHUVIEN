@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WNC_QUANLYTHIVIEN_REALModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Author">
+    <Key>
+      <PropertyRef Name="AuthorID" />
+    </Key>
+    <Property Name="AuthorID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AuthorName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Books" Relationship="Self.Book_Author" FromRole="Author" ToRole="Book" />
+  </EntityType>
+  <EntityType Name="Book">
+    <Key>
+      <PropertyRef Name="BookID" />
+    </Key>
+    <Property Name="BookID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PublisherID" Type="Int32" />
+    <Property Name="CategoryID" Type="Int32" />
+    <Property Name="PublishedYear" Type="Int32" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="Description" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ImageURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Category" Relationship="Self.FK__Book__CategoryID__52593CB8" FromRole="Book" ToRole="Category" />
+    <NavigationProperty Name="Publisher" Relationship="Self.FK__Book__PublisherI__534D60F1" FromRole="Book" ToRole="Publisher" />
+    <NavigationProperty Name="Borrowing_Record" Relationship="Self.FK__Borrowing__BookI__5629CD9C" FromRole="Book" ToRole="Borrowing_Record" />
+    <NavigationProperty Name="Staff_Add_Book" Relationship="Self.FK__Staff_Add__BookI__59FA5E80" FromRole="Book" ToRole="Staff_Add_Book" />
+    <NavigationProperty Name="Authors" Relationship="Self.Book_Author" FromRole="Book" ToRole="Author" />
+  </EntityType>
+  <EntityType Name="Borrowing_Record">
+    <Key>
+      <PropertyRef Name="BorrowID" />
+    </Key>
+    <Property Name="BorrowID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StudentID" Type="Int32" />
+    <Property Name="BookID" Type="Int32" />
+    <Property Name="BorrowDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DueDate" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ReturnDate" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Book" Relationship="Self.FK__Borrowing__BookI__5629CD9C" FromRole="Borrowing_Record" ToRole="Book" />
+    <NavigationProperty Name="Student" Relationship="Self.FK__Borrowing__Stude__571DF1D5" FromRole="Borrowing_Record" ToRole="Student" />
+    <NavigationProperty Name="Fines" Relationship="Self.FK__Fine__BorrowID__5812160E" FromRole="Borrowing_Record" ToRole="Fine" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Books" Relationship="Self.FK__Book__CategoryID__52593CB8" FromRole="Category" ToRole="Book" />
+  </EntityType>
+  <EntityType Name="Fine">
+    <Key>
+      <PropertyRef Name="FineID" />
+    </Key>
+    <Property Name="FineID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BorrowID" Type="Int32" />
+    <Property Name="FineAmount" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="PaidStatus" Type="Boolean" />
+    <NavigationProperty Name="Borrowing_Record" Relationship="Self.FK__Fine__BorrowID__5812160E" FromRole="Fine" ToRole="Borrowing_Record" />
+  </EntityType>
+  <EntityType Name="Notification">
+    <Key>
+      <PropertyRef Name="NotificationID" />
+    </Key>
+    <Property Name="NotificationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StudentID" Type="Int32" />
+    <Property Name="Message" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NotificationDate" Type="DateTime" Precision="3" />
+    <Property Name="ReadStatus" Type="Boolean" />
+    <NavigationProperty Name="Student" Relationship="Self.FK__Notificat__Stude__59063A47" FromRole="Notification" ToRole="Student" />
+  </EntityType>
+  <EntityType Name="Publisher">
+    <Key>
+      <PropertyRef Name="PublisherID" />
+    </Key>
+    <Property Name="PublisherID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PublisherName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PublisherAddress" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Books" Relationship="Self.FK__Book__PublisherI__534D60F1" FromRole="Publisher" ToRole="Book" />
+  </EntityType>
+  <EntityType Name="Staff">
+    <Key>
+      <PropertyRef Name="StaffID" />
+    </Key>
+    <Property Name="StaffID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="Role" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Staff_Add_Book" Relationship="Self.FK__Staff_Add__Staff__5AEE82B9" FromRole="Staff" ToRole="Staff_Add_Book" />
+  </EntityType>
+  <EntityType Name="Staff_Add_Book">
+    <Key>
+      <PropertyRef Name="RecordID" />
+    </Key>
+    <Property Name="RecordID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StaffID" Type="Int32" Nullable="false" />
+    <Property Name="BookID" Type="Int32" Nullable="false" />
+    <Property Name="AddedDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Book" Relationship="Self.FK__Staff_Add__BookI__59FA5E80" FromRole="Staff_Add_Book" ToRole="Book" />
+    <NavigationProperty Name="Staff" Relationship="Self.FK__Staff_Add__Staff__5AEE82B9" FromRole="Staff_Add_Book" ToRole="Staff" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="StudentID" />
+    </Key>
+    <Property Name="StudentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="StudentAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="EnrollmentDate" Type="DateTime" Nullable="false" Precision="0" />
+    <NavigationProperty Name="Borrowing_Record" Relationship="Self.FK__Borrowing__Stude__571DF1D5" FromRole="Student" ToRole="Borrowing_Record" />
+    <NavigationProperty Name="Notifications" Relationship="Self.FK__Notificat__Stude__59063A47" FromRole="Student" ToRole="Notification" />
+  </EntityType>
+  <Association Name="FK__Book__CategoryID__52593CB8">
+    <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
+    <End Role="Book" Type="Self.Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="Book">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Book__PublisherI__534D60F1">
+    <End Role="Publisher" Type="Self.Publisher" Multiplicity="0..1" />
+    <End Role="Book" Type="Self.Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Publisher">
+        <PropertyRef Name="PublisherID" />
+      </Principal>
+      <Dependent Role="Book">
+        <PropertyRef Name="PublisherID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Borrowing__BookI__5629CD9C">
+    <End Role="Book" Type="Self.Book" Multiplicity="0..1" />
+    <End Role="Borrowing_Record" Type="Self.Borrowing_Record" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Book">
+        <PropertyRef Name="BookID" />
+      </Principal>
+      <Dependent Role="Borrowing_Record">
+        <PropertyRef Name="BookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Staff_Add__BookI__59FA5E80">
+    <End Role="Book" Type="Self.Book" Multiplicity="1" />
+    <End Role="Staff_Add_Book" Type="Self.Staff_Add_Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Book">
+        <PropertyRef Name="BookID" />
+      </Principal>
+      <Dependent Role="Staff_Add_Book">
+        <PropertyRef Name="BookID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Borrowing__Stude__571DF1D5">
+    <End Role="Student" Type="Self.Student" Multiplicity="0..1" />
+    <End Role="Borrowing_Record" Type="Self.Borrowing_Record" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="StudentID" />
+      </Principal>
+      <Dependent Role="Borrowing_Record">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Fine__BorrowID__5812160E">
+    <End Role="Borrowing_Record" Type="Self.Borrowing_Record" Multiplicity="0..1" />
+    <End Role="Fine" Type="Self.Fine" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Borrowing_Record">
+        <PropertyRef Name="BorrowID" />
+      </Principal>
+      <Dependent Role="Fine">
+        <PropertyRef Name="BorrowID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Notificat__Stude__59063A47">
+    <End Role="Student" Type="Self.Student" Multiplicity="0..1" />
+    <End Role="Notification" Type="Self.Notification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="StudentID" />
+      </Principal>
+      <Dependent Role="Notification">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Staff_Add__Staff__5AEE82B9">
+    <End Role="Staff" Type="Self.Staff" Multiplicity="1" />
+    <End Role="Staff_Add_Book" Type="Self.Staff_Add_Book" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Staff">
+        <PropertyRef Name="StaffID" />
+      </Principal>
+      <Dependent Role="Staff_Add_Book">
+        <PropertyRef Name="StaffID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Book_Author">
+    <End Role="Author" Type="Self.Author" Multiplicity="*" />
+    <End Role="Book" Type="Self.Book" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="WNC_QUANLYTHIVIEN_REALEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Authors" EntityType="Self.Author" />
+    <EntitySet Name="Books" EntityType="Self.Book" />
+    <EntitySet Name="Borrowing_Record" EntityType="Self.Borrowing_Record" />
+    <EntitySet Name="Categories" EntityType="Self.Category" />
+    <EntitySet Name="Fines" EntityType="Self.Fine" />
+    <EntitySet Name="Notifications" EntityType="Self.Notification" />
+    <EntitySet Name="Publishers" EntityType="Self.Publisher" />
+    <EntitySet Name="Staffs" EntityType="Self.Staff" />
+    <EntitySet Name="Staff_Add_Book" EntityType="Self.Staff_Add_Book" />
+    <EntitySet Name="Students" EntityType="Self.Student" />
+    <AssociationSet Name="FK__Book__CategoryID__52593CB8" Association="Self.FK__Book__CategoryID__52593CB8">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Book" EntitySet="Books" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Book__PublisherI__534D60F1" Association="Self.FK__Book__PublisherI__534D60F1">
+      <End Role="Publisher" EntitySet="Publishers" />
+      <End Role="Book" EntitySet="Books" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Borrowing__BookI__5629CD9C" Association="Self.FK__Borrowing__BookI__5629CD9C">
+      <End Role="Book" EntitySet="Books" />
+      <End Role="Borrowing_Record" EntitySet="Borrowing_Record" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Staff_Add__BookI__59FA5E80" Association="Self.FK__Staff_Add__BookI__59FA5E80">
+      <End Role="Book" EntitySet="Books" />
+      <End Role="Staff_Add_Book" EntitySet="Staff_Add_Book" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Borrowing__Stude__571DF1D5" Association="Self.FK__Borrowing__Stude__571DF1D5">
+      <End Role="Student" EntitySet="Students" />
+      <End Role="Borrowing_Record" EntitySet="Borrowing_Record" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Fine__BorrowID__5812160E" Association="Self.FK__Fine__BorrowID__5812160E">
+      <End Role="Borrowing_Record" EntitySet="Borrowing_Record" />
+      <End Role="Fine" EntitySet="Fines" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Notificat__Stude__59063A47" Association="Self.FK__Notificat__Stude__59063A47">
+      <End Role="Student" EntitySet="Students" />
+      <End Role="Notification" EntitySet="Notifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Staff_Add__Staff__5AEE82B9" Association="Self.FK__Staff_Add__Staff__5AEE82B9">
+      <End Role="Staff" EntitySet="Staffs" />
+      <End Role="Staff_Add_Book" EntitySet="Staff_Add_Book" />
+    </AssociationSet>
+    <AssociationSet Name="Book_Author" Association="Self.Book_Author">
+      <End Role="Author" EntitySet="Authors" />
+      <End Role="Book" EntitySet="Books" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
