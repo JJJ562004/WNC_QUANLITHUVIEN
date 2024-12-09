@@ -1,4 +1,8 @@
-﻿@model cuoiki_LTWNC.Models.BookViewModel
+﻿@{
+    ViewBag.Title = "View";
+}
+
+@model cuoiki_LTWNC.Models.BookViewModel
 <!DOCTYPE html>
 <html>
 <head>
@@ -82,17 +86,14 @@
     </div>
     <div class="book-details">
         <div class="col-md-12">
-            <h1 class="about_taital">Chi tiết sách</h1>
+            <h1 class="about_taital">Chi tiết phiếu mượn</h1>
             <div class="bulit_icon"><img src="~/images/bulit-icon.png"></div>
         </div>
         <div class="book-image">
-            <img src="@Model.Image" alt="@Model.Title" style="max-width:350px" />
+            <img src="@Model.Image" alt="@Model.Title" style="max-width:100px; max-height:150px;" />
         </div>
         <div class="book-info">
             <h3>@Model.Title</h3>
-            <p><strong>Năm ra mắt:</strong> @Model.PublishYear</p>
-            <p><strong>Số lượng:</strong> @Model.Quantity</p>
-            <p><strong>Mô tả:</strong> @Model.Description</p>
             <p><strong>Tên tác giả:</strong></p>
             <ol>
                 @foreach (var author in Model.AuthorName)
@@ -103,11 +104,24 @@
         </div>
         <div class="container">
             <div class="row">
+                <div class="col-12">
+                   <div class="col-6">
+                       Mã sinh viên: ...
+                   </div>
+                    <div class="col-6">
+                        Tên sinh viên: ...
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
                 <div class="col-6 justify-content-center align-items-center">
-                    <a href="@Url.Action("Index", "LibraryBook")" class="btn btn-primary">Quay lại</a>
+                    <a href="@Url.Action("Details", "LibraryBook", new { id = @Model.BookID })" class="btn btn-primary">Quay lại</a>
                 </div>
                 <div class="col-6 justify-content-center align-items-center">
-                    <a href="@Url.Action("Borrow_Book", "LibraryBook", new { id = @Model.BookID })" class="btn btn-success">Đăng kí mượn</a>
+                    <!-- Bug here, not @Model.BookID, must be StudentID -->
+                    <a href="@Url.Action("DanhSachPhieuMuon", "LibraryBook", new { id = @Model.BookID })" class="btn btn-success">Đăng kí mượn</a>
                 </div>
             </div>
         </div>
@@ -178,4 +192,6 @@
     <script src="js/custom.js"></script>
 </body>
 </html>
+
+
 

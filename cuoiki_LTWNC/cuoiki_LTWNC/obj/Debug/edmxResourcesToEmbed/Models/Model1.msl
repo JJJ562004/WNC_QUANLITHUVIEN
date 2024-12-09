@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="WNC_QUANLYTHUVIENModelStoreContainer" CdmEntityContainer="WNC_QUANLYTHUVIENEntities2">
+  <EntityContainerMapping StorageEntityContainer="WNC_QUANLYTHUVIEN_REALModelStoreContainer" CdmEntityContainer="WNC_QUANLYTHUVIEN_Entities2">
     <EntitySetMapping Name="Authors">
-      <EntityTypeMapping TypeName="WNC_QUANLYTHUVIENModel.Author">
+      <EntityTypeMapping TypeName="WNC_QUANLYTHUVIEN_REALModel.Author">
         <MappingFragment StoreEntitySet="Author">
           <ScalarProperty Name="AuthorID" ColumnName="AuthorID" />
           <ScalarProperty Name="AuthorName" ColumnName="AuthorName" />
@@ -10,7 +10,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Books">
-      <EntityTypeMapping TypeName="WNC_QUANLYTHUVIENModel.Book">
+      <EntityTypeMapping TypeName="WNC_QUANLYTHUVIEN_REALModel.Book">
         <MappingFragment StoreEntitySet="Book">
           <ScalarProperty Name="BookID" ColumnName="BookID" />
           <ScalarProperty Name="Title" ColumnName="Title" />
@@ -18,11 +18,13 @@
           <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
           <ScalarProperty Name="PublishedYear" ColumnName="PublishedYear" />
           <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ImageURL" ColumnName="ImageURL" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Borrowing_Record">
-      <EntityTypeMapping TypeName="WNC_QUANLYTHUVIENModel.Borrowing_Record">
+      <EntityTypeMapping TypeName="WNC_QUANLYTHUVIEN_REALModel.Borrowing_Record">
         <MappingFragment StoreEntitySet="Borrowing_Record">
           <ScalarProperty Name="BorrowID" ColumnName="BorrowID" />
           <ScalarProperty Name="StudentID" ColumnName="StudentID" />
@@ -34,7 +36,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Categories">
-      <EntityTypeMapping TypeName="WNC_QUANLYTHUVIENModel.Category">
+      <EntityTypeMapping TypeName="WNC_QUANLYTHUVIEN_REALModel.Category">
         <MappingFragment StoreEntitySet="Category">
           <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
           <ScalarProperty Name="CategoryName" ColumnName="CategoryName" />
@@ -42,7 +44,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Fines">
-      <EntityTypeMapping TypeName="WNC_QUANLYTHUVIENModel.Fine">
+      <EntityTypeMapping TypeName="WNC_QUANLYTHUVIEN_REALModel.Fine">
         <MappingFragment StoreEntitySet="Fine">
           <ScalarProperty Name="FineID" ColumnName="FineID" />
           <ScalarProperty Name="BorrowID" ColumnName="BorrowID" />
@@ -52,7 +54,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Notifications">
-      <EntityTypeMapping TypeName="WNC_QUANLYTHUVIENModel.Notification">
+      <EntityTypeMapping TypeName="WNC_QUANLYTHUVIEN_REALModel.Notification">
         <MappingFragment StoreEntitySet="Notification">
           <ScalarProperty Name="NotificationID" ColumnName="NotificationID" />
           <ScalarProperty Name="StudentID" ColumnName="StudentID" />
@@ -63,7 +65,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Publishers">
-      <EntityTypeMapping TypeName="WNC_QUANLYTHUVIENModel.Publisher">
+      <EntityTypeMapping TypeName="WNC_QUANLYTHUVIEN_REALModel.Publisher">
         <MappingFragment StoreEntitySet="Publisher">
           <ScalarProperty Name="PublisherID" ColumnName="PublisherID" />
           <ScalarProperty Name="PublisherName" ColumnName="PublisherName" />
@@ -72,7 +74,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staffs">
-      <EntityTypeMapping TypeName="WNC_QUANLYTHUVIENModel.Staff">
+      <EntityTypeMapping TypeName="WNC_QUANLYTHUVIEN_REALModel.Staff">
         <MappingFragment StoreEntitySet="Staff">
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
           <ScalarProperty Name="FirstName" ColumnName="FirstName" />
@@ -84,7 +86,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Staff_Add_Book">
-      <EntityTypeMapping TypeName="WNC_QUANLYTHUVIENModel.Staff_Add_Book">
+      <EntityTypeMapping TypeName="WNC_QUANLYTHUVIEN_REALModel.Staff_Add_Book">
         <MappingFragment StoreEntitySet="Staff_Add_Book">
           <ScalarProperty Name="RecordID" ColumnName="RecordID" />
           <ScalarProperty Name="StaffID" ColumnName="StaffID" />
@@ -94,7 +96,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Students">
-      <EntityTypeMapping TypeName="WNC_QUANLYTHUVIENModel.Student">
+      <EntityTypeMapping TypeName="WNC_QUANLYTHUVIEN_REALModel.Student">
         <MappingFragment StoreEntitySet="Student">
           <ScalarProperty Name="StudentID" ColumnName="StudentID" />
           <ScalarProperty Name="FirstName" ColumnName="FirstName" />
@@ -107,7 +109,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="sysdiagrams">
-      <EntityTypeMapping TypeName="WNC_QUANLYTHUVIENModel.sysdiagram">
+      <EntityTypeMapping TypeName="WNC_QUANLYTHUVIEN_REALModel.sysdiagram">
         <MappingFragment StoreEntitySet="sysdiagrams">
           <ScalarProperty Name="name" ColumnName="name" />
           <ScalarProperty Name="principal_id" ColumnName="principal_id" />
@@ -117,7 +119,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <AssociationSetMapping Name="Book_Author" TypeName="WNC_QUANLYTHUVIENModel.Book_Author" StoreEntitySet="Book_Author">
+    <AssociationSetMapping Name="Book_Author" TypeName="WNC_QUANLYTHUVIEN_REALModel.Book_Author" StoreEntitySet="Book_Author">
       <EndProperty Name="Author">
         <ScalarProperty Name="AuthorID" ColumnName="AuthorID" />
       </EndProperty>
