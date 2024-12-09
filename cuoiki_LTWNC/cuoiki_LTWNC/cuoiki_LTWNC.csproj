@@ -132,21 +132,21 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Author.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Modelreal.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Book.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Modelreal.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\BookViewModel.cs" />
     <Compile Include="Models\BorrowingRecordModel.cs" />
     <Compile Include="Models\Borrowing_Record.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Modelreal.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Category.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Modelreal.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Fine.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Modelreal.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -163,20 +163,35 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Modelreal.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Modelreal.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Modelreal.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Modelreal.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Modelreal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Modelreal.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\Notification.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Modelreal.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Publisher.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Modelreal.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Staff.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Modelreal.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Staff_Add_Book.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Modelreal.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Student.cs">
-      <DependentUpon>Model1.tt</DependentUpon>
+      <DependentUpon>Modelreal.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sysdiagram.cs">
       <DependentUpon>Model1.tt</DependentUpon>
@@ -269,6 +284,16 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Content Include="Models\Modelreal.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Modelreal.edmx</DependentUpon>
+      <LastGenOutput>Modelreal.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Modelreal.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Modelreal.edmx</DependentUpon>
+      <LastGenOutput>Modelreal.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="css\.DS_Store" />
@@ -289,6 +314,13 @@
     </EntityDeploy>
     <Content Include="Models\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <EntityDeploy Include="Models\Modelreal.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Modelreal.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Modelreal.edmx.diagram">
+      <DependentUpon>Modelreal.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
