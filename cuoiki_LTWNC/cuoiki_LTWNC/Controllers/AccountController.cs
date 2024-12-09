@@ -13,8 +13,13 @@ namespace cuoiki_LTWNC.Controllers
         SqlCommand cmd = new SqlCommand();
         SqlDataReader dr;
         // GET: Account
+        Account db = new Account();
         [HttpGet]
-        
+        public ActionResult DangKy()
+        {
+            return View();
+        }
+
         public ActionResult Login()
         {
             return View();
@@ -36,6 +41,42 @@ namespace cuoiki_LTWNC.Controllers
             con.ConnectionString = "Data Source=BINHTRAN\\BINHVAN;Initial Catalog=WNC_QUANLYTHUVIEN;Integrated Security=True;Encrypt=False";
         }
         [HttpPost]
+        public ActionResult DangKy(Account acc)
+        {
+            try
+            {
+                connectionString();
+                con.Open();
+
+                cmd.Connection = con;
+                cmd.CommandText = @"INSERT INTO Student 
+    (FirstName, LastName, Email, PhoneNumber, StudentAddress, EnrollmentDate) 
+    VALUES 
+    (@FirstName, @LastName, @Email, @PhoneNumber, @StudentAddress, @EnrollmentDate)";
+
+                // Thêm các tham số phù hợp với các cột trong bảng
+                cmd.Parameters.AddWithValue("@FirstName", acc.Ten);
+                cmd.Parameters.AddWithValue("@LastName", acc.Ho);
+                cmd.Parameters.AddWithValue("@Email", acc.Email);
+                cmd.Parameters.AddWithValue("@PhoneNumber", acc.Password);
+                cmd.Parameters.AddWithValue("@StudentAddress", acc.DiaChi);
+                cmd.Parameters.AddWithValue("@EnrollmentDate", DateTime.Now); // Hoặc acc.EnrollmentDate nếu được truyền từ View
+                cmd.Parameters.AddWithValue("@StudentID ", acc.MSV); 
+               
+
+
+                cmd.ExecuteNonQuery();
+                con.Close();
+
+                return Redirect("~/Account/Login");
+            }
+            catch (Exception ex)
+            {
+                con.Close();
+                return View("Error");
+            }
+        }
+
         public ActionResult Verify(Account acc)
         {
             connectionString();

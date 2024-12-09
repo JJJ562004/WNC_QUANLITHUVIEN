@@ -235,3 +235,7 @@ D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuo
 D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_L.71B75303.Up2Date
 D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.dll
 D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.pdb
+D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.dll
+D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.SqlServer.dll
+D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.xml
+D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.SqlServer.xml

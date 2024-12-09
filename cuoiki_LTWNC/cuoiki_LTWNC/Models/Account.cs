@@ -13,5 +13,15 @@ namespace cuoiki_LTWNC.Models
         public string MSV { get; set; }
         [Required(ErrorMessage = "Password cannot be blank")]
         public string Password { get; set; }
+        [Required(ErrorMessage = "Ten cannot be blank")]
+        public string Ten { get; set; }
+        [Required(ErrorMessage = "Ho cannot be blank")]
+        public string Ho { get; set; }
+        [Required(ErrorMessage = "Email cannot be blank")]
+        public string Email { get; set; }
+        [Required(ErrorMessage = "Dia chi cannot be blank")]
+        public string DiaChi { get; set; }
+        [Required(ErrorMessage = "EnrollmentDate cannot be blank")]
+        public string EnrollmentDate { get; set; }
     }
 }
