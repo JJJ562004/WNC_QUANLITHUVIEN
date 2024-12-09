@@ -1,9 +1,10 @@
 ﻿using cuoiki_LTWNC.Models;
-using System;
 using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using PagedList;
+using System.Web.UI;
 
 namespace cuoiki_LTWNC.Controllers
 {
@@ -11,21 +12,11 @@ namespace cuoiki_LTWNC.Controllers
     {
         private WNC_QUANLYTHIVIEN_REALEntities _context = new WNC_QUANLYTHIVIEN_REALEntities();
 
-        public ActionResult Index() { return View(); }
-        public ActionResult about() { return View(); }
-        public ActionResult publishers() { return View(); }
-        public ActionResult staff() { return View(); }
-        public ActionResult students() { return View(); }
-
-        public ActionResult books()
+        public ActionResult books(int? bookId, int? page)
         {
-            ViewBag.Publishers = _context.Publishers
-                .Select(p => new SelectListItem
-                {
-                    Value = p.PublisherID.ToString(),
-                    Text = p.PublisherName
-                })
-                .ToList();
+            int pageSize = 5;
+            int pageNumber = page ?? 1;
+            
 
             ViewBag.Categories = _context.Categories
                 .Select(c => new SelectListItem
@@ -35,294 +26,301 @@ namespace cuoiki_LTWNC.Controllers
                 })
                 .ToList();
 
-            ViewBag.Books = _context.Books
-                .Select(b => new 
+            ViewBag.Publishers = _context.Publishers
+                .Select(p => new SelectListItem
                 {
-                    b.BookID,
-                    b.Title,
-                    b.Publisher.PublisherName,
-                    b.Category.CategoryName,
-                    b.Description,
-                    b.ImageURL,
-                    b.PublishedYear,
-                    b.Quantity
+                    Value = p.PublisherID.ToString(),
+                    Text = p.PublisherName
                 })
                 .ToList();
 
-            return View();
+            var books = _context.Books.OrderBy(s => s.Title).ToPagedList(pageNumber, pageSize); ;
+
+            if (bookId.HasValue)
+            {
+                var book = _context.Books.FirstOrDefault(b => b.BookID == bookId);
+                if (book != null)
+                {
+                    ViewBag.Book = book;
+                }
+            }
+
+            return View(books);
         }
 
         [HttpPost]
-        public ActionResult ManageBook(Book model, string action, HttpPostedFileBase Image)
-        {         
-            switch (action)
-            {
-                case "Create":
-                    return CreateBook(model, Image);
-                case "Update":
-                    return UpdateBook(model, Image);
-                case "Delete":
-                    return DeleteBook(model.Title);
-                default:
-                    TempData["Error"] = "Invalid action.";
-                    return RedirectToAction("books");
-            }          
-     
-        }
-
-
-        private ActionResult CreateBook(Book model, HttpPostedFileBase Image)
+        public ActionResult ManageBook(Book model, string action, HttpPostedFileBase ImageURL)
         {
-            try
+            if (action == "Create")
             {
-                // Handle Image upload
-                if (Image != null && Image.ContentLength > 0)
+                // Check if an image is uploaded
+                if (ImageURL != null && ImageURL.ContentLength > 0)
                 {
-                    var fileExtension = Path.GetExtension(Image.FileName).ToLower();
-                    var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
-                    if (!allowedExtensions.Contains(fileExtension))
-                    {
-                        TempData["Error"] = "Invalid image file type.";
-                        return RedirectToAction("books");
-                    }
+                    // Generate a unique file name to avoid name conflicts
+                    var fileName = Path.GetFileName(ImageURL.FileName);
+                    var filePath = Path.Combine(Server.MapPath("~/images"), fileName); // Use '~' to map correctly
 
-                    var fileName = Path.GetFileName(Image.FileName);
-                    var directoryPath = Server.MapPath("~/Uploaded/");
-                    if (!Directory.Exists(directoryPath))
-                    {
-                        Directory.CreateDirectory(directoryPath);
-                    }
+                    // Save the image file to the server
+                    ImageURL.SaveAs(filePath);
 
-                    var filePath = Path.Combine(directoryPath, fileName);
-                    Image.SaveAs(filePath);
-                    model.ImageURL = "/Uploaded/" + fileName;
+                    // Store the relative file path in the database
+                    model.ImageURL = "/images/" + fileName; // Use the relative path for easy access in the view
                 }
                 else
                 {
-                    // Handle case where image is not provided (optional step)
-                    model.ImageURL = "/Uploaded/default.jpg"; // Or handle default behavior
+                    // Set a default image if no image is selected
+                    model.ImageURL = "/images/blog-img1.png"; // Default image path
                 }
 
+                // Add the new book to the context and save
                 _context.Books.Add(model);
                 _context.SaveChanges();
-
-                TempData["Message"] = "Book created successfully!";
-                return RedirectToAction("books");
+                TempData["Message"] = "Book added successfully!";
             }
-            catch (Exception ex)
+
+
+            else if (action == "Update")
             {
-                TempData["Error"] = "An error occurred: " + ex.Message;
-                return RedirectToAction("books");
-            }
-        }
-
-
-
-        private ActionResult UpdateBook(Book model, HttpPostedFileBase Image)
-        {
-            var book = _context.Books.FirstOrDefault(b => b.Title == model.Title);
-            if (book != null && ModelState.IsValid)
-            {
-                book.Title = model.Title;
-                book.PublisherID = model.PublisherID;
-                book.CategoryID = model.CategoryID;
-                book.Description = model.Description;
-                book.PublishedYear = model.PublishedYear;
-                book.Quantity = model.Quantity;
-
-                // Handle Image upload if new image is selected
-                if (Image != null && Image.ContentLength > 0)
+                var existingBook = _context.Books.Find(model.BookID);
+                if (existingBook != null)
                 {
-                    // Ensure the image is valid and save it
-                    var fileExtension = Path.GetExtension(Image.FileName).ToLower();
-                    var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
-                    if (!allowedExtensions.Contains(fileExtension))
+                    // Update existing book
+                    existingBook.Title = model.Title;
+                    existingBook.CategoryID = model.CategoryID;
+                    existingBook.PublisherID = model.PublisherID;
+                    existingBook.PublishedYear = model.PublishedYear;
+                    existingBook.Quantity = model.Quantity;
+                    existingBook.Description = model.Description;
+                    if (ImageURL != null && ImageURL.ContentLength > 0)
                     {
-                        TempData["Error"] = "Invalid image file type. Only JPG, PNG, or GIF are allowed.";
-                        return RedirectToAction("books");
+                        // Generate a unique file name and save the file
+                        var fileName = Path.GetFileName(ImageURL.FileName);
+                        var filePath = Path.Combine(Server.MapPath("images"), fileName);
+                        ImageURL.SaveAs(filePath);
+
+                        // Save the file path in the database
+                        existingBook.ImageURL = "images/" + fileName;
                     }
 
-                    var fileName = Path.GetFileName(Image.FileName);
-                    var directoryPath = Server.MapPath("~/Uploaded/");
-
-                    // Ensure the directory exists
-                    if (!Directory.Exists(directoryPath))
-                    {
-                        Directory.CreateDirectory(directoryPath);
-                    }
-
-                    var filePath = Path.Combine(directoryPath, fileName);
-                    Image.SaveAs(filePath);
-                    book.ImageURL = "/Uploaded/" + fileName;
+                    _context.SaveChanges();
+                    TempData["Message"] = "Book updated successfully!";
                 }
-
-                _context.SaveChanges();
-                TempData["Message"] = "Book updated successfully!";
             }
-            else
+            else if (action == "Delete")
             {
-                TempData["Error"] = "Failed to update book.";
+                var book = _context.Books.Find(model.BookID) ;
+                if (book != null)
+                {
+                    _context.Books.Remove(book);
+                    _context.SaveChanges();
+                    TempData["Message"] = "Book deleted successfully!";
+                }
+                else
+                {
+                    TempData["Error"] = "Book not found.";
+                }
             }
-            return RedirectToAction("books");
-        }
 
-        private ActionResult DeleteBook(string bookTitle)
+            return RedirectToAction("books");
+        }    
+
+        public ActionResult staff(int? staffId, int? page)
         {
-            var book = _context.Books.FirstOrDefault(b => b.Title == bookTitle);
-            if (book != null)
+            int pageSize = 5;
+            int pageNumber = page ?? 1;
+
+            var staff = _context.Staffs.OrderBy(s => s.LastName).ToPagedList(pageNumber, pageSize);
+
+            if (staffId.HasValue)
             {
-                _context.Books.Remove(book);
-                _context.SaveChanges();
-                TempData["Message"] = "Book deleted successfully!";
+                var stf = _context.Staffs.FirstOrDefault(b => b.StaffID == staffId);
+                if (stf != null)
+                {
+                    ViewBag.Staff = stf;
+                }
             }
-            else
-            {
-                TempData["Error"] = "Failed to delete book.";
-            }
-            return RedirectToAction("books");
+
+            return View(staff);
         }
 
         [HttpPost]
         public ActionResult ManageStaff(Staff model, string action)
         {
-            switch (action)
+            if (action == "Create")
             {
-                case "Create":
-                    return CreateStaff(model);
-                case "Update":
-                    return UpdateStaff(model);
-                case "Delete":
-                    return DeleteStaff(model.PhoneNumber);
-                default:
-                    TempData["Error"] = "Invalid action.";
-                    return RedirectToAction("Staff");
-            }
-            
-
-        }
-
-        private ActionResult DeleteStaff(string phoneNumber)
-        {
-            var sta = _context.Staffs.FirstOrDefault(b => b.PhoneNumber == phoneNumber);
-            if (sta != null)
-            {
-                _context.Staffs.Remove(sta);
-                _context.SaveChanges();
-                TempData["Message"] = "Staff deleted successfully!";
-            }
-            else
-            {
-                TempData["Error"] = "Failed to delete staff.";
-            }
-            return RedirectToAction("staff");
-        }
-
-        private ActionResult UpdateStaff(Staff model)
-        {
-            var sta = _context.Staffs.FirstOrDefault(b => b.PhoneNumber == model.PhoneNumber);
-            if (sta != null && ModelState.IsValid)
-            {
-                sta.FirstName = model.FirstName;
-                sta.LastName = model.LastName;
-                sta.Email = model.Email;
-                sta.PhoneNumber = model.PhoneNumber;
-                sta.Role = model.Role;             
-
-                _context.SaveChanges();
-                TempData["Message"] = "Staff updated successfully!";
-            }
-            else
-            {
-                TempData["Error"] = "Failed to update staff.";
-            }
-            return RedirectToAction("staff");
-        }
-
-        private ActionResult CreateStaff(Staff model)
-        {
-            try 
-             { 
+               
                 _context.Staffs.Add(model);
                 _context.SaveChanges();
-
-                TempData["Message"] = "Staff created successfully!";
-                return RedirectToAction("staff");
+                TempData["Message"] = "Staff added successfully!";
             }
-            catch (Exception ex)
+
+
+            else if (action == "Update")
+            {
+                var existingStaff = _context.Staffs.Find(model.StaffID);
+                if (existingStaff != null)
                 {
-                    TempData["Error"] = "An error occurred: " + ex.Message;
-                    return RedirectToAction("staff");
+                    // Update existing staff
+                    existingStaff.FirstName = model.FirstName;
+                    existingStaff.LastName = model.LastName;
+                    existingStaff.Email = model.Email;
+                    existingStaff.PhoneNumber = model.PhoneNumber;
+                    existingStaff.Role = model.Role;
+                    _context.SaveChanges();
+                    TempData["Message"] = "Staff updated successfully!";
                 }
+            }
+            else if (action == "Delete")
+            {
+                var stf = _context.Staffs.Find(model.StaffID);
+                if (stf != null)
+                {
+                    _context.Staffs.Remove(stf);
+                    _context.SaveChanges();
+                    TempData["Message"] = "Staff deleted successfully!";
+                }
+                else
+                {
+                    TempData["Error"] = "Staff not found.";
+                }
+            }
+
+            return RedirectToAction("staff");
+
+        }
+      
+
+        public ActionResult publishers(int? publisherId, int? page)
+        {
+            int pageSize = 5;
+            int pageNumber = page ?? 1;
+
+            var publishers = _context.Publishers.OrderBy(s => s.PublisherName).ToPagedList(pageNumber, pageSize);
+
+            if (publisherId.HasValue)
+            {
+                var publisher = _context.Publishers.FirstOrDefault(b => b.PublisherID == publisherId);
+                if (publisher != null)
+                {
+                    ViewBag.Publisher = publisher;
+                }
+            }
+
+            return View(publishers);
         }
 
         [HttpPost]
-        public ActionResult ManagePublisher(Publisher model, string action)
+        public ActionResult ManagePublisher(Models.Publisher model, string action)
         {
-            switch (action)
-            {
-                case "Create":
-                    return CreatePublisher(model);
-                case "Update":
-                    return UpdatePublisher(model);
-                case "Delete":
-                    return DeletePublisher(model.PublisherName);
-                default:
-                    TempData["Error"] = "Invalid action.";
-                    return RedirectToAction("publishers");
-            }
-
-
-        }
-
-        private ActionResult DeletePublisher(string name)
-        {
-            var pub = _context.Publishers.FirstOrDefault(b => b.PublisherName == name);
-            if (pub != null)
-            {
-                _context.Publishers.Remove(pub);
-                _context.SaveChanges();
-                TempData["Message"] = "Publisher deleted successfully!";
-            }
-            else
-            {
-                TempData["Error"] = "Failed to delete publisher.";
-            }
-            return RedirectToAction("publishers");
-        }
-
-        private ActionResult UpdatePublisher(Publisher model)
-        {
-            var pub = _context.Publishers.FirstOrDefault(b => b.PublisherName == model.PublisherName);
-            if (pub != null && ModelState.IsValid) 
-            {
-                pub.PublisherName = model.PublisherName;
-                pub.PublisherAddress = model.PublisherAddress;
-
-                _context.SaveChanges();
-                TempData["Message"] = "Publisher updated successfully!";
-            }
-            else
-            {
-                TempData["Error"] = "Failed to update publisher.";
-            }
-            return RedirectToAction("publishers");
-        }
-
-        private ActionResult CreatePublisher(Publisher model)
-        {
-            try
+            if (action == "Create")
             {
                 _context.Publishers.Add(model);
                 _context.SaveChanges();
+                TempData["Message"] = "Publisher added successfully!";
+            }
 
-                TempData["Message"] = "Publisher created successfully!";
-                return RedirectToAction("publishers");
-            }
-            catch (Exception ex)
+
+            else if (action == "Update")
             {
-                TempData["Error"] = "An error occurred: " + ex.Message;
-                return RedirectToAction("publishers");
+                var existingPublisher = _context.Publishers.Find(model.PublisherID);
+                if (existingPublisher != null)
+                {
+                    // Update existing staff
+                    existingPublisher.PublisherName = model.PublisherName;
+                    existingPublisher.PublisherAddress = model.PublisherAddress;
+                    existingPublisher.PublisherAddress = model.PublisherAddress;
+                    _context.SaveChanges();
+                    TempData["Message"] = "Publisher updated successfully!";
+                }
             }
+            else if (action == "Delete")
+            {
+                var publisher = _context.Publishers.Find(model.PublisherID);
+                if (publisher != null)
+                {
+                    _context.Publishers.Remove(publisher);
+                    _context.SaveChanges();
+                    TempData["Message"] = "Publisher deleted successfully!";
+                }
+                else
+                {
+                    TempData["Error"] = "Publisher not found.";
+                }
+            }
+
+            return RedirectToAction("publishers");
+
+
+        }
+
+        public ActionResult fines(int? fineId, int? page)
+        {
+            int pageSize = 5;
+            int pageNumber = page ?? 1;
+
+            ViewBag.Borrows = _context.Borrowing_Record
+               .Select(c => new SelectListItem
+               {
+                   Value = c.BorrowID.ToString(),
+                   Text = c.BorrowDate.ToString(),
+               })
+               .ToList();
+
+            var fines = _context.Fines.OrderBy(s => s.FineID).ToPagedList(pageNumber, pageSize);
+
+            if (fineId.HasValue)
+            {
+                var fine = _context.Fines.FirstOrDefault(b => b.FineID == fineId);
+                if (fine != null)
+                {
+                    ViewBag.Fine = fine;
+                }
+            }
+
+            return View(fines);
+        }
+
+        [HttpPost]
+        public ActionResult ManageFine(Models.Fine model, string action)
+        {
+            if (action == "Create")
+            {
+                _context.Fines.Add(model);
+                _context.SaveChanges();
+                TempData["Message"] = "Fine data added successfully!";
+            }
+
+
+            else if (action == "Update")
+            {
+                var existingFine= _context.Fines.Find(model.FineID);
+                if (existingFine != null)
+                {
+                    existingFine.BorrowID = model.BorrowID;
+                    existingFine.FineAmount = model.FineAmount;
+                    existingFine.PaidStatus = model.PaidStatus;
+                    _context.SaveChanges();
+                    TempData["Message"] = "Fine data updated successfully!";
+                }
+            }
+            else if (action == "Delete")
+            {
+                var fine = _context.Fines.Find(model.FineID);
+                if (fine != null)
+                {
+                    _context.Fines.Remove(fine);
+                    _context.SaveChanges();
+                    TempData["Message"] = "fine data deleted successfully!";
+                }
+                else
+                {
+                    TempData["Error"] = "fine data not found.";
+                }
+            }
+
+            return RedirectToAction("fines");
+
+
         }
 
     }
