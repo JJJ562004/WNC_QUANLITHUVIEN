@@ -13,10 +13,10 @@ namespace cuoiki_LTWNC.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class WNC_QUANLYTHIVIEN_REALEntities : DbContext
+    public partial class WNC_QUANLYTHUVIEN_REALEntities : DbContext
     {
-        public WNC_QUANLYTHIVIEN_REALEntities()
-            : base("name=WNC_QUANLYTHIVIEN_REALEntities")
+        public WNC_QUANLYTHUVIEN_REALEntities()
+            : base("name=WNC_QUANLYTHUVIEN_REALEntities")
         {
         }
     

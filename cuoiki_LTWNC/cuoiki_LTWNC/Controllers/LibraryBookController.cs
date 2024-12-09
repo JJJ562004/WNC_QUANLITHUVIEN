@@ -10,7 +10,30 @@ namespace cuoiki_LTWNC.Controllers
 {
     public class LibraryBookController : Controller
     {
-        private WNC_QUANLYTHIVIEN_REALEntities _context = new WNC_QUANLYTHIVIEN_REALEntities();
+        private WNC_QUANLYTHUVIEN_REALEntities _context = new WNC_QUANLYTHUVIEN_REALEntities();
+
+        public ActionResult Index()
+        {
+            return View(); // This looks for the `Index.cshtml` in `/Views/LibraryBook/`
+        }
+
+        public ActionResult charts()
+        {
+            return View();
+        }
+
+        public JsonResult GetChartData()
+        {
+            var data = _context.Categories
+                .Select(c => new
+                {
+                    CategoryName = c.CategoryName,
+                    BookCount = _context.Books.Count(b => b.CategoryID == c.CategoryID)
+                })
+                .ToList();
+
+            return Json(data, JsonRequestBehavior.AllowGet);
+        }
 
         public ActionResult books(int? bookId, int? page)
         {

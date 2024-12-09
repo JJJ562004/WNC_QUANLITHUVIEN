@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -209,6 +208,8 @@
     <Content Include="css\jquery-ui.css" />
     <Content Include="css\jquery.fancybox.min.css" />
     <Content Include="css\jquery.mCustomScrollbar.min.css" />
+    <Content Include="css\mdb.min.css" />
+    <Content Include="css\mdb.rtl.min.css" />
     <Content Include="css\meanmenu.css" />
     <Content Include="css\nice-select.css" />
     <Content Include="css\normalize.css" />
@@ -254,6 +255,8 @@
     <Content Include="js\jquery.mCustomScrollbar.concat.min.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="js\jquery.validate.js" />
+    <Content Include="js\mdb.es.min.js" />
+    <Content Include="js\mdb.umd.min.js" />
     <Content Include="js\modernizer.js" />
     <Content Include="js\plugin.js" />
     <Content Include="js\popper.min.js" />
@@ -289,6 +292,9 @@
     <Content Include="Models\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </Content>
+    <Content Include="css\mdb.min.css.map" />
+    <Content Include="js\mdb.es.min.js.map" />
+    <Content Include="js\mdb.umd.min.js.map" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -315,7 +321,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\LibraryBook\Index.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\LibraryBook\about.cshtml" />
+    <Content Include="Views\LibraryBook\charts.cshtml" />
     <Content Include="Views\LibraryBook\staff.cshtml" />
     <Content Include="Views\LibraryBook\books.cshtml" />
     <Content Include="Views\LibraryBook\students.cshtml" />
