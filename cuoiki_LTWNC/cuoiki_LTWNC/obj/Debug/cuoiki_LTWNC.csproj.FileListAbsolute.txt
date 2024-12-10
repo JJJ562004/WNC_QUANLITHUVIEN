@@ -1,241 +1,76 @@
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\cuoiki_LTWNC.dll.config
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\cuoiki_LTWNC.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\cuoiki_LTWNC.pdb
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\csc.exe
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\csc.exe.config
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\csc.rsp
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\csi.exe
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\csi.exe.config
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\csi.rsp
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.Managed.Core.targets
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.Win32.Primitives.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.AppContext.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Console.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Globalization.Calendars.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.IO.Compression.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.IO.Compression.ZipFile.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Net.Http.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Net.Sockets.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Security.Cryptography.Primitives.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Threading.Tasks.Extensions.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.ValueTuple.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Xml.ReaderWriter.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Xml.XmlDocument.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Xml.XPath.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Xml.XPath.XDocument.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\vbc.exe
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\vbc.exe.config
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\vbc.rsp
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\VBCSCompiler.exe
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\Antlr3.Runtime.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\Newtonsoft.Json.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Helpers.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Mvc.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Optimization.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Razor.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Deployment.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Razor.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\WebGrease.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Helpers.xml
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Mvc.xml
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Optimization.xml
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Razor.xml
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.xml
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Deployment.xml
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Razor.xml
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\Newtonsoft.Json.xml
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\Antlr3.Runtime.pdb
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.csproj.AssemblyReference.cache
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.csproj.CoreCompileInputs.cache
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.csproj.CopyComplete
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.dll
-C:\Users\Acer Nitro\source\repos\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.pdb
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\cuoiki_LTWNC.dll.config
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\cuoiki_LTWNC.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\cuoiki_LTWNC.pdb
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\csc.exe
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\csc.exe.config
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\csc.rsp
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\csi.exe
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\csi.exe.config
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\csi.rsp
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.CSharp.Core.targets
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.Managed.Core.targets
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.Win32.Primitives.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.AppContext.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Console.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Diagnostics.StackTrace.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Globalization.Calendars.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.IO.Compression.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.IO.Compression.ZipFile.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.IO.FileSystem.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.IO.FileSystem.Primitives.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Net.Http.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Net.Sockets.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Security.Cryptography.Encoding.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Security.Cryptography.Primitives.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Text.Encoding.CodePages.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Threading.Tasks.Extensions.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.ValueTuple.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Xml.ReaderWriter.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Xml.XmlDocument.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Xml.XPath.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Xml.XPath.XDocument.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\vbc.exe
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\vbc.exe.config
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\vbc.rsp
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\VBCSCompiler.exe
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\VBCSCompiler.exe.config
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Antlr3.Runtime.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Newtonsoft.Json.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Helpers.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Mvc.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Optimization.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Razor.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Deployment.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Razor.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\WebGrease.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Helpers.xml
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Mvc.xml
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Optimization.xml
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Razor.xml
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.xml
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Deployment.xml
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Razor.xml
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Newtonsoft.Json.xml
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Antlr3.Runtime.pdb
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.csproj.AssemblyReference.cache
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.csproj.CoreCompileInputs.cache
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.csproj.CopyComplete
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.dll
-C:\Users\Acer Nitro\source\repos\CuoiKi_ThayThuan\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.pdb
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\cuoiki_LTWNC.dll.config
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\cuoiki_LTWNC.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\cuoiki_LTWNC.pdb
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\csc.exe
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\csc.exe.config
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\csc.rsp
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\csi.exe
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\csi.exe.config
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\csi.rsp
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.Managed.Core.targets
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\Microsoft.Win32.Primitives.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.AppContext.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Collections.Immutable.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Console.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Diagnostics.StackTrace.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Globalization.Calendars.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.IO.Compression.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.IO.Compression.ZipFile.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.IO.FileSystem.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.IO.FileSystem.Primitives.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Net.Http.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Net.Sockets.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Reflection.Metadata.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Security.Cryptography.Encoding.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Security.Cryptography.Primitives.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Text.Encoding.CodePages.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Threading.Tasks.Extensions.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.ValueTuple.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Xml.ReaderWriter.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Xml.XmlDocument.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Xml.XPath.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\System.Xml.XPath.XDocument.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\vbc.exe
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\vbc.exe.config
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\vbc.rsp
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\VBCSCompiler.exe
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\roslyn\VBCSCompiler.exe.config
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Antlr3.Runtime.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Microsoft.Web.Infrastructure.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Newtonsoft.Json.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Helpers.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Mvc.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Optimization.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Razor.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Deployment.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Razor.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\WebGrease.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Helpers.xml
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Mvc.xml
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Optimization.xml
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Razor.xml
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.xml
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Deployment.xml
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Razor.xml
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Newtonsoft.Json.xml
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Antlr3.Runtime.pdb
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.csproj.AssemblyReference.cache
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.csproj.CoreCompileInputs.cache
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_L.71B75303.Up2Date
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.pdb
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.SqlServer.dll
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.xml
-D:\TranVanBinhLapTrinh\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.SqlServer.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\cuoiki_LTWNC.dll.config
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\cuoiki_LTWNC.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\cuoiki_LTWNC.pdb
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Antlr3.Runtime.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.SqlServer.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Microsoft.Web.Infrastructure.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Newtonsoft.Json.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\PagedList.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\PagedList.Mvc.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Helpers.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Mvc.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Optimization.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Razor.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Deployment.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Razor.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\WebGrease.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.SqlServer.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\PagedList.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\PagedList.Mvc.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Helpers.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Mvc.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Optimization.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Razor.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Deployment.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Razor.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Newtonsoft.Json.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Antlr3.Runtime.pdb
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.csproj.AssemblyReference.cache
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.csproj.CoreCompileInputs.cache
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_L.71B75303.Up2Date
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.pdb
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\cuoiki_LTWNC.dll.config
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\cuoiki_LTWNC.dll
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\cuoiki_LTWNC.pdb
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Antlr3.Runtime.dll
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.dll
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.SqlServer.dll
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Newtonsoft.Json.dll
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\PagedList.dll
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\PagedList.Mvc.dll
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Helpers.dll
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Mvc.dll
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Optimization.dll
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Razor.dll
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Deployment.dll
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.dll
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Razor.dll
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\WebGrease.dll
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.xml
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.SqlServer.xml
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\PagedList.xml
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\PagedList.Mvc.xml
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Helpers.xml
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Mvc.xml
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Optimization.xml
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Razor.xml
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.xml
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Deployment.xml
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Razor.xml
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Newtonsoft.Json.xml
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Antlr3.Runtime.pdb
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.csproj.AssemblyReference.cache
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.csproj.CoreCompileInputs.cache
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_L.71B75303.Up2Date
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.dll
+C:\Users\darkn\Documents\BaiTapThuan\CuoiKi\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.pdb
