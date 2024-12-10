@@ -1,16 +1,7 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BCCK_QuanLyThuVien_v3\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{B7F740D6-492E-4E6D-BFA7-D19719FB80CD}|cuoiki_LTWNC\\cuoiki_LTWNC.csproj|d:\\programming exercises\\nam 124 - sv 3\\ltwnc_csharp\\bcck_quanlythuvien_v3\\wnc_quanlithuvien\\cuoiki_ltwnc\\cuoiki_ltwnc\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B7F740D6-492E-4E6D-BFA7-D19719FB80CD}|cuoiki_LTWNC\\cuoiki_LTWNC.csproj|solutionrelative:cuoiki_ltwnc\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7F740D6-492E-4E6D-BFA7-D19719FB80CD}|cuoiki_LTWNC\\cuoiki_LTWNC.csproj|d:\\programming exercises\\nam 124 - sv 3\\ltwnc_csharp\\bcck_quanlythuvien_v3\\wnc_quanlithuvien\\cuoiki_ltwnc\\cuoiki_ltwnc\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7F740D6-492E-4E6D-BFA7-D19719FB80CD}|cuoiki_LTWNC\\cuoiki_LTWNC.csproj|solutionrelative:cuoiki_ltwnc\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLySachThuVien\\Code\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,37 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Student.cs",
-              "DocumentMoniker": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BCCK_QuanLyThuVien_v3\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "cuoiki_LTWNC\\Models\\Student.cs",
-              "ToolTip": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BCCK_QuanLyThuVien_v3\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\Student.cs",
-              "RelativeToolTip": "cuoiki_LTWNC\\Models\\Student.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAYwCsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T04:22:19.418Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Web.config",
-              "DocumentMoniker": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BCCK_QuanLyThuVien_v3\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Web.config",
-              "RelativeDocumentMoniker": "cuoiki_LTWNC\\Web.config",
-              "ToolTip": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BCCK_QuanLyThuVien_v3\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Web.config",
-              "RelativeToolTip": "cuoiki_LTWNC\\Web.config",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAE0AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-12-10T04:17:16.99Z",
-              "EditorCaption": ""
             }
           ]
         }
