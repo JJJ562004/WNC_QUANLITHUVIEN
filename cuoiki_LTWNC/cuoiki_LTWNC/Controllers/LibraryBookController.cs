@@ -12,6 +12,19 @@ namespace cuoiki_LTWNC.Controllers
     {
         private WNC_QUANLYTHUVIEN_REALEntities _context = new WNC_QUANLYTHUVIEN_REALEntities();
 
+        public JsonResult GetChartDataStaff()
+        {
+            var data = _context.Staffs
+                 .GroupBy(s => s.Role)
+                .Select(r => new
+                {
+                    Role = r.Key,
+                    StaffCount = r.Count()
+                })
+                .ToList();
+
+            return Json(data, JsonRequestBehavior.AllowGet);
+        }
         public ActionResult Index()
         {
             using (var context = new cuoiki_LTWNC.Models.WNC_QUANLYTHUVIEN_REALEntities())
