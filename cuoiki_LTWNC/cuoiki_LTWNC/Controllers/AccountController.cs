@@ -24,6 +24,10 @@ namespace cuoiki_LTWNC.Controllers
         {
             return View();
         }
+        public ActionResult ForgotPassword()
+        {
+            return View();
+        }
         public ActionResult Finish()
         {
             return View();
