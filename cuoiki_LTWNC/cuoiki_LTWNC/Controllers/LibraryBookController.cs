@@ -80,10 +80,11 @@ namespace cuoiki_LTWNC.Controllers
         public JsonResult GetChartDataStaff()
         {
             var data = _context.Staffs
-                .Select(r => new
+                 .GroupBy(s => s.Role) // Group by the Role
+                .Select(g => new
                 {
-                    Role = r.Role,
-                    StaffCount = _context.Staffs.Count(b => b.StaffID == r.StaffID)
+                    Role = g.Key,            // The Role being grouped
+                    StaffCount = g.Count()  // Count the number of staff in each role
                 })
                 .ToList();
 
@@ -94,7 +95,7 @@ namespace cuoiki_LTWNC.Controllers
         {
             int pageSize = 5;
             int pageNumber = page ?? 1;
-            
+
 
             ViewBag.Categories = _context.Categories
                 .Select(c => new SelectListItem
@@ -186,7 +187,7 @@ namespace cuoiki_LTWNC.Controllers
             }
             else if (action == "Delete")
             {
-                var book = _context.Books.Find(model.BookID) ;
+                var book = _context.Books.Find(model.BookID);
                 if (book != null)
                 {
                     _context.Books.Remove(book);
@@ -200,7 +201,7 @@ namespace cuoiki_LTWNC.Controllers
             }
 
             return RedirectToAction("books");
-        }    
+        }
 
         public ActionResult staff(int? staffId, int? page)
         {
@@ -226,7 +227,7 @@ namespace cuoiki_LTWNC.Controllers
         {
             if (action == "Create")
             {
-               
+
                 _context.Staffs.Add(model);
                 _context.SaveChanges();
                 TempData["Message"] = "Staff added successfully!";
@@ -266,7 +267,7 @@ namespace cuoiki_LTWNC.Controllers
             return RedirectToAction("staff");
 
         }
-      
+
 
         public ActionResult publishers(int? publisherId, int? page)
         {
@@ -305,7 +306,6 @@ namespace cuoiki_LTWNC.Controllers
                 {
                     // Update existing staff
                     existingPublisher.PublisherName = model.PublisherName;
-                    existingPublisher.PublisherAddress = model.PublisherAddress;
                     existingPublisher.PublisherAddress = model.PublisherAddress;
                     _context.SaveChanges();
                     TempData["Message"] = "Publisher updated successfully!";
@@ -371,7 +371,7 @@ namespace cuoiki_LTWNC.Controllers
 
             else if (action == "Update")
             {
-                var existingFine= _context.Fines.Find(model.FineID);
+                var existingFine = _context.Fines.Find(model.FineID);
                 if (existingFine != null)
                 {
                     existingFine.BorrowID = model.BorrowID;

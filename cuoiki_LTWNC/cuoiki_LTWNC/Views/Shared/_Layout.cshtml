@@ -62,7 +62,7 @@
                             <a class="nav-link" href="~/LibraryBook/staff">Quản lí nhân viên</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="~/LibraryBook/accounts">Quản lí tài khoản</a>
+                            <a class="nav-link" href="~/Account/Login">Quản lí tài khoản</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="~/LibraryBook/students">Quản lí sinh viên</a>
@@ -78,8 +78,8 @@
                     </form>
                 </div>
             </nav>
-        </div
-        @RenderSection("Banner");
+        </div>
+        @RenderSection("Banner", required: false);
     </div>
 
     @RenderBody()
@@ -139,6 +139,7 @@
             </div>
         </div>
     </div>
+    @RenderSection("Scripts", required: false)
     <!-- copyright section end -->
     <!-- Javascript files-->
     <script src="~/js/jquery.min.js"></script>
