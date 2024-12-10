@@ -103,7 +103,7 @@
         </div>
         <div class="text-end">
             <button type="submit" class="btn btn-primary">@(ViewBag.Staff != null ? "Cập nhật" : "Thêm")</button>
-            @if (ViewBag.Book != null)
+            @if (ViewBag.Staff != null)
             {
                 <a href="@Url.Action("staff", "LibraryBook")" class="btn btn-secondary">Hủy</a>
             }

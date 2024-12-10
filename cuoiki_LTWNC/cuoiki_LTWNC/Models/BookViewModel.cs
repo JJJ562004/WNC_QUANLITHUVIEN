@@ -14,6 +14,8 @@ namespace cuoiki_LTWNC.Models
         public string Image { get; set; }
         public string Description { get; set; }
         public List<string> AuthorName { get; set; } // Danh sách tên tác giả
+
+        public int? CategoryID { get; set; }
     }
 
 

@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var staffName = Session["StaffName"];
+}
+<!DOCTYPE html>
 <html>
 <head>
     <!-- basic -->
@@ -68,8 +71,7 @@
                     <form class="form-inline my-2 my-lg-0">
                         <div class="login_bt">
                             <ul>
-                                <li><a href="~/Account/Login"><span class="user_icon"><i class="fa fa-user" aria-hidden="true"></i></span>Login</a></li>
-                                <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                <li><a href="~/Account/Login"><span class="user_icon"><i class="fa fa-user" aria-hidden="true"></i></span>@staffName</a></li>
                             </ul>
                         </div>
                     </form>
@@ -83,37 +85,37 @@
 
     <!-- footer section start -->
     <<div class="footer_section layout_padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="address_text">Địa chỉ</h1>
-                <p class="footer_text">here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use</p>
-                <div class="location_text">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_10">+01 1234567890</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">demo@gmail.com</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <form method="post" action="@Url.Action("SendEmail", "Footer")">
-                    <div class="form-group">
-                        <textarea class="update_mail" placeholder="Your Email" rows="5" id="emailContent" name="emailContent"></textarea>
-                        <div class="subscribe_bt">
-                            <button type="submit" class="btn btn-primary">Send Email</button>
-                        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="address_text">Địa chỉ</h1>
+                    <p class="footer_text">here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use</p>
+                    <div class="location_text">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_10">+01 1234567890</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">demo@gmail.com</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                </form>
+                    <form method="post" action="@Url.Action("SendEmail", "Footer")">
+                        <div class="form-group">
+                            <textarea class="update_mail" placeholder="Your Email" rows="5" id="emailContent" name="emailContent"></textarea>
+                            <div class="subscribe_bt">
+                                <button type="submit" class="btn btn-primary">Send Email</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
     <!-- footer section end -->
     <!-- copyright section start -->

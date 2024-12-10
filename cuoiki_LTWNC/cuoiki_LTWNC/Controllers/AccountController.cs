@@ -23,6 +23,11 @@ namespace cuoiki_LTWNC.Controllers
             return View();
         }
 
+        public ActionResult ForgotPassword()
+        {
+            return View();
+        }
+
         public ActionResult Login()
         {
             return View();
@@ -45,8 +50,9 @@ namespace cuoiki_LTWNC.Controllers
         }
         void connectionString()
         {
-            con.ConnectionString = "Data Source=DESKTOP-7FI0AQQ;Initial Catalog=WNC_QUANLYTHUVIEN_REAL;Integrated Security=True;Encrypt=False";
-            con.ConnectionString = "Data Source=DESKTOP-IA0NH5J;Initial Catalog=WNC_QUANLYTHIVIEN_REAL;Integrated Security=True;Encrypt=False";
+            //con.ConnectionString = "Data Source=DESKTOP-7FI0AQQ;Initial Catalog=WNC_QUANLYTHUVIEN_REAL;Integrated Security=True;Encrypt=False";
+            //con.ConnectionString = "Data Source=DESKTOP-IA0NH5J;Initial Catalog=WNC_QUANLYTHIVIEN_REAL;Integrated Security=True;Encrypt=False";
+            con.ConnectionString = "Data Source=ADMIN-PC;Initial Catalog=WNC_QUANLYTHUVIEN_REAL;Integrated Security=True;Encrypt=False";
         }
         [HttpPost]
         public ActionResult DangKy(Account acc)
@@ -89,6 +95,7 @@ namespace cuoiki_LTWNC.Controllers
         {
             return Redirect("~/Account/Login");
         }
+
         public ActionResult Verify(cuoiki_LTWNC.Models.Student acc)
         {
             int msv = acc.StudentID;
@@ -97,16 +104,13 @@ namespace cuoiki_LTWNC.Controllers
             con.Open();
 
             cmd.Connection = con;
-            cmd.CommandText = "select * from Student where StudentID='" + acc.MSV + "' and PhoneNumber='" + acc.Password + "'";
-            Debug.WriteLine($"MSV: {acc.MSV}, Password: {acc.Password}");
-            ViewBag.StudentID = acc.MSV;
             cmd.CommandText = "select * from Student where StudentID='" + msv.ToString() + "' and PhoneNumber='" + pass + "'";
             dr = cmd.ExecuteReader();
             if (dr.Read())
             {
-                Session["StudentID"] = dr["StudentID"].ToString();
-                Session["StudentName"] = dr["LastName"].ToString() + " " + dr["FirstName"].ToString();
-                Session["Email"] = dr["Email"].ToString();
+                Session["StudentID"] = dr["StudentID"];
+                Session["StudentName"] = dr["LastName"] + " " + dr["FirstName"];
+                Session["Email"] = dr["Email"];
                 con.Close();
                 return Redirect("~/LibraryBook/Index");
             }
@@ -117,6 +121,8 @@ namespace cuoiki_LTWNC.Controllers
             }
 
         }
+
+
 
         public ActionResult VerifyStaff(cuoiki_LTWNC.Models.Staff acc)
         {
@@ -130,6 +136,8 @@ namespace cuoiki_LTWNC.Controllers
             dr = cmd.ExecuteReader();          
             if (dr.Read())
             {
+                Session["StaffID"] = dr["StaffID"];
+                Session["StaffName"] = dr["LastName"] + " " + dr["FirstName"];
                 con.Close();
                 return Redirect("~/LibraryBook/charts");
             }

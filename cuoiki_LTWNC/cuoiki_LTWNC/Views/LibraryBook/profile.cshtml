@@ -1,0 +1,35 @@
+﻿@model List<cuoiki_LTWNC.Models.Student>
+@{
+    ViewBag.Title = "profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Banner{}
+<div class="book-details">
+    <div class="col-md-12">
+        <h1 class="about_taital">Thông tin cá nhân</h1>
+        <div class="bulit_icon"><img src="~/images/bulit-icon.png"></div>
+    </div>
+    <div class="book-image">
+        <img src="https://scontent.fdad8-2.fna.fbcdn.net/v/t39.30808-6/432980034_1581859822577238_7556476514551851188_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=_fwFM2i0W4EQ7kNvgHfGsoe&_nc_zt=23&_nc_ht=scontent.fdad8-2.fna&_nc_gid=AcPqO_i3OeNU2BfqXyjZtoj&oh=00_AYAvzHUr3KR3Yn2V8KZNLFy4fTDMWk8TaiegAW0kgkKapg&oe=675E497A" style="max-width:350px" />
+    </div>
+    @if (Model != null && Model.Any())
+    {
+        foreach (var student in Model)
+        {
+            <div class="book-info">
+                <p><strong>Họ và tên:</strong>@student.LastName  @student.FirstName</p>
+                <p><strong>Email:</strong>@student.Email</p>
+                <p><strong>SĐT:</strong>@student.PhoneNumber</p>
+                <p><strong>Địa chỉ:</strong>@student.StudentAddress</p>
+                <p><strong>Ngày tạo:</strong>@student.EnrollmentDate</p>
+            </div>
+        }
+    }
+    <div class="container">
+        <div class="row">
+            <div class="col-6 justify-content-center align-items-center">
+                <a href="@Url.Action("Index", "LibraryBook")" class="btn btn-primary">Quay lại</a>
+            </div>
+        </div>
+    </div>
+</div>

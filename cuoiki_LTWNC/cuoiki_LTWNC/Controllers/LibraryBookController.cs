@@ -21,9 +21,25 @@ namespace cuoiki_LTWNC.Controllers
         SqlCommand cmd = new SqlCommand();
         SqlDataReader dr;
 
+
+        public ActionResult profile(string studentID)
+        {
+            int new_id = 0;
+            new_id = Int32.Parse(studentID);
+            using (var context = new cuoiki_LTWNC.Models.WNC_QUANLYTHUVIEN_REALEntities())
+            {
+
+                var student_records = context.Students
+                .Where(b => b.StudentID == new_id)
+                    .ToList();
+                // After retrieving data, format the dates
+
+                return View(student_records);
+            }
+        }
         public ActionResult Index(int? categoryId)
         {
-            using (var context = new cuoiki_LTWNC.Models.WNC_QUANLYTHUVIEN_REALEntities1())
+            using (var context = new cuoiki_LTWNC.Models.WNC_QUANLYTHUVIEN_REALEntities())
             {
                 var categories = context.Categories
                     .Select(c => new CategoryViewModel
@@ -144,6 +160,20 @@ namespace cuoiki_LTWNC.Controllers
             {
                 con.Close();
             }
+        }
+
+        public JsonResult GetChartDataStaff()
+        {
+            var data = _context.Staffs
+                 .GroupBy(s => s.Role)
+                .Select(r => new
+                {
+                    Role = r.Key,
+                    StaffCount = r.Count()
+                })
+                .ToList();
+
+            return Json(data, JsonRequestBehavior.AllowGet);
         }
 
         public ActionResult DanhSachPhieuMuon(string studentID)
@@ -518,6 +548,71 @@ namespace cuoiki_LTWNC.Controllers
             }
 
             return RedirectToAction("fines");
+
+
+        }
+
+        public ActionResult students(int? studentId, int? page)
+        {
+            int pageSize = 5;
+            int pageNumber = page ?? 1;
+
+            var students = _context.Students.OrderBy(s => s.StudentID).ToPagedList(pageNumber, pageSize);
+
+            if (studentId.HasValue)
+            {
+                var student = _context.Students.FirstOrDefault(b => b.StudentID == studentId);
+                if (student != null)
+                {
+                    ViewBag.Student = student;
+                }
+            }
+
+            return View(students);
+        }
+
+        [HttpPost]
+        public ActionResult ManageStudent(Models.Student model, string action)
+        {
+            if (action == "Create")
+            {
+                _context.Students.Add(model);
+                _context.SaveChanges();
+                TempData["Message"] = "Student added successfully!";
+            }
+
+
+            else if (action == "Update")
+            {
+                var existingStudent = _context.Students.Find(model.StudentID);
+                if (existingStudent != null)
+                {
+                    existingStudent.LastName = model.LastName;
+                    existingStudent.FirstName = model.FirstName;
+                    existingStudent.Email = model.Email;
+                    existingStudent.PhoneNumber = model.PhoneNumber;
+                    existingStudent.StudentAddress = model.StudentAddress;
+                    existingStudent.EnrollmentDate = model.EnrollmentDate;
+                    _context.SaveChanges();
+                    TempData["Message"] = "Student updated successfully!";
+                }
+            }
+            else if (action == "Delete")
+            {
+                var student = _context.Students.Find(model.StudentID);
+                if (student != null)
+                {
+                    _context.Students.Remove(student);
+                    _context.SaveChanges();
+                    TempData["Message"] = "Student deleted successfully!";
+                }
+                else
+                {
+                    TempData["Error"] = "Student not found.";
+                }
+            }
+
+            return RedirectToAction("students");
 
 
         }

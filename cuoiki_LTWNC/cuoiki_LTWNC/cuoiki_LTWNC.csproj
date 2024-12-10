@@ -153,9 +153,11 @@
     <Compile Include="Models\Category.cs">
       <DependentUpon>Modelreal.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\CategoryViewModel.cs" />
     <Compile Include="Models\Fine.cs">
       <DependentUpon>Modelreal.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\LibraryIndexViewModel.cs" />
     <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -381,6 +383,8 @@
     <Content Include="Views\LibraryBook\Details.cshtml" />
     <Content Include="Views\Shared\User_Layout.cshtml" />
     <Content Include="Views\Account\staff_Login.cshtml" />
+    <Content Include="Views\LibraryBook\profile.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
