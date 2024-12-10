@@ -265,7 +265,11 @@
     <Content Include="images\img-3.png" />
     <Content Include="images\img-4.png" />
     <Content Include="images\logo.png" />
+    <Content Include="images\nguyentuan.png" />
+    <Content Include="images\Screenshot 2024-12-10 184640.png" />
+    <Content Include="images\stack-of-books.png" />
     <Content Include="images\teligram-icon.png" />
+    <Content Include="images\thanhhieu.jpg" />
     <Content Include="js\bootstrap.bundle.js" />
     <Content Include="js\bootstrap.bundle.min.js" />
     <Content Include="js\bootstrap.js" />
