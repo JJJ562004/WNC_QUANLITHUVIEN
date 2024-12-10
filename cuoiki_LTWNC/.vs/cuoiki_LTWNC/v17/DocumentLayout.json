@@ -1,14 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BCCK_QuanLyThuVien_v3\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\",
+  "WorkspaceRootPath": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLySachThuVien\\Code\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B7F740D6-492E-4E6D-BFA7-D19719FB80CD}|cuoiki_LTWNC\\cuoiki_LTWNC.csproj|d:\\programming exercises\\nam 124 - sv 3\\ltwnc_csharp\\bcck_quanlythuvien_v3\\wnc_quanlithuvien\\cuoiki_ltwnc\\cuoiki_ltwnc\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B7F740D6-492E-4E6D-BFA7-D19719FB80CD}|cuoiki_LTWNC\\cuoiki_LTWNC.csproj|solutionrelative:cuoiki_ltwnc\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{B7F740D6-492E-4E6D-BFA7-D19719FB80CD}|cuoiki_LTWNC\\cuoiki_LTWNC.csproj|d:\\programming exercises\\nam 124 - sv 3\\ltwnc_csharp\\baocaocuoiki_quanlysachthuvien\\code\\wnc_quanlithuvien\\cuoiki_ltwnc\\cuoiki_ltwnc\\views\\librarybook\\charts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B7F740D6-492E-4E6D-BFA7-D19719FB80CD}|cuoiki_LTWNC\\cuoiki_LTWNC.csproj|solutionrelative:cuoiki_ltwnc\\views\\librarybook\\charts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7F740D6-492E-4E6D-BFA7-D19719FB80CD}|cuoiki_LTWNC\\cuoiki_LTWNC.csproj|d:\\programming exercises\\nam 124 - sv 3\\ltwnc_csharp\\bcck_quanlythuvien_v3\\wnc_quanlithuvien\\cuoiki_ltwnc\\cuoiki_ltwnc\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7F740D6-492E-4E6D-BFA7-D19719FB80CD}|cuoiki_LTWNC\\cuoiki_LTWNC.csproj|solutionrelative:cuoiki_ltwnc\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7F740D6-492E-4E6D-BFA7-D19719FB80CD}|cuoiki_LTWNC\\cuoiki_LTWNC.csproj|d:\\programming exercises\\nam 124 - sv 3\\ltwnc_csharp\\baocaocuoiki_quanlysachthuvien\\code\\wnc_quanlithuvien\\cuoiki_ltwnc\\cuoiki_ltwnc\\controllers\\librarybookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F740D6-492E-4E6D-BFA7-D19719FB80CD}|cuoiki_LTWNC\\cuoiki_LTWNC.csproj|solutionrelative:cuoiki_ltwnc\\controllers\\librarybookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F740D6-492E-4E6D-BFA7-D19719FB80CD}|cuoiki_LTWNC\\cuoiki_LTWNC.csproj|d:\\programming exercises\\nam 124 - sv 3\\ltwnc_csharp\\baocaocuoiki_quanlysachthuvien\\code\\wnc_quanlithuvien\\cuoiki_ltwnc\\cuoiki_ltwnc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B7F740D6-492E-4E6D-BFA7-D19719FB80CD}|cuoiki_LTWNC\\cuoiki_LTWNC.csproj|solutionrelative:cuoiki_ltwnc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,36 +22,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Student.cs",
-              "DocumentMoniker": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BCCK_QuanLyThuVien_v3\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\Student.cs",
-              "RelativeDocumentMoniker": "cuoiki_LTWNC\\Models\\Student.cs",
-              "ToolTip": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BCCK_QuanLyThuVien_v3\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\Student.cs",
-              "RelativeToolTip": "cuoiki_LTWNC\\Models\\Student.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAYwCsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T04:22:19.418Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3fd5e0cc-709a-4f8c-94c3-7f0f8dff5bb2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Web.config",
-              "DocumentMoniker": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BCCK_QuanLyThuVien_v3\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Web.config",
-              "RelativeDocumentMoniker": "cuoiki_LTWNC\\Web.config",
-              "ToolTip": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BCCK_QuanLyThuVien_v3\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Web.config",
-              "RelativeToolTip": "cuoiki_LTWNC\\Web.config",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAAE0AAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-12-10T04:17:16.99Z",
+              "Title": "charts.cshtml",
+              "DocumentMoniker": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLySachThuVien\\Code\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\LibraryBook\\charts.cshtml",
+              "RelativeDocumentMoniker": "cuoiki_LTWNC\\Views\\LibraryBook\\charts.cshtml",
+              "ToolTip": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLySachThuVien\\Code\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\LibraryBook\\charts.cshtml",
+              "RelativeToolTip": "cuoiki_LTWNC\\Views\\LibraryBook\\charts.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAEIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T10:53:12.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LibraryBookController.cs",
+              "DocumentMoniker": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLySachThuVien\\Code\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Controllers\\LibraryBookController.cs",
+              "RelativeDocumentMoniker": "cuoiki_LTWNC\\Controllers\\LibraryBookController.cs",
+              "ToolTip": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLySachThuVien\\Code\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Controllers\\LibraryBookController.cs",
+              "RelativeToolTip": "cuoiki_LTWNC\\Controllers\\LibraryBookController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T10:52:08.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLySachThuVien\\Code\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "cuoiki_LTWNC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLySachThuVien\\Code\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "cuoiki_LTWNC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T10:48:56.544Z",
               "EditorCaption": ""
             }
           ]

@@ -53,7 +53,7 @@ namespace cuoiki_LTWNC.Controllers
             }
         }
 
-        public ActionResult Details(int? id)
+        public ActionResult charts()
         {
             using (var context = new WNC_QUANLYTHUVIEN_REALEntities1())
             {
@@ -67,7 +67,7 @@ namespace cuoiki_LTWNC.Controllers
                         Quantity = b.Quantity ?? 0,
                         AuthorName = b.Authors.Select(a => a.AuthorName).ToList(), // Lấy danh sách tên tác giả
                         Image = b.ImageURL,
-                        Description = b.Description
+                        Description = b.Description// Giả định có cột mô tả
                     })
                     .FirstOrDefault();
 
@@ -80,37 +80,69 @@ namespace cuoiki_LTWNC.Controllers
             }
         }
 
-        public ActionResult charts()
+        public ActionResult DanhSachPhieuMuon(int? studentID)
         {
-            return View();
-        }
+            using (var context = new cuoiki_LTWNC.Models.WNC_QUANLYTHUVIEN_REALEntities())
+            {
 
-        public JsonResult GetChartDataCategory()
-        {
-            var data = _context.Categories
-                .Select(c => new
+                var borrow_records = context.Borrowing_Record
+             .OrderBy(b => b.DueDate) // Sorting by DueDate
+             .Join(
+                 context.Books, // Join with the Book table
+                 b => b.BookID, // Foreign key in Borrowing_Record
+                 book => book.BookID, // Primary key in Book table
+                 (b, book) => new BorrowingRecordModel
+                 {
+                     Title = book.Title,
+                     StudentId = (int)b.StudentID,
+                     BorrowID = b.BorrowID,
+                     BorrowDay = b.BorrowDate,
+                     DueDate = b.DueDate,
+                     ReturnDate = b.ReturnDate // Keep DateTime? as is for now
+                 }).Where(b => b.StudentId == studentID)
+                    .ToList();
+                // After retrieving data, format the dates
+                foreach (var record in borrow_records)
                 {
-                    CategoryName = c.CategoryName,
-                    BookCount = _context.Books.Count(b => b.CategoryID == c.CategoryID)
-                })
-                .ToList();
+                    record.BorrowDateString = record.BorrowDay.ToString("dd/MM/yyyy"); // Short date format
+                    record.DueDateString = record.DueDate.ToString("dd/MM/yyyy"); // Short date format
 
-            return Json(data, JsonRequestBehavior.AllowGet);
+                    record.ReturnDateString = record.ReturnDate.HasValue
+                        ? record.ReturnDate.Value.ToString("dd/MM/yyyy")
+                        : "Chưa trả sách"; // If null, set the default message
+                }
+
+                return View(borrow_records);
+            }
         }
 
-        public JsonResult GetChartDataStaff()
+        public ActionResult Details(int? id)
         {
-            var data = _context.Staffs
-                 .GroupBy(s => s.Role) // Group by the Role
-                .Select(g => new
-                {
-                    Role = g.Key,            // The Role being grouped
-                    StaffCount = g.Count()  // Count the number of staff in each role
-                })
-                .ToList();
+            using (var context = new WNC_QUANLYTHUVIEN_REALEntities())
+            {
+                var book = context.Books
+                    .Where(b => b.BookID == id)
+                    .Select(b => new BookViewModel
+                    {
+                        BookID = b.BookID,
+                        Title = b.Title,
+                        PublishYear = b.PublishedYear,
+                        Quantity = b.Quantity ?? 0,
+                        AuthorName = b.Authors.Select(a => a.AuthorName).ToList(), // Lấy danh sách tên tác giả
+                        Image = b.ImageURL,
+                        Description = b.Description// Giả định có cột mô tả
+                    })
+                    .FirstOrDefault();
 
-            return Json(data, JsonRequestBehavior.AllowGet);
+                if (book == null)
+                {
+                    return HttpNotFound();
+                }
+
+                return View(book);
+            }
         }
+
 
         public ActionResult books(int? bookId, int? page)
         {

@@ -50,22 +50,22 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="~/LibraryBook/index">Trang chủ</a>
+                            <a class="nav-link" href="@Url.Action("Index", "LibraryBook")">Trang chủ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="~/LibraryBook/charts">Dữ liệu thống kê</a>
+                            <a class="nav-link" href="@Url.Action("charts", "LibraryBook")">Dữ liệu thống kê</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="~/LibraryBook/books">Quản lí sách</a>
+                            <a class="nav-link" href="@Url.Action("books", "LibraryBook")">Quản lí sách</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="~/LibraryBook/staff">Quản lí nhân viên</a>
+                            <a class="nav-link" href="@Url.Action("staff", "LibraryBook")">Quản lí nhân viên</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Quản lí tài khoản</a>
+                            <a class="nav-link" href="@Url.Action("Login", "Account")">Quản lí tài khoản</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Quản lí sinh viên</a>
+                            <a class="nav-link" href="@Url.Action("students", "LibraryBook")">Quản lí sinh viên</a>
                         </li>
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
