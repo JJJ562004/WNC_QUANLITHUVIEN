@@ -1,6 +1,6 @@
 ﻿
 @{
-    
+
     ViewBag.Title = "";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -8,35 +8,34 @@
     <!-- banner section start -->
     <div class="banner_section layout_padding">
         <div class="container">
-            <div class="category_section">
-                    <!-- Tiêu đề Danh mục với liên kết -->
-                    <a href="@Url.Action("Index", "LibraryBook")" class="category_title">Danh mục</a>
-
-                    <!-- Danh sách danh mục -->
-                    <div class="category_list">
-                        @foreach (var category in Model.Categories)
-                        {
-                            <a href="@Url.Action("Index", "LibraryBook", new { categoryId = category.CategoryID })" class="category_link">
-                                @category.CategoryName
-                            </a>
-                        }
-                    </div>
+            <!--<div class="category_section">-->
+            <!-- Tiêu đề Danh mục với liên kết -->
+            <!--<a href="@Url.Action("Index", "LibraryBook")" class="category_title">Danh mục</a>-->
+            <!-- Danh sách danh mục -->
+            <!--<div class="category_list">
+                    @foreach (var category in Model.Categories)
+                    {
+                        <a href="@Url.Action("Index", "LibraryBook", new { categoryId = category.CategoryID })" class="category_link">
+                            @category.CategoryName
+                        </a>
+                    }
                 </div>
+            </div>-->
             <div id="banner_slider" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="banner_img"><img src="~/images/banner-img.png"></div>
+                                <div class="banner_img"><img src="~/images/stack-of-books.png"></div>
                             </div>
                             <div class="col-md-6">
                                 <div class="banner_taital_main">
-                                    <h1 class="banner_taital">coffee</h1>
-                                    <h5 class="tasty_text">Tasty Of DozeCafe</h5>
-                                    <p class="banner_text">more-or-less normal distribution of letters, as opposed to using </p>
+                                    <h1 class="banner_taital">Thư viện UTE</h1>
+                                    <h5 class="tasty_text">Xin chào các bạn</h5>
+                                    <p class="banner_text">Chào mừng các bạn đến với trang thư viện UTE </p>
                                     <div class="btn_main">
-                                        <div class="about_bt"><a href="#">About Us</a></div>
-                                        <div class="callnow_bt active"><a href="#">Call Now</a></div>
+                                        <div class="about_bt"><a href="#">Về chúng tôi</a></div>
+                                        <div class="callnow_bt active"><a href="#">Liên hệ</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -45,16 +44,16 @@
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="banner_img"><img src="~/images/banner-img.png"></div>
+                                <div class="banner_img"><img src="~/images/stack-of-books.png"></div>
                             </div>
                             <div class="col-md-6">
                                 <div class="banner_taital_main">
-                                    <h1 class="banner_taital">coffee</h1>
-                                    <h5 class="tasty_text">Tasty Of DozeCafe</h5>
-                                    <p class="banner_text">more-or-less normal distribution of letters, as opposed to using </p>
+                                    <h1 class="banner_taital">Thư viện UTE</h1>
+                                    <h5 class="tasty_text">Xin chào các bạn</h5>
+                                    <p class="banner_text">Chào mừng các bạn đến với trang thư viện UTE </p>
                                     <div class="btn_main">
-                                        <div class="about_bt"><a href="#">About Us</a></div>
-                                        <div class="callnow_bt active"><a href="#">Call Now</a></div>
+                                        <div class="about_bt"><a href="#">Về chúng tôi</a></div>
+                                        <div class="callnow_bt active"><a href="#">Liên hệ</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -63,16 +62,16 @@
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="banner_img"><img src="~/images/banner-img.png"></div>
+                                <div class="banner_img"><img src="~/images/stack-of-books.png"></div>
                             </div>
                             <div class="col-md-6">
                                 <div class="banner_taital_main">
-                                    <h1 class="banner_taital">coffee</h1>
-                                    <h5 class="tasty_text">Tasty Of DozeCafe</h5>
-                                    <p class="banner_text">more-or-less normal distribution of letters, as opposed to using </p>
+                                    <h1 class="banner_taital">Thư viện UTE</h1>
+                                    <h5 class="tasty_text">Xin chào các bạn</h5>
+                                    <p class="banner_text">Chào mừng các bạn đến với trang thư viện UTE </p>
                                     <div class="btn_main">
-                                        <div class="about_bt"><a href="#">About Us</a></div>
-                                        <div class="callnow_bt active"><a href="#">Call Now</a></div>
+                                        <div class="about_bt"><a href="#">Về chúng tôi</a></div>
+                                        <div class="callnow_bt active"><a href="#">Liên hệ</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -91,7 +90,6 @@
     <!-- banner section end -->
 }
 <!-- coffee section start -->
-
 <!-- coffee section end -->
 <div class="coffee_section layout_padding">
     <div class="container">
@@ -99,14 +97,32 @@
             <h1 class="coffee_taital">Danh mục sách</h1>
             <div class="bulit_icon"><img src="~/images/bulit-icon.png"></div>
         </div>
+
+        <!-- Categories -->
+        <div class="category_section">
+            <!-- Tiêu đề Danh mục với liên kết -->
+            <a href="@Url.Action("Index", "LibraryBook")" class="category_title">Danh mục</a>
+
+            <!-- Danh sách danh mục -->
+            <div class="category_list">
+                @foreach (var category in Model.Categories)
+                {
+                    <a href="@Url.Action("Index", "LibraryBook", new { categoryId = category.CategoryID })" class="category_link">
+                        @category.CategoryName
+                    </a>
+                }
+            </div>
+        </div>
     </div>
+
+    <!-- Books -->
     <div class="coffee_section_2">
         <div id="main_slider" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="container-fluid">
                         <div class="row">
-                            @foreach (var book in Model)
+                            @foreach (var book in Model.Books)
                             {
                                 <div class="col-lg-3 col-md-6">
                                     <div class="coffee_img">
@@ -117,21 +133,22 @@
                                     <div class="read_bt">
                                         <a href="@Url.Action("Details", "LibraryBook", new { id = book.BookID })">View Details</a>
                                     </div>
-                                </div>}
+                                </div>
+                            }
                         </div>
-
                     </div>
                 </div>
             </div>
+            <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+                <i class="fa fa-arrow-left"></i>
+            </a>
+            <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+                <i class="fa fa-arrow-right"></i>
+            </a>
         </div>
-        <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-            <i class="fa fa-arrow-left"></i>
-        </a>
-        <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-            <i class="fa fa-arrow-right"></i>
-        </a>
     </div>
 </div>
+
 <!-- about section start -->
 <div class="about_section layout_padding">
     <div class="container">
@@ -141,7 +158,7 @@
                 <div class="bulit_icon"><img src="https://watermark.lovepik.com/photo/20211119/large/lovepik-a-neatly-arranged-bookshelf-in-the-library-picture_500210603.jpg"></div>
             </div>
         </div>
-      
+
     </div>
 </div>
 <!-- about section end -->
@@ -150,39 +167,49 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="about_taital">What syas customers</h1>
+                <h1 class="about_taital">Giới thiêu thành viên nhóm</h1>
                 <div class="bulit_icon"><img src="~/images/bulit-icon.png"></div>
             </div>
         </div>
         <div class="client_section_2">
             <div class="client_taital_main">
                 <div class="client_left">
-                    <div class="client_img"><img src="~/images/client-img1.png"></div>
+                    <div class="client_img"><img src="https://scontent.fdad8-2.fna.fbcdn.net/v/t39.30808-1/432980034_1581859822577238_7556476514551851188_n.jpg?stp=dst-jpg_s160x160_tt6&_nc_cat=104&ccb=1-7&_nc_sid=0ecb9b&_nc_ohc=_fwFM2i0W4EQ7kNvgEvq2hX&_nc_zt=24&_nc_ht=scontent.fdad8-2.fna&_nc_gid=A6LVxnaq0mLYgWhca0IZeG3&oh=00_AYC_zQNAX19_CO6n80EdgD4cktvPg3osNet7A0MLpfuu3Q&oe=675E023C"></div>
                 </div>
                 <div class="client_right">
-                    <h3 class="moark_text">Joy Moark</h3>
-                    <p class="client_text">now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancynow use Lorem Ipsum as their default model text, </p>
+                    <h3 class="moark_text">Trần Công Hiếu</h3>
+                    <p class="client_text">Tôi là Trần Công Hiếu, một người đam mê công nghệ và sáng tạo. Rất vui được đồng hành cùng bạn!</p>
                 </div>
             </div>
             <div class="client_taital_main">
                 <div class="client_left">
-                    <div class="client_img"><img src="~/images/client-img2.png"></div>
+                    <div class="client_img"><img src="~/images/thanhhieu.jpg"></div>
                 </div>
                 <div class="client_right">
-                    <h3 class="moark_text">Mihacal</h3>
-                    <p class="client_text">now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancynow use Lorem Ipsum as their default model text, </p>
+                    <h3 class="moark_text">Nguyễn Thanh Hiếu</h3>
+                    <p class="client_text">Xin chào, tôi là Nguyễn Thanh Hiếu, một người yêu thích thiết kế và luôn tìm kiếm sự hoàn hảo.</p>
                 </div>
             </div>
             <div class="client_taital_main">
                 <div class="client_left">
-                    <div class="client_img"><img src="~/images/client-img3.png"></div>
+                    <div class="client_img"><img src="~/images/nguyentuan.png"></div>
                 </div>
                 <div class="client_right">
-                    <h3 class="moark_text">Uliya den</h3>
-                    <p class="client_text">now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancynow use Lorem Ipsum as their default model text, </p>
+                    <h3 class="moark_text">Nguyễn Ngọc Tuấn</h3>
+                    <p class="client_text">Nguyễn Ngọc Tuấn, một người trẻ đầy nhiệt huyết và khát khao mang đến những giá trị tốt đẹp nhất.</p>
+                </div>
+            </div>
+            <div class="client_taital_main">
+                <div class="client_left">
+                    <div class="client_img"><img src="https://scontent.fdad8-2.fna.fbcdn.net/v/t39.30808-6/434660998_950705533123582_8167939968196413712_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=HFAHDTKJR-8Q7kNvgEUYvrF&_nc_zt=23&_nc_ht=scontent.fdad8-2.fna&_nc_gid=AWiptuytB4ePP_O4epNWYsU&oh=00_AYBZEuCwob4WjQCfAOHZyjkPsLf4ruU_IpBDNx4StTCZyQ&oe=675E05B7"></div>
+                </div>
+                <div class="client_right">
+                    <h3 class="moark_text">Trần Văn Bình</h3>
+                    <p class="client_text">Tôi là Trần Văn Bình, một người tận tâm và không ngừng học hỏi để hoàn thiện bản thân mỗi ngày.</p>
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 <!-- client section end -->
@@ -191,7 +218,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h1 class="about_taital">Our Blog</h1>
+                <h1 class="about_taital">Bài viết liên quan</h1>
                 <div class="bulit_icon"><img src="~/images/bulit-icon.png"></div>
             </div>
         </div>
@@ -199,23 +226,24 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="blog_box">
-                        <div class="blog_img"><img src="~/images/blog-img1.png"></div>
-                        <h4 class="date_text">05 April</h4>
-                        <h4 class="prep_text">PREP TECHNIQUES Coffee</h4>
-                        <p class="lorem_text">distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a moredistracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more</p>
+                        <div class="blog_img" ><img src="https://cdn.pixabay.com/photo/2014/10/14/20/14/library-488690_640.jpg"></div>
+                        <h4 class="date_text">10 December</h4>
+                        <h4 class="prep_text">Library Management Tips</h4>
+                        <p class="lorem_text">Khám phá cách tổ chức và quản lý thư viện hiệu quả để giúp người dùng dễ dàng tìm kiếm và tiếp cận tài liệu.</p>
                     </div>
                     <div class="read_bt"><a href="#">Read More</a></div>
                 </div>
                 <div class="col-md-6">
                     <div class="blog_box">
-                        <div class="blog_img"><img src="~/images/blog-img2.png"></div>
-                        <h4 class="date_text">05 April</h4>
-                        <h4 class="prep_text">PREP TECHNIQUES Coffee</h4>
-                        <p class="lorem_text">distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a moredistracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more</p>
+                        <div class="blog_img"><img src="https://img.lovepik.com/photo/20211122/medium/lovepik-national-library-picture_500661719.jpg"></div>
+                        <h4 class="date_text">10 December</h4>
+                        <h4 class="prep_text">Modern Digital Libraries</h4>
+                        <p class="lorem_text">Thư viện số đang thay đổi cách chúng ta đọc sách, nghiên cứu và học tập với tài nguyên phong phú và dễ tiếp cận.</p>
                     </div>
                     <div class="read_bt"><a href="#">Read More</a></div>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
@@ -225,7 +253,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <h1 class="contact_taital">Get In Touch</h1>
+                <h1 class="contact_taital">Phản hồi ý kiến</h1>
                 <div class="bulit_icon"><img src="~/images/bulit-icon.png"></div>
             </div>
         </div>

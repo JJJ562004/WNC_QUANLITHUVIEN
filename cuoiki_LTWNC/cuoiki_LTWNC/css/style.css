@@ -38,7 +38,7 @@ body {
 /* Book Details Container */
 .book-details {
     width: 80%;
-    margin: 150px auto 100px auto;
+    margin: 0px auto 100px auto;
     padding: 20px 20px 100px 20px;
     background-color: #fff;
     border-radius: 8px;
@@ -311,16 +311,18 @@ button {
 .header_section {
     width: 100%;
     float: left;
-    background-image: url(../images/banner-bg.png);
+    background-image: url("https://cdn-media.sforum.vn/storage/app/media/thanhhuyen/h%C3%ACnh%20n%E1%BB%81n%20m%C3%A0u%20n%C3%A2u/2.4/hinh-nen-mau-nau-80.jpg");
     height: auto;
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
 .header_bg {
+    
     width: 100%;
+    
     float: left;
-    background-image: url(../images/header-bg.png);
+    background-image: url("https://cdn-media.sforum.vn/storage/app/media/thanhhuyen/h%C3%ACnh%20n%E1%BB%81n%20m%C3%A0u%20n%C3%A2u/2.4/hinh-nen-mau-nau-80.jpg");
     height: auto;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -556,6 +558,7 @@ button {
 }
 
 .bulit_icon {
+    margin-top:100px;
     width: 100%;
     text-align: center;
 }
@@ -658,6 +661,7 @@ button {
 }
 
 .about_taital {
+    margin-top:35px;
     width: 100%;
     float: left;
     font-size: 40px;
@@ -736,7 +740,7 @@ button {
 .client_section {
     width: 100%;
     float: left;
-    background-image: url(../images/client-bg.png);
+    background-image: url("https://mega.com.vn/media/news/2707_background-hoc-tap-full-hd5.jpg");
     height: auto;
     background-size: 100% 100%;
     padding-bottom: 50px;
@@ -956,7 +960,7 @@ textarea#comment.massage-bt::placeholder {
     width: 100%;
     float: left;
     height: auto;
-    background-image: url(../images/footer-bg.png);
+    background-image: url("https://www.shutterstock.com/shutterstock/videos/20376343/thumb/1.jpg?ip=x480");
     background-size: 100% 100%;
     padding: 90px 0px 0px 0px;
 }
