@@ -10,11 +10,11 @@ namespace cuoiki_LTWNC.Controllers
 {
     public class LibraryBookController : Controller
     {
-        private WNC_QUANLYTHUVIEN_REALEntities _context = new WNC_QUANLYTHUVIEN_REALEntities();
+        private WNC_QUANLYTHUVIEN_REALEntities1 _context = new WNC_QUANLYTHUVIEN_REALEntities1();
 
         public ActionResult Index()
         {
-            using (var context = new cuoiki_LTWNC.Models.WNC_QUANLYTHUVIEN_REALEntities())
+            using (var context = new cuoiki_LTWNC.Models.WNC_QUANLYTHUVIEN_REALEntities1())
             {
 
                 var books = context.Books
@@ -34,7 +34,7 @@ namespace cuoiki_LTWNC.Controllers
 
         public ActionResult Details(int? id)
         {
-            using (var context = new WNC_QUANLYTHUVIEN_REALEntities())
+            using (var context = new WNC_QUANLYTHUVIEN_REALEntities1())
             {
                 var book = context.Books
                     .Where(b => b.BookID == id)
