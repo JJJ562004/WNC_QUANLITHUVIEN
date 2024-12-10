@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.Mvc;
 using cuoiki_LTWNC.Models;
 using System.Data.SqlClient;
+using System.Web.UI.WebControls;
+using System.Diagnostics;
 namespace cuoiki_LTWNC.Controllers
 {
     public class AccountController : Controller
@@ -84,11 +86,16 @@ namespace cuoiki_LTWNC.Controllers
 
             cmd.Connection = con;
             cmd.CommandText = "select * from Student where StudentID='" + acc.MSV + "' and PhoneNumber='" + acc.Password + "'";
+            Debug.WriteLine($"MSV: {acc.MSV}, Password: {acc.Password}");
+            ViewBag.StudentID = acc.MSV;
             dr = cmd.ExecuteReader();
             if (dr.Read())
             {
+                Session["StudentID"] = dr["StudentID"].ToString();
+                Session["StudentName"] = dr["LastName"].ToString() + " " + dr["FirstName"].ToString();
+                Session["Email"] = dr["Email"].ToString();
                 con.Close();
-                return Redirect("~/LibraryBook/index");
+                return Redirect("~/LibraryBook/Index");
             }
             else
             {

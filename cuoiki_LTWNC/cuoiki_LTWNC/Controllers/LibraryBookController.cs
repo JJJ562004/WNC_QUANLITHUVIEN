@@ -5,12 +5,21 @@ using System.Web;
 using System.Web.Mvc;
 using PagedList;
 using System.Web.UI;
+using System;
+using System.Web.UI.WebControls;
+using System.Diagnostics;
+using System.Data.SqlClient;
+using System.Drawing;
 
 namespace cuoiki_LTWNC.Controllers
 {
+
     public class LibraryBookController : Controller
     {
         private WNC_QUANLYTHUVIEN_REALEntities _context = new WNC_QUANLYTHUVIEN_REALEntities();
+        SqlConnection con = new SqlConnection();
+        SqlCommand cmd = new SqlCommand();
+        SqlDataReader dr;
 
         public JsonResult GetChartDataStaff()
         {
@@ -64,7 +73,8 @@ namespace cuoiki_LTWNC.Controllers
             return Json(data, JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult Borrow_Book(int? id)
+        [HttpGet]
+        public ActionResult Borrow_Book(int id)
         {
             using (var context = new WNC_QUANLYTHUVIEN_REALEntities())
             {
@@ -91,13 +101,53 @@ namespace cuoiki_LTWNC.Controllers
             }
         }
 
-        public ActionResult DanhSachPhieuMuon(int? studentID)
+        void connectionString()
         {
+            con.ConnectionString = "Data Source=ADMIN-PC;Initial Catalog=WNC_QUANLYTHUVIEN_REAL;Integrated Security=True;Encrypt=False";
+        }
+
+        [HttpPost]
+        public ActionResult BorrowBook(int studentID, int bookID, DateTime borrowDate, DateTime returnDate)
+        {
+            connectionString();
+            try
+            {
+                con.Open();
+
+                string query = "INSERT INTO Borrowing_Record (StudentID, BookID, BorrowDate, DueDate) " +
+                               "VALUES (@StudentID, @BookID, @BorrowDate, @ReturnDate)";
+
+                SqlCommand cmd = new SqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@StudentID", studentID);
+                cmd.Parameters.AddWithValue("@BookID", bookID);
+                cmd.Parameters.AddWithValue("@BorrowDate", borrowDate);
+                cmd.Parameters.AddWithValue("@ReturnDate", returnDate);
+
+                cmd.ExecuteNonQuery();
+
+                TempData["SuccessMessage"] = "Borrowing record created successfully!";
+                return RedirectToAction("DanhSachPhieuMuon", new { studentID = studentID });
+            }
+            catch (Exception ex)
+            {
+                TempData["ErrorMessage"] = "An error occurred: " + ex.Message;
+                return RedirectToAction("Error");
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public ActionResult DanhSachPhieuMuon(string studentID)
+        {
+            int new_id = 0;
+            new_id = Int32.Parse(studentID);
             using (var context = new cuoiki_LTWNC.Models.WNC_QUANLYTHUVIEN_REALEntities())
             {
 
                 var borrow_records = context.Borrowing_Record
-             .OrderBy(b => b.DueDate) // Sorting by DueDate
+             .OrderByDescending(b => b.DueDate) // Sorting by DueDate
              .Join(
                  context.Books, // Join with the Book table
                  b => b.BookID, // Foreign key in Borrowing_Record
@@ -110,7 +160,7 @@ namespace cuoiki_LTWNC.Controllers
                      BorrowDay = b.BorrowDate,
                      DueDate = b.DueDate,
                      ReturnDate = b.ReturnDate // Keep DateTime? as is for now
-                 }).Where(b => b.StudentId == studentID)
+                 }).Where(b => b.StudentId == new_id)
                     .ToList();
                 // After retrieving data, format the dates
                 foreach (var record in borrow_records)

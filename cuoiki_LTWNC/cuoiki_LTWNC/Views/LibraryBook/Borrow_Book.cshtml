@@ -1,9 +1,13 @@
 ﻿@{
-    ViewBag.Title = "View";
-}
-@{
     ViewBag.Title = "Borrow_Book";
     Layout = "~/Views/Shared/_Layout.cshtml";
+    var studentID = Session["StudentID"];
+    var studentName = Session["StudentName"];
+    var email = Session["Email"];
+
+    // Calculate today's date and one month from today
+    var borrowDate = DateTime.Today.AddDays(2);
+    var returnDate = borrowDate.AddMonths(2);
 }
 @model cuoiki_LTWNC.Models.BookViewModel
 
@@ -18,6 +22,7 @@
     <div class="book-info">
         <h3>@Model.Title</h3>
         <p><strong>Tên tác giả:</strong></p>
+        <p><strong>Mô tả:</strong> @Model.Description</p>
         <ol>
             @foreach (var author in Model.AuthorName)
             {
@@ -25,29 +30,66 @@
             }
         </ol>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="col-6">
-                    Mã sinh viên: ...
+</div>
+<div class="book-details">
+    <div class="col-md-12">
+        <div class="container">
+            <div class="row">
+                <h3>Thông tin người mượn</h3>
+                <div class="col-12">
+                    <p><strong>Mã sinh viên:</strong> @studentID</p>
                 </div>
-                <div class="col-6">
-                    Tên sinh viên: ...
+                <div class="col-12">
+                    <p><strong>Tên sinh viên:</strong> @studentName </p>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-6 justify-content-center align-items-center">
-                <a href="@Url.Action("Details", "LibraryBook", new { id = @Model.BookID })" class="btn btn-primary">Quay lại</a>
-            </div>
-            <div class="col-6 justify-content-center align-items-center">
-                <!-- Bug here, not @Model.BookID, must be StudentID -->
-                <a href="@Url.Action("DanhSachPhieuMuon", "LibraryBook", new { id = @Model.BookID })" class="btn btn-success">Đăng kí mượn</a>
+                <div class="col-12">
+                    <p><strong>Email:</strong> @email </p>
+                </div>
+                <div>
+                    <h5>Ngày mượn sách:</h5>
+                    <p>@borrowDate</p>
+                    <h5>Ngày trả sách:</h5>
+                    <p>@returnDate</p>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<div class="container">
+    <div class="row">
+        <div class="col-6 text-center">
+            <a href="@Url.Action("Details", "LibraryBook", new { id = @Model.BookID })" class="btn btn-primary">Quay lại</a>
+        </div>
+        <div class="col-6 text-center">
+            <a href="@Url.Action("DanhSachPhieuMuon", "LibraryBook", new { studentID = studentID })" onclick="borrowBook()" class="btn btn-success">Đăng kí mượn</a>
+        </div>
+    </div>
+</div>
 
+<script>
+    async function borrowBook() {
+        const studentID = '@studentID';
+        const bookID = '@Model.BookID';
+        const borrowDate = '@borrowDate.ToString("yyyy-MM-dd")';
+        const returnDate = '@returnDate.ToString("yyyy-MM-dd")';
+
+        fetch('@Url.Action("BorrowBook", "LibraryBook")', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ studentID, bookID, borrowDate, returnDate })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert('Borrowing record created successfully!');
+                window.location.href = '@Url.Action("DanhSachPhieuMuon", "LibraryBook", new { studentID = studentID })';
+            } else {
+                alert('Failed to create borrowing record.');
+            }
+        })
+        .catch(error => console.error('Error:', error));
+    }
+</script>
 
