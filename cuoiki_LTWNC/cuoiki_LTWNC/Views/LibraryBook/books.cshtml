@@ -1,0 +1,133 @@
+﻿@model PagedList.IPagedList<cuoiki_LTWNC.Models.Book>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Quản lí sách";
+}
+@section Banner{}
+<div class="container">
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="~/images/blog-img2.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">@(ViewBag.Staff != null ? "Cập nhật nhân viên" : "Quản lí nhân viên")</h1>
+                <p class="lead">@(ViewBag.Staff != null ? "Bạn đang ở trang cập nhật nhân viên" : "Bạn đang ở trang thêm nhân viên")</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data Table -->
+    @if (Model != null && Model.Any())
+    {
+        <table class="table mt-4">
+            <thead>
+                <tr>
+                    <th>Tiêu đề</th>
+                    <th>Thể loại</th>
+                    <th>Nhà xuất bản</th>
+                    <th>Năm sản xuất</th>
+                    <th>Số lượng</th>
+                    <th>Mô tả</th>
+                    <th>Ảnh</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var book in Model)
+                {
+                    <tr>
+                        <td>@book.Title</td>
+                        <td>@book.Category.CategoryName</td>
+                        <td>@book.Publisher.PublisherName</td>
+                        <td>@book.PublishedYear</td>
+                        <td>@book.Quantity</td>
+                        <td>@book.Description</td>
+                        <td><img src="@book.ImageURL" alt="Book Image" width="50" /></td>
+                        <td>
+                            <!-- Edit Button -->
+                            <form action="@Url.Action("books", "LibraryBook")" method="get" style="display:inline;">
+                                <input type="hidden" name="bookId" value="@book.BookID" />
+                                <button type="submit" class="btn btn-warning">Sửa</button>
+                            </form>
+                            <!-- Delete Button -->
+                            <form action="@Url.Action("ManageBook", "LibraryBook")" method="post" style="display:inline;">
+                                <input type="hidden" name="bookId" value="@book.BookID" />
+                                <input type="hidden" name="action" value="Delete" />
+                                <button type="submit" class="btn btn-danger">Xóa</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <!-- Add paging controls -->
+        <div class="text-center">
+            @Html.PagedListPager(Model, page => Url.Action("books", new { page }))
+        </div>
+    }
+    else
+    {
+        <p>Chưa có sách</p>
+    }
+
+    <!-- Start form -->
+    <form action="@Url.Action("ManageBook", "LibraryBook")" method="post" enctype="multipart/form-data">
+        @if (ViewBag.Book != null)
+        {
+            <input type="hidden" name="BookID" value="@ViewBag.Book.BookID" />
+            <input type="hidden" name="action" value="Update" />
+        }
+        else
+        {
+            <input type="hidden" name="action" value="Create" />
+        }
+
+        <div class="mb-3">
+            <label for="Title">Tiêu đề</label>
+            <input type="text" name="Title" class="form-control" required />
+        </div>
+        <div class="mb-3">
+            <label for="CategoryID">Thể loại</label>
+            <select name="CategoryID" class="form-control">
+                @foreach (var category in ViewBag.Categories)
+                {
+                    <option value="@category.Value" @(category.Value == ViewBag.Book?.CategoryID.ToString() ? "selected" : "")>@category.Text</option>
+                }
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="PublisherID">Nhà xuất bản</label>
+            <select name="PublisherID" class="form-control">
+                @foreach (var publisher in ViewBag.Publishers)
+                {
+                    <option value="@publisher.Value" @(publisher.Value == ViewBag.Book?.PublisherID.ToString() ? "selected" : "")>@publisher.Text</option>
+                }
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="PublishedYear">Năm sản xuất</label>
+            <input type="number" name="PublishedYear" class="form-control" placeholder="Nhập một số" required />
+        </div>
+        <div class="mb-3">
+            <label for="Quantity">Số lượng</label>
+            <input type="number" name="Quantity" class="form-control" placeholder="Nhập một số" required />
+        </div>
+        <div class="mb-3">
+            <label for="Description">Mô tả</label>
+            <textarea name="Description" class="form-control" placeholder="Mô tả ảnh"></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="ImageURL">URL ảnh</label>
+            <input type="file" name="ImageURL" class="form-control" placeholder="Chọn ảnh" formenctype="" />
+        </div>
+        <div class="text-end">
+            <button type="submit" class="btn btn-primary">@(ViewBag.Book != null ? "Cập nhật" : "Thêm")</button>
+            @if (ViewBag.Book != null)
+            {
+                <a href="@Url.Action("books", "LibraryBook")" class="btn btn-secondary">Hủy</a>
+            }
+        </div>
+    </form>
+    <!-- End form -->
+</div>

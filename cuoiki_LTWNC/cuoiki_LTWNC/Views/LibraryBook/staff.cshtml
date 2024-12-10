@@ -1,0 +1,110 @@
+﻿@model PagedList.IPagedList<cuoiki_LTWNC.Models.Staff>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Quản lí nhân viên";
+}
+@section Banner{}
+<div class="container">
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="~/images/blog-img2.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">@(ViewBag.Staff != null ? "Cập nhật nhân viên" : "Quản lí nhân viên")</h1>
+                <p class="lead">@(ViewBag.Staff != null ? "Bạn đang ở trang cập nhật nhân viên" : "Bạn đang ở trang thêm nhân viên")</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data Table -->
+    @if (Model != null && Model.Any())
+    {
+        <table class="table mt-4">
+            <thead>
+                <tr>
+                    <th>Họ</th>
+                    <th>Tên</th>
+                    <th>Email</th>
+                    <th>Số điện thoại</th>
+                    <th>Vai trò</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var stf in Model)
+                {
+                    <tr>
+                        <td>@stf.LastName</td>
+                        <td>@stf.FirstName</td>
+                        <td>@stf.Email</td>
+                        <td>@stf.PhoneNumber</td>
+                        <td>@stf.Role</td>
+                        <td>
+                            <!-- Edit Button -->
+                            <form action="@Url.Action("staff", "LibraryBook")" method="get" style="display:inline;">
+                                <input type="hidden" name="staffId" value="@stf.StaffID" />
+                                <button type="submit" class="btn btn-warning">Sửa</button>
+                            </form>
+                            <!-- Delete Button -->
+                            <form action="@Url.Action("ManageStaff", "LibraryBook")" method="post" style="display:inline;">
+                                <input type="hidden" name="staffId" value="@stf.StaffID" />
+                                <input type="hidden" name="action" value="Delete" />
+                                <button type="submit" class="btn btn-danger">Xóa</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <!-- Add paging controls -->
+        <div class="text-center">
+            @Html.PagedListPager(Model, page => Url.Action("staff", new { page }))
+        </div>
+    }
+    else
+    {
+        <p>Hiện tại chưa có nhân viên</p>
+    }
+
+    <form action="@Url.Action("ManageStaff", "LibraryBook")" method="post" enctype="multipart/form-data">
+        @if (ViewBag.Staff != null)
+        {
+            <input type="hidden" name="StaffID" value="@ViewBag.Staff.StaffID" />
+            <input type="hidden" name="action" value="Update" />
+        }
+        else
+        {
+            <input type="hidden" name="action" value="Create" />
+        }
+
+        <div class="mb-3">
+            <label for="LastName">Họ</label>
+            <input type="text" name="LastName" class="form-control" required />
+        </div>
+        <div class="mb-3">
+            <label for="FirstName">Tên</label>
+            <input type="text" name="FirstName" class="form-control" required />
+        </div>
+        <div class="mb-3">
+            <label for="Email">Email</label>
+            <input type="email" name="Email" class="form-control" placeholder="example@gmail.com" required />
+        </div>
+        <div class="mb-3">
+            <label for="PhoneNumber">Số điện thoại</label>
+            <input type="tel" name="PhoneNumber" class="form-control" placeholder="Bao gồm đủ 11 số" required />
+        </div>
+        <div class="mb-3">
+            <label for="Role">Vai trò</label>
+            <input type="text" name="Role" class="form-control" placeholder="Quản trị viên, nhân viên kiểm tra sách,..." required />
+        </div>
+        <div class="text-end">
+            <button type="submit" class="btn btn-primary">@(ViewBag.Staff != null ? "Cập nhật" : "Thêm")</button>
+            @if (ViewBag.Book != null)
+            {
+                <a href="@Url.Action("staff", "LibraryBook")" class="btn btn-secondary">Hủy</a>
+            }
+        </div>
+    </form>
+</div>

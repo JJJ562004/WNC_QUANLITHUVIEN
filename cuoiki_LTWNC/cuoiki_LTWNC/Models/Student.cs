@@ -12,6 +12,7 @@ namespace cuoiki_LTWNC.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Student()
         {
+
            
         }
 
@@ -38,6 +39,12 @@ namespace cuoiki_LTWNC.Models
         [Column(TypeName = "date")]
         public DateTime EnrollmentDate { get; set; }
 
-       
+   
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Borrowing_Record> Borrowing_Record { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Notification> Notifications { get; set; }
+
     }
 }

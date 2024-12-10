@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Đăng ký</h2>
+<h2>Đăng ký tài khoản</h2>
 
 
 @using (Html.BeginForm()) 
@@ -13,7 +13,6 @@
     @Html.AntiForgeryToken()
     
 <div class="form-horizontal">
-    <h4>Account</h4>
     <hr />
     @Html.ValidationSummary(true, "", new { @class = "text-danger" })
     <div class="form-group">
@@ -79,7 +78,7 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Back to List", "Index", "LibraryBook")
 </div>
 
 @section Scripts {

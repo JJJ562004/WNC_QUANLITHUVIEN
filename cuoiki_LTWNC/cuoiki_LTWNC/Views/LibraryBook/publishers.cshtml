@@ -1,0 +1,91 @@
+﻿@model PagedList.IPagedList<cuoiki_LTWNC.Models.Publisher>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Quản lí nhà xuất bản";
+}
+@section Banner{}
+<div class="container">
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="~/images/blog-img2.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">@(ViewBag.Publisher != null ? "Cập nhật nhà sản xuất" : "Quản lí nhà sản xuất")</h1>
+                <p class="lead">@(ViewBag.Publisher != null ? "Bạn đang ở trang cập nhật nhà sản xuất" : "Bạn đang ở trang thêm nhà sản xuất")</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Data Table -->
+    @if (Model != null && Model.Any())
+    {
+        <table class="table mt-4">
+            <thead>
+                <tr>
+                    <th>Tên nhà sản xuất</th>
+                    <th>Địa chỉ nhà sản xuất</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var publisher in Model)
+                {
+                    <tr>
+                        <td>@publisher.PublisherName</td>
+                        <td>@publisher.PublisherAddress</td>
+                        <td>
+                            <!-- Edit Button -->
+                            <form action="@Url.Action("publishers", "LibraryBook")" method="get" style="display:inline;">
+                                <input type="hidden" name="publisherId" value="@publisher.PublisherID" />
+                                <button type="submit" class="btn btn-warning">Sửa</button>
+                            </form>
+                            <!-- Delete Button -->
+                            <form action="@Url.Action("ManagePublisher", "LibraryBook")" method="post" style="display:inline;">
+                                <input type="hidden" name="publisherId" value="@publisher.PublisherID" />
+                                <input type="hidden" name="action" value="Delete" />
+                                <button type="submit" class="btn btn-danger">Xóa</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <!-- Add paging controls -->
+        <div class="text-center">
+            @Html.PagedListPager(Model, page => Url.Action("publishers", new { page }))
+        </div>
+    }
+    else
+    {
+        <p>Hiện tại chưa có nhà sản xuất</p>
+    }
+
+    <form action="@Url.Action("ManagePublisher", "LibraryBook")" method="post" enctype="multipart/form-data">
+        @if (ViewBag.Publisher != null)
+        {
+            <input type="hidden" name="PublisherID" value="@ViewBag.Publisher.PublisherID" />
+            <input type="hidden" name="action" value="Update" />
+        }
+        else
+        {
+            <input type="hidden" name="action" value="Create" />
+        }
+
+        <div class="mb-3">
+            <label for="PublisherName">Tên nhà sản xuất</label>
+            <input type="text" name="PublisherName" class="form-control" required />
+        </div>
+        <div class="mb-3">
+            <label for="PublisherAddress">Địa chỉ nhà sản xuất</label>
+            <input type="text" name="PublisherAddress" class="form-control" required />
+        </div>
+        <div class="text-end">
+            <button type="submit" class="btn btn-primary">@(ViewBag.Publisher != null ? "Cập nhật" : "Thêm")</button>
+            @if (ViewBag.Publisher != null)
+            {
+                <a href="@Url.Action("publishers", "LibraryBook")" class="btn btn-secondary">Hủy</a>
+            }
+        </div>
+    </form>
+</div>

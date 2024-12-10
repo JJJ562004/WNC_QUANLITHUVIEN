@@ -3,9 +3,9 @@
     "",
     "\\cuoiki_LTWNC",
     "\\cuoiki_LTWNC\\cuoiki_LTWNC",
-    "\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views",
-    "\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\LibraryBook"
+    "\\cuoiki_LTWNC\\cuoiki_LTWNC\\Controllers",
+    "\\cuoiki_LTWNC\\cuoiki_LTWNC\\Models"
   ],
-  "SelectedNode": "\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\LibraryBook\\index.html",
+  "SelectedNode": "\\cuoiki_LTWNC\\cuoiki_LTWNC\\Models\\Book.cs",
   "PreviewInSolutionExplorer": false
 }
