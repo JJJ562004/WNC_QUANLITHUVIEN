@@ -2,6 +2,8 @@
 @{
     ViewBag.Title = "Details";
     Layout = "~/Views/Shared/User_Layout.cshtml";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var studentID = Session["StudentID"];
 }
 @section Banner{}
 <div class="book-details">
@@ -25,14 +27,14 @@
             }
         </ol>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-6 justify-content-center align-items-center">
-        <a href="@Url.Action("Index", "LibraryBook")" class="btn btn-primary">Quay lại</a>
-    </div>
-            <div class="col-6 justify-content-center align-items-center">
-                <a href="@Url.Action("Borrow_Book", "LibraryBook", new { id = @Model.BookID })" class="btn btn-success">Đăng kí mượn</a>
-            </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-6 justify-content-center align-items-center">
+            <a href="@Url.Action("Index", "LibraryBook")" class="btn btn-primary">Quay lại</a>
+        </div>
+        <div class="col-6 justify-content-center align-items-center">
+            <a href="@Url.Action("Borrow_Book", "LibraryBook", new { id = @Model.BookID })" class="btn btn-success">Đăng kí mượn</a>
         </div>
     </div>
 </div>

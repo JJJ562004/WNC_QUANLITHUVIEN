@@ -6,6 +6,8 @@ using System.Web.Mvc;
 using cuoiki_LTWNC.Models;
 using System.Data.SqlClient;
 using System.Web.UI.WebControls;
+using System.Diagnostics;
+using System.Web.UI.WebControls;
 namespace cuoiki_LTWNC.Controllers
 {
     public class AccountController : Controller
@@ -43,6 +45,7 @@ namespace cuoiki_LTWNC.Controllers
         }
         void connectionString()
         {
+            con.ConnectionString = "Data Source=DESKTOP-7FI0AQQ;Initial Catalog=WNC_QUANLYTHUVIEN_REAL;Integrated Security=True;Encrypt=False";
             con.ConnectionString = "Data Source=DESKTOP-IA0NH5J;Initial Catalog=WNC_QUANLYTHIVIEN_REAL;Integrated Security=True;Encrypt=False";
         }
         [HttpPost]
@@ -94,10 +97,16 @@ namespace cuoiki_LTWNC.Controllers
             con.Open();
 
             cmd.Connection = con;
+            cmd.CommandText = "select * from Student where StudentID='" + acc.MSV + "' and PhoneNumber='" + acc.Password + "'";
+            Debug.WriteLine($"MSV: {acc.MSV}, Password: {acc.Password}");
+            ViewBag.StudentID = acc.MSV;
             cmd.CommandText = "select * from Student where StudentID='" + msv.ToString() + "' and PhoneNumber='" + pass + "'";
             dr = cmd.ExecuteReader();
             if (dr.Read())
             {
+                Session["StudentID"] = dr["StudentID"].ToString();
+                Session["StudentName"] = dr["LastName"].ToString() + " " + dr["FirstName"].ToString();
+                Session["Email"] = dr["Email"].ToString();
                 con.Close();
                 return Redirect("~/LibraryBook/Index");
             }
