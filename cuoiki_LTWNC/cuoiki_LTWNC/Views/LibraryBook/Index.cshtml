@@ -1,4 +1,6 @@
-﻿@{
+﻿
+@{
+    
     ViewBag.Title = "";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
@@ -6,6 +8,20 @@
     <!-- banner section start -->
     <div class="banner_section layout_padding">
         <div class="container">
+            <div class="category_section">
+                    <!-- Tiêu đề Danh mục với liên kết -->
+                    <a href="@Url.Action("Index", "LibraryBook")" class="category_title">Danh mục</a>
+
+                    <!-- Danh sách danh mục -->
+                    <div class="category_list">
+                        @foreach (var category in Model.Categories)
+                        {
+                            <a href="@Url.Action("Index", "LibraryBook", new { categoryId = category.CategoryID })" class="category_link">
+                                @category.CategoryName
+                            </a>
+                        }
+                    </div>
+                </div>
             <div id="banner_slider" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">

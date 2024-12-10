@@ -12,23 +12,44 @@ namespace cuoiki_LTWNC.Controllers
     {
         private WNC_QUANLYTHUVIEN_REALEntities1 _context = new WNC_QUANLYTHUVIEN_REALEntities1();
 
-        public ActionResult Index()
+        public ActionResult Index(int? categoryId)
         {
             using (var context = new cuoiki_LTWNC.Models.WNC_QUANLYTHUVIEN_REALEntities1())
             {
+                var categories = context.Categories
+                    .Select(c => new CategoryViewModel
+                    {
+                        CategoryID = c.CategoryID,
+                        CategoryName = c.CategoryName
+                    })
+                    .ToList();
 
-                var books = context.Books
-                    .OrderBy(b => b.BookID) // Sắp xếp nếu cần thiết (theo BookID)
+                var booksQuery = context.Books.AsQueryable();
+
+                if (categoryId.HasValue)
+                {
+                    booksQuery = booksQuery.Where(b => b.CategoryID == categoryId);
+                }
+
+                var books = booksQuery
+                    .OrderBy(b => b.BookID)
                     .Select(b => new BookViewModel
                     {
                         BookID = b.BookID,
                         Title = b.Title,
-                        Quantity = b.Quantity ?? 0, // Xử lý null cho Quantity
-                        Image = b.ImageURL // Sinh ảnh từ imageurl
+                        Quantity = b.Quantity ?? 0,
+                        Image = b.ImageURL,
+                        CategoryID = b.CategoryID
                     })
                     .ToList();
 
-                return View(books);
+                var viewModel = new LibraryIndexViewModel
+                {
+                    Categories = categories,
+                    Books = books
+                };
+
+                return View(viewModel);
             }
         }
 

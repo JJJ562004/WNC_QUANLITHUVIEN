@@ -17,4 +17,14 @@ namespace cuoiki_LTWNC.Models
     AuthorName
         { get; set; } // Danh sách tên tác giả
     }
+    public class CategoryViewModel
+    {
+        public int CategoryID { get; set; }
+        public string CategoryName { get; set; }
+    }
+    public class LibraryIndexViewModel
+    {
+        public List<CategoryViewModel> Categories { get; set; }
+        public List<BookViewModel> Books { get; set; }
+    }
 }
