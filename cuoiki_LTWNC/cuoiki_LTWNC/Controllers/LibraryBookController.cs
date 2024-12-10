@@ -21,37 +21,44 @@ namespace cuoiki_LTWNC.Controllers
         SqlCommand cmd = new SqlCommand();
         SqlDataReader dr;
 
-        public JsonResult GetChartDataStaff()
+        public ActionResult Index(int? categoryId)
         {
-            var data = _context.Staffs
-                 .GroupBy(s => s.Role)
-                .Select(r => new
-                {
-                    Role = r.Key,
-                    StaffCount = r.Count()
-                })
-                .ToList();
-
-            return Json(data, JsonRequestBehavior.AllowGet);
-        }
-        public ActionResult Index()
-        {
-            using (var context = new cuoiki_LTWNC.Models.WNC_QUANLYTHUVIEN_REALEntities())
+            using (var context = new cuoiki_LTWNC.Models.WNC_QUANLYTHUVIEN_REALEntities1())
             {
+                var categories = context.Categories
+                    .Select(c => new CategoryViewModel
+                    {
+                        CategoryID = c.CategoryID,
+                        CategoryName = c.CategoryName
+                    })
+                    .ToList();
 
-                var books = context.Books
-                    .OrderBy(b => b.BookID) // Sắp xếp nếu cần thiết (theo BookID)          
+                var booksQuery = context.Books.AsQueryable();
+
+                if (categoryId.HasValue)
+                {
+                    booksQuery = booksQuery.Where(b => b.CategoryID == categoryId);
+                }
+
+                var books = booksQuery
+                    .OrderBy(b => b.BookID)
                     .Select(b => new BookViewModel
                     {
                         BookID = b.BookID,
                         Title = b.Title,
-                        Quantity = b.Quantity ?? 0, // Xử lý null cho Quantity
+                        Quantity = b.Quantity ?? 0,
                         Image = b.ImageURL,
-                        Description = b.Description // Sinh ảnh từ BookID
+                        CategoryID = b.CategoryID
                     })
                     .ToList();
 
-                return View(books);
+                var viewModel = new LibraryIndexViewModel
+                {
+                    Categories = categories,
+                    Books = books
+                };
+
+                return View(viewModel);
             }
         }
 

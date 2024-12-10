@@ -40,7 +40,7 @@ namespace cuoiki_LTWNC.Controllers
         }
         void connectionString()
         {
-            con.ConnectionString = "Data Source=ADMIN-PC;Initial Catalog=WNC_QUANLYTHUVIEN_REAL;Integrated Security=True;Encrypt=False";
+            con.ConnectionString = "Data Source=DESKTOP-7FI0AQQ;Initial Catalog=WNC_QUANLYTHUVIEN_REAL;Integrated Security=True;Encrypt=False";
         }
         [HttpPost]
         public ActionResult DangKy(Account acc)
