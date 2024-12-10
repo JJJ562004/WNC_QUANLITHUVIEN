@@ -1,6 +1,9 @@
 ﻿@model PagedList.IPagedList<cuoiki_LTWNC.Models.Fine>
 @using PagedList.Mvc;
 @{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
     ViewBag.Title = "Quản lí dữ liệu tiền đền bù";
 }
 @section Banner{}
@@ -25,7 +28,7 @@
                 <tr>
                     <th>Ngày mượn</th>
                     <th>Số tiền</th>
-                    <th>Tình trạng</th>            
+                    <th>Tình trạng</th>
                     <th></th>
                 </tr>
             </thead>
@@ -33,9 +36,9 @@
                 @foreach (var fine in Model)
                 {
                     <tr>
-                        <td>@fine.Borrowing_Record.BorrowDate</td>                        
+                        <td>@fine.Borrowing_Record.BorrowDate</td>
                         <td>@fine.FineAmount</td>
-                        <td>@fine.PaidStatus</td>                       
+                        <td>@fine.PaidStatus</td>
                         <td>
                             <!-- Edit Button -->
                             <form action="@Url.Action("fines", "LibraryBook")" method="get" style="display:inline;">
@@ -82,15 +85,15 @@
                     <option value="@b.Value" @(b.Value == ViewBag.Fine?.BorrowID.ToString() ? "selected" : "")>@b.Text</option>
                 }
             </select>
-        </div>      
+        </div>
         <div class="mb-3">
             <label for="FineAmount">Số tiền</label>
             <input type="number" name="FineAmount" class="form-control" placeholder="Nhập số tiền" required />
         </div>
         <div class="mb-3">
             <label for="PaidStatus">Tình trạng (đã nộp)</label>
-            <input type="checkbox" name="PaidStatus" class="form-check-input" required/>
-        </div>        
+            <input type="checkbox" name="PaidStatus" class="form-check-input" required />
+        </div>
         <div class="text-end">
             <button type="submit" class="btn btn-primary">@(ViewBag.Fine != null ? "Cập nhật" : "Thêm")</button>
             @if (ViewBag.Fine != null)

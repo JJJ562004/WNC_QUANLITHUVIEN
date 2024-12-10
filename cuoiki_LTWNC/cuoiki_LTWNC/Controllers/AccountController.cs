@@ -7,6 +7,7 @@ using cuoiki_LTWNC.Models;
 using System.Data.SqlClient;
 using System.Web.UI.WebControls;
 using System.Diagnostics;
+using System.Web.UI.WebControls;
 namespace cuoiki_LTWNC.Controllers
 {
     public class AccountController : Controller
@@ -26,6 +27,10 @@ namespace cuoiki_LTWNC.Controllers
         {
             return View();
         }
+        public ActionResult staff_Login()
+        {
+            return View();
+        }
         public ActionResult Finish()
         {
             return View();
@@ -41,6 +46,7 @@ namespace cuoiki_LTWNC.Controllers
         void connectionString()
         {
             con.ConnectionString = "Data Source=DESKTOP-7FI0AQQ;Initial Catalog=WNC_QUANLYTHUVIEN_REAL;Integrated Security=True;Encrypt=False";
+            con.ConnectionString = "Data Source=DESKTOP-IA0NH5J;Initial Catalog=WNC_QUANLYTHIVIEN_REAL;Integrated Security=True;Encrypt=False";
         }
         [HttpPost]
         public ActionResult DangKy(Account acc)
@@ -49,12 +55,11 @@ namespace cuoiki_LTWNC.Controllers
             {
                 connectionString();
                 con.Open();
-
                 cmd.Connection = con;
                 cmd.CommandText = @"INSERT INTO Student 
-    (FirstName, LastName, Email, PhoneNumber, StudentAddress, EnrollmentDate) 
-    VALUES 
-    (@FirstName, @LastName, @Email, @PhoneNumber, @StudentAddress, @EnrollmentDate)";
+                (FirstName, LastName, Email, PhoneNumber, StudentAddress, EnrollmentDate) 
+                VALUES 
+                (@FirstName, @LastName, @Email, @PhoneNumber, @StudentAddress, @EnrollmentDate)";
 
                 // Thêm các tham số phù hợp với các cột trong bảng
                 cmd.Parameters.AddWithValue("@FirstName", acc.Ten);
@@ -63,9 +68,7 @@ namespace cuoiki_LTWNC.Controllers
                 cmd.Parameters.AddWithValue("@PhoneNumber", acc.Password);
                 cmd.Parameters.AddWithValue("@StudentAddress", acc.DiaChi);
                 cmd.Parameters.AddWithValue("@EnrollmentDate", DateTime.Now); // Hoặc acc.EnrollmentDate nếu được truyền từ View
-                cmd.Parameters.AddWithValue("@StudentID ", acc.MSV); 
-               
-
+                cmd.Parameters.AddWithValue("@StudentID ", acc.MSV);                
 
                 cmd.ExecuteNonQuery();
                 con.Close();
@@ -78,9 +81,18 @@ namespace cuoiki_LTWNC.Controllers
                 return View("Error");
             }
         }
-
-        public ActionResult Verify(Account acc)
+        public ActionResult SwitchStaff()
         {
+            return Redirect("~/Account/staff_Login");
+        }
+        public ActionResult SwitchStudent()
+        {
+            return Redirect("~/Account/Login");
+        }
+        public ActionResult Verify(cuoiki_LTWNC.Models.Student acc)
+        {
+            int msv = acc.StudentID;
+            string pass = acc.PhoneNumber;
             connectionString();
             con.Open();
 
@@ -88,6 +100,7 @@ namespace cuoiki_LTWNC.Controllers
             cmd.CommandText = "select * from Student where StudentID='" + acc.MSV + "' and PhoneNumber='" + acc.Password + "'";
             Debug.WriteLine($"MSV: {acc.MSV}, Password: {acc.Password}");
             ViewBag.StudentID = acc.MSV;
+            cmd.CommandText = "select * from Student where StudentID='" + msv.ToString() + "' and PhoneNumber='" + pass + "'";
             dr = cmd.ExecuteReader();
             if (dr.Read())
             {
@@ -105,7 +118,28 @@ namespace cuoiki_LTWNC.Controllers
 
         }
 
+        public ActionResult VerifyStaff(cuoiki_LTWNC.Models.Staff acc)
+        {
+            int ms = acc.StaffID;
+            string pass = acc.PhoneNumber;
+            connectionString();
+            con.Open();
 
+            cmd.Connection = con;
+            cmd.CommandText = "select * from Staff where StaffID='" + ms.ToString() + "' and PhoneNumber='" + pass + "'";
+            dr = cmd.ExecuteReader();          
+            if (dr.Read())
+            {
+                con.Close();
+                return Redirect("~/LibraryBook/charts");
+            }
+            else
+            {
+                con.Close();
+                return View("Error");
+            }
+
+        }
 
         //public ActionResult Login()
         //{

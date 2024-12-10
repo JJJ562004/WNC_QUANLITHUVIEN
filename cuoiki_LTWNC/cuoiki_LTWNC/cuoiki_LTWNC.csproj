@@ -199,6 +199,7 @@
     <Compile Include="Models\Staff_Add_Book.cs">
       <DependentUpon>Modelreal.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Staff_Temp.cs" />
     <Compile Include="Models\Student.cs">
       <DependentUpon>Modelreal.tt</DependentUpon>
     </Compile>
@@ -378,6 +379,8 @@
     <Content Include="Views\LibraryBook\Borrow_Book.cshtml" />
     <Content Include="Views\LibraryBook\DanhSachPhieuMuon.cshtml" />
     <Content Include="Views\LibraryBook\Details.cshtml" />
+    <Content Include="Views\Shared\User_Layout.cshtml" />
+    <Content Include="Views\Account\staff_Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -74,3 +74,41 @@ D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuV
 D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_L.71B75303.Up2Date
 D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.dll
 D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.pdb
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\cuoiki_LTWNC.dll.config
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\cuoiki_LTWNC.dll
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\cuoiki_LTWNC.pdb
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Antlr3.Runtime.dll
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.dll
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.SqlServer.dll
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Newtonsoft.Json.dll
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\PagedList.dll
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\PagedList.Mvc.dll
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Helpers.dll
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Mvc.dll
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Optimization.dll
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Razor.dll
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Deployment.dll
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.dll
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Razor.dll
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\WebGrease.dll
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.xml
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.SqlServer.xml
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\PagedList.xml
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\PagedList.Mvc.xml
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Helpers.xml
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Mvc.xml
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Optimization.xml
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Razor.xml
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.xml
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Deployment.xml
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Razor.xml
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Newtonsoft.Json.xml
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Antlr3.Runtime.pdb
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.csproj.AssemblyReference.cache
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.csproj.CoreCompileInputs.cache
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_L.71B75303.Up2Date
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.dll
+C:\Users\darkn\Documents\BaiTapThuan\temp\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.pdb
