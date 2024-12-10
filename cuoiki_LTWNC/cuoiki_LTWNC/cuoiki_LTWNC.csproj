@@ -143,6 +143,8 @@
     <Compile Include="Models\Book.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\BookViewModel.cs" />
+    <Compile Include="Models\BorrowingRecordModel.cs" />
     <Compile Include="Models\Borrowing_Record.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -328,6 +330,9 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\LibraryBook\publishers.cshtml" />
     <Content Include="Views\LibraryBook\fines.cshtml" />
+    <Content Include="Views\LibraryBook\Borrow_Book.cshtml" />
+    <Content Include="Views\LibraryBook\DanhSachPhieuMuon.cshtml" />
+    <Content Include="Views\LibraryBook\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
