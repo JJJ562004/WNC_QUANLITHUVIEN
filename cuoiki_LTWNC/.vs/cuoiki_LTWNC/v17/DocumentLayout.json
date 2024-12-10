@@ -1,38 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\",
+  "WorkspaceRootPath": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLySachThuVien\\Code\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Controllers\\AccountController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cuoiki_LTWNC\\Controllers\\AccountController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7F740D6-492E-4E6D-BFA7-D19719FB80CD}|cuoiki_LTWNC\\cuoiki_LTWNC.csproj|d:\\programming exercises\\nam 124 - sv 3\\ltwnc_csharp\\baocaocuoiki_quanlysachthuvien\\code\\wnc_quanlithuvien\\cuoiki_ltwnc\\cuoiki_ltwnc\\views\\librarybook\\charts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B7F740D6-492E-4E6D-BFA7-D19719FB80CD}|cuoiki_LTWNC\\cuoiki_LTWNC.csproj|solutionrelative:cuoiki_ltwnc\\views\\librarybook\\charts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_ltwnc\\views\\account\\dangky.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cuoiki_ltwnc\\views\\account\\dangky.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B7F740D6-492E-4E6D-BFA7-D19719FB80CD}|cuoiki_LTWNC\\cuoiki_LTWNC.csproj|d:\\programming exercises\\nam 124 - sv 3\\ltwnc_csharp\\baocaocuoiki_quanlysachthuvien\\code\\wnc_quanlithuvien\\cuoiki_ltwnc\\cuoiki_ltwnc\\controllers\\librarybookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F740D6-492E-4E6D-BFA7-D19719FB80CD}|cuoiki_LTWNC\\cuoiki_LTWNC.csproj|solutionrelative:cuoiki_ltwnc\\controllers\\librarybookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_ltwnc\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cuoiki_ltwnc\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_ltwnc\\views\\page_login_vanbinh.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cuoiki_ltwnc\\views\\page_login_vanbinh.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_ltwnc\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cuoiki_ltwnc\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_ltwnc\\views\\librarybook\\charts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cuoiki_ltwnc\\views\\librarybook\\charts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_ltwnc\\controllers\\librarybookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cuoiki_ltwnc\\controllers\\librarybookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_ltwnc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:cuoiki_ltwnc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B7F740D6-492E-4E6D-BFA7-D19719FB80CD}|cuoiki_LTWNC\\cuoiki_LTWNC.csproj|d:\\programming exercises\\nam 124 - sv 3\\ltwnc_csharp\\baocaocuoiki_quanlysachthuvien\\code\\wnc_quanlithuvien\\cuoiki_ltwnc\\cuoiki_ltwnc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B7F740D6-492E-4E6D-BFA7-D19719FB80CD}|cuoiki_LTWNC\\cuoiki_LTWNC.csproj|solutionrelative:cuoiki_ltwnc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -59,99 +39,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "cuoiki_LTWNC\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "cuoiki_LTWNC\\Controllers\\AccountController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAqwCYAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T12:11:51.123Z",
+              "Title": "charts.cshtml",
+              "DocumentMoniker": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLySachThuVien\\Code\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\LibraryBook\\charts.cshtml",
+              "RelativeDocumentMoniker": "cuoiki_LTWNC\\Views\\LibraryBook\\charts.cshtml",
+              "ToolTip": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLySachThuVien\\Code\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\LibraryBook\\charts.cshtml",
+              "RelativeToolTip": "cuoiki_LTWNC\\Views\\LibraryBook\\charts.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAEIAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T10:53:12.742Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DangKy.cshtml",
-              "DocumentMoniker": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\Account\\DangKy.cshtml",
-              "RelativeDocumentMoniker": "cuoiki_LTWNC\\Views\\Account\\DangKy.cshtml",
-              "ToolTip": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\Account\\DangKy.cshtml",
-              "RelativeToolTip": "cuoiki_LTWNC\\Views\\Account\\DangKy.cshtml",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-10T12:11:40.499Z"
+              "Title": "LibraryBookController.cs",
+              "DocumentMoniker": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLySachThuVien\\Code\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Controllers\\LibraryBookController.cs",
+              "RelativeDocumentMoniker": "cuoiki_LTWNC\\Controllers\\LibraryBookController.cs",
+              "ToolTip": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLySachThuVien\\Code\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Controllers\\LibraryBookController.cs",
+              "RelativeToolTip": "cuoiki_LTWNC\\Controllers\\LibraryBookController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T10:52:08.396Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "cuoiki_LTWNC\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "cuoiki_LTWNC\\Views\\_ViewStart.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-10T12:11:20.811Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Page_Login_VanBinh.cshtml",
-              "DocumentMoniker": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\Page_Login_VanBinh.cshtml",
-              "RelativeDocumentMoniker": "cuoiki_LTWNC\\Views\\Page_Login_VanBinh.cshtml",
-              "ToolTip": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\Page_Login_VanBinh.cshtml",
-              "RelativeToolTip": "cuoiki_LTWNC\\Views\\Page_Login_VanBinh.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-10T12:11:07.608Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Web.config",
-              "DocumentMoniker": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Web.config",
-              "RelativeDocumentMoniker": "cuoiki_LTWNC\\Web.config",
-              "ToolTip": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Web.config",
-              "RelativeToolTip": "cuoiki_LTWNC\\Web.config",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAAEgAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-12-10T12:08:06.733Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "charts.cshtml",
-              "DocumentMoniker": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\LibraryBook\\charts.cshtml",
-              "RelativeDocumentMoniker": "cuoiki_LTWNC\\Views\\LibraryBook\\charts.cshtml",
-              "ToolTip": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\LibraryBook\\charts.cshtml",
-              "RelativeToolTip": "cuoiki_LTWNC\\Views\\LibraryBook\\charts.cshtml",
-              "ViewState": "AQIAADYAAAAAAAAAAAAAAEIAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-10T10:53:12.742Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LibraryBookController.cs",
-              "DocumentMoniker": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Controllers\\LibraryBookController.cs",
-              "RelativeDocumentMoniker": "cuoiki_LTWNC\\Controllers\\LibraryBookController.cs",
-              "ToolTip": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Controllers\\LibraryBookController.cs",
-              "RelativeToolTip": "cuoiki_LTWNC\\Controllers\\LibraryBookController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T10:52:08.396Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLySachThuVien\\Code\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "cuoiki_LTWNC\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\darkn\\Documents\\BaiTapThuan\\temp\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Programming Exercises\\Nam 124 - SV 3\\LTWNC_Csharp\\BaoCaoCuoiKi_QuanLySachThuVien\\Code\\WNC_QUANLITHUVIEN\\cuoiki_LTWNC\\cuoiki_LTWNC\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "cuoiki_LTWNC\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAADMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-10T10:48:56.544Z"
+              "WhenOpened": "2024-12-10T10:48:56.544Z",
+              "EditorCaption": ""
             }
           ]
         }

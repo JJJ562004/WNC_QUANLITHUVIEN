@@ -1,5 +1,7 @@
-﻿@{
-    ViewBag.Title = "Quản lí sách";
+﻿@model cuoiki_LTWNC.Models.BookViewModel
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @section Banner{}
 <div class="book-details">
@@ -16,14 +18,25 @@
         <p><strong>Số lượng:</strong> @Model.Quantity</p>
         <p><strong>Mô tả:</strong> @Model.Description</p>
         <p><strong>Tên tác giả:</strong></p>
-        <ul>
+        <ol>
             @foreach (var author in Model.AuthorName)
             {
                 <li>@author</li>
             }
-        </ul>
+        </ol>
     </div>
-    <div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 justify-content-center align-items-center">
         <a href="@Url.Action("Index", "LibraryBook")" class="btn btn-primary">Quay lại</a>
     </div>
+            <div class="col-6 justify-content-center align-items-center">
+                <a href="@Url.Action("Borrow_Book", "LibraryBook", new { id = @Model.BookID })" class="btn btn-success">Đăng kí mượn</a>
+            </div>
+        </div>
+    </div>
 </div>
+
+
+
+

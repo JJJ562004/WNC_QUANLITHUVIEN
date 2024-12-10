@@ -146,6 +146,7 @@
       <DependentUpon>Modelreal.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\BookViewModel.cs" />
+    <Compile Include="Models\BorrowingRecordModel.cs" />
     <Compile Include="Models\Borrowing_Record.cs">
       <DependentUpon>Modelreal.tt</DependentUpon>
     </Compile>
@@ -365,12 +366,14 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\LibraryBook\publishers.cshtml" />
     <Content Include="Views\LibraryBook\fines.cshtml" />
-    <Content Include="Views\LibraryBook\Details.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\DangKy.cshtml" />
     <Content Include="Views\Login\Create.cshtml" />
     <Content Include="Views\Login\Error.cshtml" />
     <Content Include="Views\Page_Login_VanBinh.cshtml" />
+    <Content Include="Views\LibraryBook\Borrow_Book.cshtml" />
+    <Content Include="Views\LibraryBook\DanhSachPhieuMuon.cshtml" />
+    <Content Include="Views\LibraryBook\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

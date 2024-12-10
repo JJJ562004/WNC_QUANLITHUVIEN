@@ -1,0 +1,41 @@
+﻿@model IEnumerable<cuoiki_LTWNC.Models.BorrowingRecordModel>
+@{
+    ViewBag.Title = "DanhSachPhieuMuon";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+    <!-- header section end -->
+    <!-- Table phiếu mượn sách-->
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Tên sách</th>
+                <th scope="col">Ngày mượn</th>
+                <th scope="col">Ngày đến hạn</th>
+                <th scope="col">Ngày thực trả</th>
+            </tr>
+        </thead>
+        @* Initialize a counter variable *@
+        @{
+            int rowNumber = 1;
+        }
+
+        @foreach (var borrow_record in Model)
+        {
+            <tr>
+                <th scope="row">@rowNumber</th> @* Display the row number *@
+                <td>@borrow_record.Title</td>
+                <td>@borrow_record.BorrowDateString</td>
+                <td>@borrow_record.DueDateString</td>
+                <td>@borrow_record.ReturnDateString</td>
+            </tr>
+
+            @* Increment the counter *@
+            rowNumber++;
+        }
+    </table>
+
+
+    

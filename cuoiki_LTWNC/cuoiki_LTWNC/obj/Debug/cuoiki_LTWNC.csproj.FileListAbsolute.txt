@@ -36,41 +36,41 @@ D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BCCK_QuanLyThuVien_v3\WNC_Q
 D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BCCK_QuanLyThuVien_v3\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_L.71B75303.Up2Date
 D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BCCK_QuanLyThuVien_v3\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.dll
 D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BCCK_QuanLyThuVien_v3\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.pdb
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\cuoiki_LTWNC.dll.config
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\cuoiki_LTWNC.dll
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\cuoiki_LTWNC.pdb
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Antlr3.Runtime.dll
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.dll
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.SqlServer.dll
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Microsoft.Web.Infrastructure.dll
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Newtonsoft.Json.dll
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\PagedList.dll
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\PagedList.Mvc.dll
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Helpers.dll
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Mvc.dll
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Optimization.dll
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Razor.dll
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Deployment.dll
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.dll
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Razor.dll
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\WebGrease.dll
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.xml
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.SqlServer.xml
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\PagedList.xml
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\PagedList.Mvc.xml
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Helpers.xml
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Mvc.xml
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Optimization.xml
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Razor.xml
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.xml
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Deployment.xml
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Razor.xml
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Newtonsoft.Json.xml
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Antlr3.Runtime.pdb
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.csproj.AssemblyReference.cache
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.csproj.CoreCompileInputs.cache
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.csproj.CopyComplete
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.dll
-D:\HocTap\hocki1nam3\LTWNC\Mainnn\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.pdb
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\cuoiki_LTWNC.dll.config
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\cuoiki_LTWNC.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\cuoiki_LTWNC.pdb
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Antlr3.Runtime.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.SqlServer.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Microsoft.Web.Infrastructure.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Newtonsoft.Json.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\PagedList.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\PagedList.Mvc.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Helpers.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Mvc.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Optimization.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Razor.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Deployment.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Razor.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\WebGrease.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\EntityFramework.SqlServer.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\PagedList.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\PagedList.Mvc.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Helpers.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Mvc.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Optimization.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.Razor.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Deployment.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\System.Web.WebPages.Razor.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Newtonsoft.Json.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Antlr3.Runtime.pdb
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.csproj.AssemblyReference.cache
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.csproj.CoreCompileInputs.cache
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_L.71B75303.Up2Date
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.dll
+D:\Programming Exercises\Nam 124 - SV 3\LTWNC_Csharp\BaoCaoCuoiKi_QuanLySachThuVien\Code\WNC_QUANLITHUVIEN\cuoiki_LTWNC\cuoiki_LTWNC\obj\Debug\cuoiki_LTWNC.pdb
