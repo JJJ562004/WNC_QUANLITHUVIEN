@@ -3,6 +3,7 @@
     ViewBag.Title = "Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@section Banner{}
 <div class="book-details">
     <div class="col-md-12">
         <h1 class="about_taital">Chi tiết sách</h1>
@@ -27,8 +28,8 @@
     <div class="container">
         <div class="row">
             <div class="col-6 justify-content-center align-items-center">
-                <a href="@Url.Action("Index", "LibraryBook")" class="btn btn-primary">Quay lại</a>
-            </div>
+        <a href="@Url.Action("Index", "LibraryBook")" class="btn btn-primary">Quay lại</a>
+    </div>
             <div class="col-6 justify-content-center align-items-center">
                 <a href="@Url.Action("Borrow_Book", "LibraryBook", new { id = @Model.BookID })" class="btn btn-success">Đăng kí mượn</a>
             </div>

@@ -2,23 +2,24 @@
     ViewBag.Title = "Dữ liệu thống kê";
 }
 @section Banner {}
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<div id="container" style="width:100%; height:400px;"></div>
 
+<script src="https://code.highcharts.com/highcharts.js"></script>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
-        fetchChartData();
+        fetchChartDataCategory();
+        fetchChartDataStaff();
 
-        function fetchChartData() {
+        // Fetch chart data for book categories
+        function fetchChartDataCategory() {
             $.ajax({
-                url: '@Url.Action("GetChartData", "LibraryBook")', // Adjust route as needed
+                url: '@Url.Action("GetChartDataCategory", "LibraryBook")', // Adjust route as needed
                 method: 'GET',
                 success: function (data) {
                     const categories = data.map(item => item.CategoryName);
                     const bookCounts = data.map(item => item.BookCount);
 
-                    // Initialize the chart
-                    Highcharts.chart('container', {
+                    // Initialize the category chart
+                    Highcharts.chart('categoryChartContainer', {
                         chart: {
                             type: 'bar'
                         },
@@ -41,9 +42,55 @@
                     });
                 },
                 error: function (err) {
-                    console.error('Error fetching chart data:', err);
+                    console.error('Error fetching chart data for categories:', err);
+                }
+            });
+        }
+
+        // Fetch chart data for staff roles
+        function fetchChartDataStaff() {
+            $.ajax({
+                url: '@Url.Action("GetChartDataStaff", "LibraryBook")', // Adjust route as needed
+                method: 'GET',
+                success: function (data) {
+                    const roles = data.map(item => item.Role);
+                    const staffCounts = data.map(item => item.StaffCount);
+
+                    // Initialize the staff role chart
+                    Highcharts.chart('staffChartContainer', {
+                        chart: {
+                            type: 'bar'
+                        },
+                        title: {
+                            text: 'Nhân viên và vai trò'
+                        },
+                        xAxis: {
+                            categories: roles
+                        },
+                        yAxis: {
+                            title: {
+                                text: 'Số lượng nhân viên'
+                            },
+                            allowDecimals: false
+                        },
+                        series: [{
+                            name: 'Nhân viên',
+                            data: staffCounts
+                        }]
+                    });
+                },
+                error: function (err) {
+                    console.error('Error fetching chart data for staff:', err);
                 }
             });
         }
     });
 </script>
+
+<div>
+    <div id="categoryChartContainer" style="width: 100%; height: 400px;"></div>
+</div>
+
+<div>
+    <div id="staffChartContainer" style="width: 100%; height: 400px;"></div>
+</div>
